@@ -1,0 +1,888 @@
+/* 
+    Document   : colors
+    Author     : Little Neko
+    Description: template colors
+*/
+
+
+/* Table of Content
+==================================================
+
+#BOOSTRAP CUSTOMIZATION
+#TYPOGRAPHY
+#LINKS AND BUTTONS
+#HEADER
+#MAIN MENU 
+#FOOTER 
+#SLIDERS
+#BLOG
+#NEWS
+#PAGES
+#PORTFOLIO
+#MISCELANIOUS
+#NEKO CSS FRAMEWORK
+
+*/
+
+/* BOOSTRAP CUSTOMIZATION
+================================================== */
+
+/*** pagination ***/
+.pagination ul > li > a, .pagination ul > li > span, .pager li > a, .pager li > span {
+	background-color:#eee;
+	color:#555;
+}
+.pagination ul > li > a:hover, .pagination ul > .active > span:hover, .pagination ul > .active > a, .pagination ul > .active > span, .pager li > a:hover {
+	background-color:#3CB6B6;
+	color:#fff;
+}
+.pagination a i {
+	color:#888;
+}
+.pagination a:hover i {
+	color:#fff;
+}
+
+/*** modal ***/
+.modal, .modal-footer {
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	-moz-box-shadow: 0 0 0 0;
+	-webkit-box-shadow:  0 0 0 0;
+	-o-box-shadow: 0 0 0 0;
+	box-shadow:  0 0 0 0;
+}
+
+/*** tabs ***/
+.nav-tabs {
+	margin-bottom:-1px;
+	outline:none
+}
+.nav-tabs li a, .nav-tabs .active a{
+	border:none;
+}
+
+.nav-tabs > .active > a, .nav.nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+	background-color:#3CB6B6;
+	border:none;
+	color:#fff;
+}
+.nav-tabs>li>a:hover, .nav-tabs>li>a:focus, .nav-tabs>li>a, .nav.nav-tabs li a:hover  {
+	border:none;
+	outline:none;
+}
+.nav.nav-tabs li a:hover  {
+	color:#555;
+}
+
+.nav-tabs>li>a {
+	color:#999;
+}
+.tab-content p, .tab-content h2 {
+
+	color:#555!important
+}
+.tab-content h2 {
+	text-shadow:none!important;
+}
+.tab-content {
+	background-color:white;
+	border:none;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus, .dropdown-submenu:hover>a, .dropdown-submenu:focus>a {
+background:#3CB6B6;
+}
+
+/*** carousel ***/
+.carousel-control {
+}
+.right.carousel-control i {
+	color:#fff;
+}
+.carousel-control.right {
+	background:#888;
+}
+.carousel-control:hover {
+	background:#3CB6B6;
+}
+
+/*** menu ***/
+.nav > li > a:hover {
+	color:white;
+}
+
+/*** accordion ***/
+.accordion-group {
+	margin-bottom:0;
+}
+a.accordion-toggle:link {
+	color:#666;
+}
+.accordion-toggle i {
+	color:#ccc!important;
+}
+.accordion .accordion-group:not(:first-child) a.accordion-toggle {
+ border-top:1px solid #E5E5E5;
+}
+a.accordion-toggle:hover, .accordion-heading a.active {
+	color:#3CB6B6;
+}
+.accordion-inner {
+	border-top:none;
+}
+.accordion-group {
+	border:none;
+}
+
+/*** progress bar ***/
+.progress .bar {
+	background-image: none;
+	background-color: #3CB6B6;
+}
+
+/*** tables ***/
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+	background-color: #4F6266 !important;
+	color:white;
+}
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+ background-color: #F5F5F5;
+}
+
+/* END BOOSTRAP CUSTOMIZATION
+================================================== */
+
+/* TYPOGRAPHY
+================================================== */
+
+body {
+	color:#777;
+	background: #f7f7f7;
+}
+
+blockquote small {
+	color:inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+	color:#222;
+}
+h2 {
+	
+}
+h2 i {color:#999}
+h1:after {
+	background-color:#3CB6B6;
+}
+.paralaxText blockquote:before, .paralaxText blockquote:after {
+	color:#fff;
+}
+
+/*** parallax sections ***/
+.paralaxText blockquote, .paralaxText h1, .paralaxText h2, .paralaxText h3, .paralaxText p{
+	color:#fff;
+}
+
+/* END TYPOGRAPHY
+================================================== */
+
+/* LINKS AND BUTTONS
+================================================== */
+a {
+	color:#3CB6B6;
+}
+a:hover, .scrollspyNav .active a {
+	color:#3CB6B6;
+}
+ul.iconsList li a {
+	color:#555
+}
+ul.iconsList li a:hover, ul.iconsList i {
+	color:#3CB6B6
+}
+
+/*** buttons ***/
+.btn {
+	background:#3CB6B6;
+	color:#fff;
+	border:1px solid transparent;
+	box-shadow:none;
+}
+.btn:hover {
+	color:#fff;
+	border:1px solid #444;
+	text-shadow:none;
+	background:#555
+}
+.btn-inverse {
+	color:#fff;
+	background:#3c3c3c
+}
+a.btn-inverse i {
+	color:#fff!important;
+}
+a.btn-inverse:hover i {
+color:#444!important;
+}
+.btn-inverse:hover {
+	background:#fff;
+	color:#444!important;
+	border-color:#eee;
+}
+.btn-primary {
+	background: #006dcc;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+	background: #555;
+}
+.btn-info {
+	background: #49AFCD;
+}
+.btn-success {
+	background: #5BB75B;
+}
+.btn-warning {
+	background: #FAA732;
+}
+.btn-danger {
+	background: #DA4F49;
+}
+.btn-link, .btn-link:active, .btn-link[disabled], .btn-link:hover {
+	background:none;
+	border:none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow:none;
+	box-shadow: none;
+	color:#49AFCD;
+}
+.btnWrapper {
+	border:1px solid #ccc;
+}
+#mapTriggerLoader {background-color:#3CB6B6;}
+#mapTriggerLoader span{color:#fff;}
+#mapTriggerLoader i {color:#3CB6B6;}
+
+/* END LINKS AND BUTTONS
+================================================== */
+
+/* HEADER
+================================================== */
+
+#home h1 {color:#FFFFFF;}
+
+/*** Social icons ***/
+.socialNetwork a.icoRss:hover {
+	background-color: #F56505;
+}
+.socialNetwork a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.socialNetwork a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.socialNetwork a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.socialNetwork a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.socialNetwork a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.socialNetwork a.icoRss:hover i, .socialNetwork a.icoFacebook:hover i, .socialNetwork a.icoTwitter:hover i, .socialNetwork a.icoGoogle:hover i, .socialNetwork a.icoVimeo:hover i, .socialNetwork a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#3CB6B6;
+}
+
+/* END HEADER
+================================================== */
+
+/* MAIN MENU 
+================================================== */
+
+#mainHeader{
+    background-color: white;
+}
+
+#mainHeader .navbar-inner {
+	background: #444;
+	filter:none !important;
+}
+#mainMenu ul li a, #resMainMenu ul li a {
+	color:#444;
+}
+#mainMenu ul li.active a, #resMainMenu ul li.active a  {
+	background: #3CB6B6;
+	color:#fff;
+}
+#mainMenu>ul>li>a:hover, #mainMenu>ul>li.hover>a, #resMainMenu>ul>li>a:hover, #resMainMenu>ul>li.hover>a{
+	background: #3CB6B6;
+	color:#fff;
+}
+.arrowsNav i, .arrowsNav .color4 i {color:#fff;}
+
+/* END MAIN MENU 
+================================================== */
+
+/* FOOTER 
+================================================== */
+
+footer {
+	color:#999;
+	background:#333;
+	border-top:8px solid #3CB6B6;
+}
+footer h3 {
+	color:#eee;
+}
+footer h3 span {
+	color:#FFF;
+}
+footer h4 {
+	color:#ccc;
+}
+footer .divider {
+	border:none;
+	background:#777;
+}
+footer .media-list p {
+	margin-bottom:0;
+}
+
+footer .media-body {
+	background:#444;
+	color:white;
+}
+#footerRights {
+	background-color:#444;
+	color:#999;
+}
+p.credits {
+	background-color:#eee;
+	color:#555;
+}
+p.credits a {
+	color:#3CB6B6;
+}
+
+/*** App footer ***/
+.app footer {
+	background:#fff;
+}
+.app footer h3{
+	color:#555;
+}
+
+/* END FOOTER 
+================================================== */
+
+/* SLIDERS
+================================================== */
+
+/*** FLEX ***/
+
+.flexslider {
+	box-shadow:none;
+}
+.slides .txt div {
+	background:#444;
+	color:#FFFFFF;
+}
+.flexslider .flex-direction-nav a {
+	background-color:#3CB6B6;
+}
+#sliderWrapper .flex-control-paging li a.flex-active {
+	background:#3CB6B6;
+}
+.flexslider .flex-control-paging li a:hover {
+	background: #3CB6B6
+}
+.flexslider .flex-control-paging li a {
+	background: #444;
+}
+.flexslider .flex-control-nav {
+	background:transparent;
+}
+.flexslider h1 {
+	color:#fff;
+	background-color:#3CB6B6;
+}
+.flexslider h2 {
+	color:#fff;
+	background-color:#333;
+}
+.flexslider .caption p {
+	background-color:#fff;
+	color:#555
+}
+/*** END FLEX SLIDER ***/
+
+/*** fullscreen background image (used on app version) ***/
+#homeApp h1, #homeApp h2, #homeApp p{color:#ffffff;}
+#homeApp {background-image:url(../images/theme-pics/app-background.jpg);}
+
+/* END SLIDERS
+================================================== */
+
+/* BLOG
+================================================== */
+
+ul.entry-meta li {
+	color:#777;
+	background:#fff;
+}
+.postTitle h2 a{
+	color:#222;
+	text-decoration:none;
+}
+.postTitle h2 a:hover {
+	color:#3CB6B6;
+}
+.blogUpdates .media, .blogUpdates .iconsList li {
+	border-bottom:1px solid #eee;
+}
+.blogUpdates .media:last-child, .blogUpdates .iconsList li:last-child {
+	border:none;
+}
+.blogUpdates .iconsList li span {
+	color:#3CB6B6;
+}
+.blogTags ul li a {
+	background-color:#ccc;
+	color:white;
+}
+.blogTags ul li a.w1 {
+	background-color:#333333;
+}
+.blogTags ul li a.w2 {
+	background-color:#666666;
+}
+.blogTags ul li a.w3 {
+	background-color:#CCCCCC;
+}
+.blogTags ul li a:hover {
+	background-color:#3CB6B6;
+	color:white;
+}
+.blogTags ul li a:hover {
+	text-decoration:none;
+}
+.comments .media {
+	border:1px solid #ccc;
+	background:#f7f7f7;
+}
+
+/* END BLOG
+================================================== */
+
+/* NEWS
+================================================== */
+.newsDate {
+	background-color:#fff;
+	color:#ddd;
+}
+.newsDate h4 {
+	color:#555!important;
+}
+.newsDate span {
+
+	color:#555;
+	border-bottom:3px solid #3CB6B6;
+}
+/* END NEWS
+================================================== */
+
+/* PAGES
+================================================== */
+.page-header {
+	background-color:#555;
+	background-repeat:no-repeat;
+	background-position:right;
+}
+.page-header h1, .page-header blockquote {
+	color:#fff;
+}
+.page-header p {
+	color:#fff;
+}
+.page-header.bigHeader {
+	background-color:#3CB6B6;
+	color:#fff;
+}
+.page-header.bigHeader h1, .page-header.bigHeader h2, .page-header.bigHeader h3 {
+	color:#fff;
+}
+.page-header.bigHeader a.btn:hover {
+	background-color:#111;
+}
+/* END PAGES
+================================================== */
+
+/* PORTFOLIO
+================================================== */
+
+nav#filter a {
+	background-color: #EEE;
+	color:#555;
+}
+nav#filter a:hover, nav#filter a.current {
+	background-color: #3CB6B6;
+	color:#fff;
+}
+li.filterTitle {
+	color:#4F6266;
+}
+section#projectDescription {
+	background-color:#F8F8F8
+}
+
+/* END PORTFOLIO
+================================================== */
+
+/* MISCELANIOUS
+================================================== */
+
+/*** pricing table ***/
+.pricingBloc {
+	background-color:#fff;
+}
+.pricingBloc ul li {
+	border-bottom:1px solid #ddd;
+	color:#444!important;
+}
+.pricingBloc ul li:last-child {
+	border-bottom:none;
+}
+.pricingBloc h2 {
+	background-color:none;
+	color:#888!important;
+	border:none;
+}
+.pricingBloc h3 {
+	background-color:#ddd;
+	color:#fff!important;
+	border-top:1px solid rgba(0, 0, 0, 0.1);
+	border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+.pricingBloc p {
+	background-color:#eee;
+	color:#444!important;
+}
+.pricingBloc.focusPlan {
+	margin-top:0;
+	border-color:#D1D1D1;
+}
+.pricingBloc.focusPlan h2{
+	background-color:#3CB6B6;
+	color:#fff!important;
+}
+.pricingBloc.focusPlan h3 {
+	background-color:#555;
+	padding:1.25em;
+	border-top:1px solid rgba(0, 0, 0, 0.2);
+	border-bottom:1px solid rgba(0, 0, 0, 0.2);
+	color:#fff!important;
+}
+
+/*** Form ***/
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+	border: none;
+	color: #fff;
+	background-color:#444;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], textarea, select {
+	color: #444;
+	background-color:#ededed;
+    border:1px solid #ededed;
+}
+#projectQuote, #projectQuote h3{background:#ddd;color:#444;}
+
+/* END MISCELANIOUS
+================================================== */
+
+/* NEKO CSS FRAMEWORK
+================================================== */
+
+/*** topBox ***/
+.topBox {
+	border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+.topBox .topQuote strong {
+	font-weight:400;
+	color:#222
+}
+/*** slices ***/
+.arrowsNav, .slice{
+	background-color:#fff;
+}
+
+.blogHeader{
+    background: url('../images/theme-pics/agency-header.jpg') top left repeat-y;
+}
+.corporateHeader{
+    background:url('../images/theme-pics/corporate-header.jpg') top left repeat-y;
+}
+
+/*box link*/
+.boxLink {
+	border-bottom:1px solid #eee;
+}
+article.boxLink:hover {
+	background-color:#3CB6B6
+}
+article.boxLink:hover h3, article.boxLink:hover p {
+	color:#fff
+}
+
+/*box Icon*/
+
+.boxIcon .iconWrapper {
+	background:#444;
+}
+.boxIcon .iconWrapper i {
+	color:#fff;
+}
+.boxIcon.hover {
+	background-color:#3CB6B6;
+}
+.boxIcon.hover .iconWrapper {
+	background:#fff;
+}
+.boxIcon.hover .iconWrapper i {
+	color:#3CB6B6;
+}
+.boxIcon p, .boxIcon.hover h2{
+	color:#fff;
+}
+.boxContent2, .boxContent2 h3{
+	background-color:#3CB6B6;
+	color:#fff!important
+}
+
+/*** call to action ***/
+
+.ctaBox blockquote {
+	color:#fff;
+}
+.ctaBox.ctaBoxFullwidth {
+	border: none;
+	box-shadow:none;
+}
+
+/*** COLORS  ***/
+.color1 i, .color2 i, .color3 i, .color4 i, .color2 a i, .color3 a i, .color4 a i, .navUp.color1 i , .navDown.color1 i {
+	color:#555
+}
+.color1 a:hover i {color:#3CB6B6;}
+
+.color2 a:hover i, .color3 a:hover i, .color4 a:hover i , .color1 .flex-direction-nav i{
+    color:white;
+}
+.color1 a.btn i, .color2 a.btn i, .color3 a.btn i, .color4 a.btn i, .color1 a.btn, .color2 a.btn, .color3 a.btn, .color4 a.btn{
+	color:#FFF;
+}/*keeps btn and icons color safe*/
+.color1 i {
+	color:#555
+}
+/*color1*/
+.color1, .bulle.color1, .iconWrapper.color1, .bigIconLink.color1 a {
+	background-color:#F7F7F7;
+	color:#444;
+}
+.iconWrapper.color1 i {
+	color:#444;
+}
+.boxFocus.color1 h2:before {
+	color:#3CB6B6;
+}
+.color1 h1, .color1 h2, .color1 h3, .color1 h4, .color1, .color1 h5, .color5 p, .bulle.color1 h1, .bulle.color1 h2, .bulle.color1 h3, .bulle.color1 h4, .bulle.color1 h5, .bulle.color1 p, .boxFocus.color1 h1, .boxFocus.color1 h2, .boxFocus.color1 h3, .boxFocus.color1 h4, .boxFocus.color1 h5, .boxFocus.color1 p, .boxContent.color1 h1, .boxContent.color1 h2, .boxContent.color1 h3, .boxContent.color1 h4, .boxContent.color1 h5, .boxContent.color1 p, .color1 .ctaBox blockquote {
+	color:#444;
+}
+.bulle.color1 {
+	background:#F7F7F7;
+}
+.bulle.color1 blockquote {
+	color:#444
+}
+.bulle.color1 blockquote:before, .bulle.color1 blockquote:after {
+	color:#ddd
+}
+.bulle.color1 h1, .bulle.color1 h2, .boxFocus.color1 h2, .tab-content.color1 h2 {
+	text-shadow:none;
+}
+/*color2*/
+.color2, .bulle.color2, .iconWrapper.color2, .bigIconLink.color2 a {
+	background-color:#999;
+	color:#ddd;
+}
+.iconWrapper.color2 i {
+	color:#ddd;
+}
+.color2 a {
+	color:#555
+}
+.color2 h1, .color2 h2, .color2 h3, .color2 h4, .color2, .color2 h5, .color5 p, .bulle.color2 h1, .bulle.color2 h2, .bulle.color2 h3, .bulle.color2 h4, .bulle.color2 h5, .bulle.color2 p, .boxFocus.color2 h1, .boxFocus.color2 h2, .boxFocus.color2 h3, .boxFocus.color2 h4, .boxFocus.color2 h5, .boxFocus.color2 p, .boxContent.color2 h1, .boxContent.color2 h2, .boxContent.color2 h3, .boxContent.color2 h4, .boxContent.color2 h5, .boxContent.color2 p {
+	color:#eee;
+}
+.color2 h2 {
+	border-bottom-color:#C9C9C9;
+}
+.bulle.color2 blockquote {
+	color:#eee
+}
+.bulle.color2 blockquote:before, .bulle.color2 blockquote:after {
+	color:#ccc
+}
+/*color3*/
+.color3, .bulle.color3, .iconWrapper.color3, .bigIconLink.color3 a {
+	background-color:#444;
+	color:#ccc;
+}
+.iconWrapper.color3 i {
+	color:#ccc;
+}
+.color3 h1, .color3 h2 {
+
+}
+.color3 p, .color3 a, .color3 h1, .color3 h2, .color3 h3, .color3 h4, .color3 h5, .color3 blockquote {
+	color:#fff;
+}
+.color3 .ctaBox {
+	border-color:#555;
+}
+/*color4*/
+.color4, .slice.color4, .bulle.color4, .iconWrapper.color4, .bigIconLink.color4 a, .color4 .previewTrigger .iconWrapper:hover {
+	background-color:#3CB6B6;
+	color:#fff;
+}
+
+.color4 .previewTrigger .iconWrapper i {color:#555;}
+.color4 .previewTrigger .iconWrapper:hover i {color:#fff;}
+
+.color4 h1:after {
+	background-color:#fff;
+}
+.iconWrapper.color4 i, .color4 a:hover {
+	color:#fff;
+}
+.color4 h1, .color4 h2, .color4 h3, .color4 h4, .color4, .color4 h5, .color4 p, .color4 a, .color4 blockquote:before, .color4 blockquote, .color4 blockquote:after{
+	color:#fff;
+}
+.color4 h1, .color4 h2 {
+
+}
+.color4 h2:before, .color4 ul.iconsList i{
+	color:#fff;
+}
+.color4 .ctaBox {
+	border-color:#fff;
+}
+.color4 h2 {
+	border-color:#fff;
+}
+.color4 h2:after {
+	background:#555;
+}
+/* bulles colors */
+.bulle.color1 .arrow {
+	border-left-color: #F7F7F7;
+}
+.bulle.color2 .arrow {
+	border-left-color: #999;
+}
+.bulle.color3 .arrow {
+	border-left-color: #444;
+}
+.bulle.color4 .arrow {
+	border-left-color: #3CB6B6;
+}
+.bulle.color1.bulleLeft .arrow {
+	border-right-color: #F7F7F7;
+}
+.bulle.color2.bulleLeft .arrow {
+	border-right-color: #999;
+}
+.bulle.color3.bulleLeft .arrow {
+	border-right-color: #444444;
+}
+.bulle.color4.bulleLeft .arrow {
+	border-right-color: #3CB6B6;
+}
+.bulle.color1.bulleBottom .arrow {
+	border-top-color: #F7F7F7;
+	border-left-color: rgba(255, 255, 255, 0)
+}
+.bulle.color2.bulleBottom .arrow {
+	border-top-color: #999;
+	border-left-color: rgba(255, 255, 255, 0)
+}
+.bulle.color3.bulleBottom .arrow {
+	border-top-color: #444444;
+	border-left-color: rgba(255, 255, 255, 0)
+}
+.bulle.color4.bulleBottom .arrow {
+	border-top-color: #3CB6B6;
+	border-left-color: rgba(255, 255, 255, 0)
+}
+
+/*image rounded*/
+.imgRounded.color1 {
+	border-color:#F7F7F7;
+}
+.imgRounded.color2 {
+	border-color:#eee;
+}
+.imgRounded.color3 {
+	border-color:#8A8A8A;
+}
+.imgRounded.color4 {
+	border-color:#3CB6B6;
+}
+
+/*** END COLORS  ***/
+
+/*** bulles ***/
+.bulle {
+
+	background-color:#fff;
+}
+
+/*** shadow ***/
+.roundedShadow {
+	background-image: url(../images/ui/rounded-shadow.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+
+/*** images ***/
+.imgRounded {
+	border:2px solid #fff;
+	box-shadow:2px 2px 0 rgba(0, 0, 0, 0.2)
+}
+.mask {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+/*** icons ***/
+a.iconWrapper:hover {
+	background-color:#3CB6B6;
+	color:#fff;
+}
+.iconWrapper, .bigIconLink a {
+	background-color:#fff;
+	color:#555;
+}
+
+/*** new badge ***/
+.newBadge {
+	background-color:#3CB6B6;
+	color:#fff;
+	border:3px solid #eee;
+}
+/* END NEKO CSS FRAMEWORK
+================================================== */
