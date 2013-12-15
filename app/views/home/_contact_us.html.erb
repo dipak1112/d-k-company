@@ -1,0 +1,58 @@
+<section class="slice color1"  id="contactSlice" >
+                            <div class="container">
+                              <div class="row mb40">
+                                <div class="span12">
+                                  <h1>Contact us</h1>
+                                </div>
+                                <div id="contactSlide">
+                                  <div class="span3"> <a href="" title="" id="mapTriggerLoader">
+                                    <div class="iconWrapper iconBig"> <i class="icon-location"></i> </div>
+                                    <span class="clearfix">Click to see the map</span></a>
+                                    <p>Curabitur turpis orci, gravida non ornare id, venenatis nec enim. Praesent posuere condimentum leo eget volutpat. .</p>
+                                  </div>
+                                  <div class="span6">
+
+                                    <form method="post" action="js-plugin/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm">
+                                      <label for="name"></label>
+                                      <input type="text" name="name" id="name" placeholder="Name"  title="Please enter your name (at least 2 characters)"/>
+                                      <label for="email"></label>
+                                      <input type="email" name="email" id="email" placeholder="Email" title="Please enter a valid email address"/>
+                                      <label for="phone"></label>
+                                      <input name="phone" type="tel" id="phone" size="30" value="" placeholder="Phone" class="required digits" title="Please enter a valid phone number (at least 10 characters)">
+                                      <label for="comments"></label>
+                                      <textarea name="comment" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+                                      <fieldset class="clearfix securityCheck">
+                                        <legend>Security</legend>
+                                        <div class="row">
+                                          <div class="span6 pull-left humanCheck">
+                                            <label for="verify" class="pull-left"><img src="/assets/image.php" alt="Image verification"/></label>
+                                            <input class="required "  id="verify" name="verify" type="text" >
+                                          </div>
+                                        </div>
+                                      </fieldset>
+                                      <br/> <div class="result"></div>
+                                      <button name="submit" type="submit" class="btn" id="submit"> Submit</button>
+                                    </form>
+
+
+                                  </div>
+                                  <div class="span3">
+                                    <address>
+                                      Address:<br/>
+                                      Himalaya Company<br/>
+                                      77 Mass. Ave., E14/E15<br/>
+                                      Cambridge, MA 02139-4307 USA <br/>
+                                      <br/>
+                                      phone:<br/>
+                                      615.987.1234<br/>
+                                    </address>
+                                  </div>
+                                </div>
+                                <div id="mapSlide">
+                                  <div class="span12">
+                                    <div id="mapWrapper"></div>
+                                    <a href="#" title="" id="mapReturn" class="btn btn-small"><i class="icon-left-dir"></i> Back</a> </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
