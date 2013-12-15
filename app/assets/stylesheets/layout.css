@@ -1583,7 +1583,6 @@ a#nextslide:hover, a#prevslide:hover {
 /*** MEDIA QUERIES ***/
 /* Large desktop */
 @media (min-width: 1200px) {
-...
 }
 
 /* Portrait tablet to landscape and desktop */
