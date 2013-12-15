@@ -60,9 +60,9 @@ ul#slide-list li a:hover{ background-position:0 -12px; cursor:pointer; }
 #thumb-back, #thumb-forward{ position:absolute; z-index:5; bottom:42px; height:108px; width:40px; }
 #thumb-back{ left:0; background: url('/assets/supersized/thumb-back.png') no-repeat center center;}
 #thumb-forward{ right:0; background:url('/assets/supersized/thumb-forward.png') no-repeat center center;}
-#thumb-back:hover, #thumb-forward:hover{ cursor:pointer; background-color:rgb(256,256,256); }
-#thumb-back:hover{ border-right:1px solid rgb(256,256,256); }
-#thumb-forward:hover{ border-left:1px solid rgb(256,256,256); }
+#thumb-back:hover, #thumb-forward:hover{ cursor:pointer; background-color:rgba(255,255,255, 0.1); }
+#thumb-back:hover{ border-right:1px solid rgba(255,255,255, 0.2); }
+#thumb-forward:hover{ border-left:1px solid rgba(255,255,255, 0.2); }
 
 
 ul#thumb-list{ display:inline-block; list-style:none; position:relative; left:0px; padding:0 0px; }
