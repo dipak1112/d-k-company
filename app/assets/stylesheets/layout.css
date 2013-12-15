@@ -1046,37 +1046,37 @@ p.credits {
 /* PARALLAX STUFF
 ================================================== */
 #paralaxSlice1 {
-	background-image: url('../images/theme-pics/paralax-1.jpg');
+	background-image: url('/assets/theme-pics/paralax-1.jpg');
 }
 #paralaxSlice2 {
-	background-image: url('../images/theme-pics/paralax-2.jpg');
+	background-image: url('/assets/theme-pics/paralax-2.jpg');
 }
 #paralaxSlice4 {
-	background-image: url('../images/theme-pics/paralax-4.jpg');
+	background-image: url('/assets/theme-pics/paralax-4.jpg');
 }
 #paralaxSlice5 {
-	background-image: url('../images/theme-pics/paralax-5.jpg');
+	background-image: url('/assets/theme-pics/paralax-5.jpg');
 }
 #paralaxSlice6 {
-	background-image: url('../images/theme-pics/paralax-6.jpg');
+	background-image: url('/assets/theme-pics/paralax-6.jpg');
 }
 #paralaxSlice7 {
-	background-image:  url('../images/theme-pics/paralax-5.jpg');
+	background-image:  url('/assets/theme-pics/paralax-5.jpg');
 }
 #paralaxSlice8 {
-	background-image:  url('../images/theme-pics/paralax-8.jpg');
+	background-image:  url('/assets/theme-pics/paralax-8.jpg');
 }
 #paralaxSlice9 {
-	background-image:  url('../images/theme-pics/paralax-9.jpg');
+	background-image:  url('/assets/theme-pics/paralax-9.jpg');
 }
 #paralaxSlice10 {
-	background-image:  url('../images/theme-pics/paralax-10.jpg');
+	background-image:  url('/assets/theme-pics/paralax-10.jpg');
 }
 #paralaxSlice11 {
-	background-image:  url('../images/theme-pics/paralax-11.jpg');
+	background-image:  url('/assets/theme-pics/paralax-11.jpg');
 }
 #paralaxSlice12 {
-	background-image:  url('../images/theme-pics/paralax-11.jpg');
+	background-image:  url('/assets/theme-pics/paralax-11.jpg');
 }
 
 #paralaxSlice1, #paralaxSlice2, #paralaxSlice4, #paralaxSlice5, #paralaxSlice6, #paralaxSlice7,  #paralaxSlice8,  #paralaxSlice9,  #paralaxSlice10,  #paralaxSlice11, #paralaxSlice12 {
@@ -1219,7 +1219,7 @@ ul.socialNetwork {
   top:0;
   text-indent: -9999px;
   overflow: hidden;
-  background: #eee url("../images/ui/resp_nav_btn.png") no-repeat center center;
+  background: #eee url("/assets/ui/resp_nav_btn.png") no-repeat center center;
   display:none;
 }
 
@@ -2250,7 +2250,7 @@ body {
 	position:absolute;
 	left:50%; /* centers the loading animation horizontally one the screen */
 	top:50%; /* centers the loading animation vertically one the screen */
-	background:url(../images/ui/loader.gif) no-repeat center top; /* path to your loading animation */
+	background:url(/assets/ui/loader.gif) no-repeat center top; /* path to your loading animation */
 	margin:-50px 0 0 -50px; /* is width and height divided by two */
 	text-align: center;
 	padding-top:70px;
