@@ -56,7 +56,6 @@ ul#slide-list li a:hover{ background-position:0 -12px; cursor:pointer; }
 
 /* Thumbnail Tray
 ----------------------------*/			
-/*
 #thumb-tray{ position:fixed; z-index:3; bottom:0; left:0; background:url(/assets/supersized/bg-black.png); height:150px; width:100%; overflow:hidden; text-align:center; -moz-box-shadow: 0px 0px 4px #000; -webkit-box-shadow: 0px 0px 4px #000; box-shadow: 0px 0px 4px #000; }
 #thumb-back, #thumb-forward{ position:absolute; z-index:5; bottom:42px; height:108px; width:40px; }
 #thumb-back{ left:0; background: url('/assets/supersized/thumb-back.png') no-repeat center center;}
@@ -71,4 +70,3 @@ ul#thumb-list li{ background:#111; list-style:none; display:inline; width:150px;
 ul#thumb-list li img { width:200px; height:auto; opacity:0.5; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; filter:alpha(opacity=60); -webkit-transition: all 100ms ease-in-out; -moz-transition: all 100ms ease-in-out; -o-transition: all 100ms ease-in-out; -ms-transition: all 100ms ease-in-out; transition: all 100ms ease-in-out; }
 ul#thumb-list li.current-thumb img, ul#thumb-list li:hover img{ opacity:1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter:alpha(opacity=100); }
 ul#thumb-list li:hover{ cursor:pointer; }
-*/
