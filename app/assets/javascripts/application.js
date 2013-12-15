@@ -17,3 +17,17 @@
 //= require jquery.min.js
 //= require jquery-ui-1.8.23.custom.min.js
 //= require bootstrap.js
+//= require bootstrap-carousel-ie.js
+//= require jquery.easing.1.3.js
+//= require supersized.3.2.7.min.js
+//= require supersized.shutter.min.js
+//= require responsive-nav.min.js
+//= require jquery.isotope.min.js
+//= require jquery.form.js
+//= require jquery.validate.min.js
+//= require jquery.prettyPhoto.js
+//= require jquery.scrollTo-1.4.3.1-min.js
+//= require jquery.localscroll-1.2.7-min.js
+//= require jquery.stellar.min.js
+//= require SmoothScroll.js
+//= require custom.js
