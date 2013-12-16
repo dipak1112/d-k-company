@@ -50,3 +50,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem "font-awesome-rails"
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem "paperclip"
+gem 'aws-s3', :require => 'aws/s3'
+gem 'aws-sdk'

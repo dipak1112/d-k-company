@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project_title: MyString
+  short_description: MyString
+  project_type: MyString
+  long_description: MyText
+  is_new_project: false
+
+two:
+  project_title: MyString
+  short_description: MyString
+  project_type: MyString
+  long_description: MyText
+  is_new_project: false
