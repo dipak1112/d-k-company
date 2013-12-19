@@ -1,0 +1,49 @@
+<section class="pageheader-default text-center">
+	<div class="semitransparentbg">
+		<h1 class="animated fadeInDown">Portfolio Three</h1>
+		<p class="animated fadeInUp container page-description">
+			 Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>
+			 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+	</div>
+</section>
+
+<div class="wrapsemibox">
+	<div class="semiboxshadow text-center">
+		<img src="/assets/shp.png" class="img-responsive" alt="">
+	</div>
+	
+	<section class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div id="filter" class="animated fadeInRight">
+					<ul>
+						<li><a href="" data-filter="*" class="selected"><i class="icon icon-reorder"></i> All Items</a></li>
+						<li><a href="" data-filter=".ROR"><i class="icon icon-th-large"></i> Ruby on Rails</a></li>
+						<li><a href="" data-filter=".Android"><i class="icon icon-th-list"></i> Android </a></li>
+						<li><a href="" data-filter=".Iphone"><i class="icon icon-th"></i> IPhone </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- END filtering menu -->
+		<div id="content" style="position: relative; overflow: hidden; height: 3242px;" class="isotope">
+			
+			<% @projects.each do |project| %>			
+				<div class="boxportfolio3 item <%= project.project_type %> isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate(0px, 1289px);">
+					<div class="boxcontainer">
+						<%= image_tag(project.avatar)%>
+						<div class="roll" style="opacity: 0;">
+							<div class="wrapcaption">
+								<a href="http://www.wowthemes.net/demo/calypso/projectdetail.html"><i class="icon-link captionicons"></i></a>
+								<a data-gal="prettyPhoto[gallery1]" href="<%= project.avatar %>" title="Title Here"><i class="icon-zoom-in captionicons"></i></a>
+							</div>
+						</div>
+						<h1><%= link_to project.project_title, portfolio_url(project) %></h1>
+						<p><%= project.short_description %></p>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</section>
+</div>

@@ -1,62 +1,30 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
-<!--<![endif]-->
+<html lang="en" class=" js csstransitions csstransforms no-csstransforms3d" style="overflow-y: hidden;">
   <head>
-  <!-- Basic Page Needs
-    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>DIPAK KESHARIYA</title>
-    <meta name="description" content="ALTEA is a One Page Premium website Template, using nice Paralax effect, HTML5, CSS3 and Twitter Bootstrap Framework">
-    <meta name="author" content="Little NEKO">
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- CSS
-    ================================================== -->
-    <!-- Bootstrap  -->
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-    <!-- web font  -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
-    <!-- Custom css -->
-    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-    <script src="/assets/modernizr-2.6.1.min.js"></script>
-    <%= csrf_meta_tags %>
-    <!-- Favicons
-      ================================================== -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Dipak Keshariya</title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <link rel="shortcut icon" href="http://www.wowthemes.net/demo/calypso/img/favicon.ico">
+    <!-- IE -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>    
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link href="css/ie8.css" rel="stylesheet">
+    <![endif]-->
   </head>
-
-  <body data-spy="scroll" data-target="#resMainMenu" data-offset="150">
-    <!-- Preloader -->
-    <div id="preloader">
-      <div id="status">loading</div>
-    </div>
-
-    <!-- Primary Page Layout 
-    ================================================== -->
-    <!-- globalWrapper -->
-    <div id="globalWrapper" class="localscroll">
-      <!-- header -->
+  <body class="on" style="">
+    <div class="wrapbox">
       <%= render :partial => "/layouts/header" %>
-      <!-- header -->
-      <!-- content -->
       <%= yield %>
-      <!-- content -->
-      <!-- footer -->
       <%= render :partial => "/layouts/footer" %>
-      <!-- End footer -->
     </div>
-    <!-- global wrapper -->
-    <!-- End Document 
-    ================================================== -->
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   </body>
-</html>
+</html> 
