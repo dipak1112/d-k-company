@@ -9432,15 +9432,105 @@ div.pp_overlay {
     to   { opacity: 1; }
 }​
 
-/* Opera */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}​
-
 .simplefade{ -webkit-animation: fadein 2s; /* Safari and Chrome */
        -moz-animation: fadein 2s; /* Firefox */
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera */
             animation: fadein 2s;}
 			
+/* =========================================================== */
+/*List Styles /* ============================================================== */
+ul.checklist li:before {
+	content:"\f00c ";
+	font-family:FontAwesome;
+	margin-right:5px;
+}
+ul.circleoklist li:before {
+	content:"\f058 ";
+	font-family:FontAwesome;
+	margin-right:5px;
+}
+ul.arrowlist li:before {
+	content:"\f061 ";
+	font-family:FontAwesome;
+	margin-right:5px;
+}
+ul.starlist li:before {
+	content:"\f005 ";
+	font-family:FontAwesome;
+	margin-right:5px;
+}
+ul.doublearrowlist li:before {
+	content:"\f101 ";
+	font-family:FontAwesome;
+	margin-right:5px;
+}
+ul.chevronlist li:before {
+	content:"\f054 ";
+	font-family:FontAwesome;
+	margin-right:5px;
+}
+ul.handlist li:before {
+	content:"\f0a4 ";
+	font-family:FontAwesome;
+	margin-right:5px;
+}
+ul.thumblist li:before {
+	content:"\f087 ";
+	font-family:FontAwesome;
+	margin-right:5px;
+}
+ul.asterisklist li:before {
+	content:"\f069 ";
+	font-family:FontAwesome;
+	margin-right:5px;
+}
+ul.circlearrowlist li:before {
+	content:"\f0a9 ";
+	font-family:FontAwesome;
+	margin-right:5px;
+}
+ul.circlepluslist li:before {
+	content:"\f055 ";
+	font-family:FontAwesome;
+	margin-right:5px;
+}
+ul.longarrowlist li:before {
+	content:"\f178 ";
+	font-family:FontAwesome;
+	margin-right: 5px;
+}
+
+/* =============================================================== */
+/* Dropcaps
+================================================================ */
+
+.drop-cap {
+	width:50px;
+	height:50px;
+	margin:3px 10px 4px 0;
+	float:left;
+	text-align:center;
+	font-size:36px;
+	font-weight:bold;
+	line-height:50px;/*	box-shadow:0px 1px 0px #FFF*/
+	
+	text-transform:uppercase;
+	color:#fff;
+	background:#f54828;
+	  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.drop-cap.round
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+		border-radius: 5px;	
+}
+.drop-cap.circle
+{
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+		border-radius: 50px;	
+}
