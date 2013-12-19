@@ -9535,9 +9535,6 @@ ul.longarrowlist li:before {
 		border-radius: 50px;	
 }
 
-
-
-
 /*================================================== * 
 Fancy Boxes
 * ===============================================*/
@@ -9558,7 +9555,7 @@ Fancy Boxes
 	color:#888;
 	margin-bottom:15px;
 }
-}
+
 .fancyy-box p {
 margin-top:20px;
 }
