@@ -8588,3 +8588,483 @@ body {
 	-o-transition-delay:0.65s;
 	transition-delay: 0.65s;
 }
+/* Accordion Simple 1 (Valentiono)================================================== */
+#accordion-container {
+	font-size:13px;
+	background:#ffffff;
+}
+.accordion-header {
+	font-size:16px;
+	background:#fff;
+	margin:5px 0 0 0;
+	padding:15px 20px;
+	border:1px solid #ebebeb;
+	cursor:pointer;
+	color:#666666;
+	font-weight:300;
+}
+.active-header {
+		background:#f54828;
+	background-repeat:no-repeat;
+	background-position:right 50%;
+	color:#fff;
+}
+.active-header:hover {
+	background:#f54828;
+	color:#fff;
+	background-repeat:no-repeat;
+	background-position:right 50%;
+}
+.inactive-header {
+	background:#fff;
+	background-repeat:no-repeat;
+	background-position:right 50%;
+}
+.inactive-header:hover {
+	background:#f5f5f5;
+	background-repeat:no-repeat;
+	background-position:right 50%;
+}
+.accordion-content {
+	display:none;
+	padding:20px;
+	background:#ffffff;
+	border:1px solid #ebebeb;
+	border-top:0;
+	width: auto !Important;
+}
+/* Responsive Tabs================================================== */
+ul.resp-tabs-list,ul.resp-tabs-list p {
+	margin:0px;
+	padding:0px;
+}
+.resp-tabs-list li {
+	color:#333;
+	font-weight:300;
+	font-size:14px;
+	display:inline-block;
+	padding:13px 15px;
+	margin:0;
+	list-style:none;
+	cursor:pointer;
+	float:left;
+}
+.resp-tabs-container {
+	padding:0px;
+	background-color:#fff;
+	clear:left;
+}
+h2.resp-accordion {
+	cursor:pointer;
+	padding:5px;
+	display:none;
+}
+.resp-tab-content {
+	display:none;
+	padding:15px;
+}
+.resp-tab-active {
+	border:1px solid #ebebeb;
+	border-bottom:none;
+	margin-bottom:-1px !important;
+	padding:12px 14px 14px 14px !important;
+}
+.resp-tab-active {
+	border-bottom:none;
+	background-color:#fff;
+}
+.resp-content-active,.resp-accordion-active {
+	display:block;
+}
+.resp-tab-content {
+	border:1px solid #ebebeb;
+}
+h2.resp-accordion {
+	font-size:13px;
+	border:1px solid #ebebeb;
+	border-top:0px solid #ebebeb;
+	margin:0px;
+	padding:10px 15px;
+}
+h2.resp-tab-active {
+	border-bottom:0px solid #ebebeb !important;
+	margin-bottom:0px !important;
+	padding:10px 15px !important;
+}
+h2.resp-tab-title:last-child {
+	border-bottom:12px solid #ebebeb !important;
+	background: blue;
+}
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+	float:left;
+	width:30%;
+}
+.resp-vtabs .resp-tabs-list li {
+	display:block;
+	padding:15px 15px !important;
+	margin:0;
+	cursor:pointer;
+	float:none;
+}
+.resp-vtabs .resp-tabs-container {
+	padding:0px;
+	background-color:#fff;
+	border:1px solid #ebebeb;
+	float:left;
+	width:69.6%;
+	min-height:157px;
+	border-radius:4px;
+	clear:none;
+}
+.resp-vtabs .resp-tab-content {
+	border:none;
+}
+.resp-vtabs li.resp-tab-active {
+	border:1px solid #ebebeb;
+	border-right:none;
+	background-color:#fff;
+	position:relative;
+	z-index:1;
+	margin-right:-1px !important;
+	padding:14px 15px 15px 14px !important;
+}
+.resp-arrow {
+	width:0;
+	height:0;
+	float:right;
+	margin-top:3px;
+	border-left:6px solid transparent;
+	border-right:6px solid transparent;
+	border-top:12px solid #ebebeb;
+}
+h2.resp-tab-active span.resp-arrow {
+	border:none;
+	border-left:6px solid transparent;
+	border-right:6px solid transparent;
+	border-bottom: 12px solid #9B9797;
+}
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+	background:#DBDBDB !important;
+}
+.resp-easy-accordion h2.resp-accordion {
+	display:block;
+}
+.resp-easy-accordion .resp-tab-content {
+	border:1px solid #ebebeb;
+}
+.resp-easy-accordion .resp-tab-content:last-child {
+	border-bottom:1px solid #ebebeb !important;
+}
+.resp-jfit {
+	width:100%;
+	margin:0px;
+}
+.resp-tab-content-active {
+	display:block;
+}
+h2.resp-accordion:first-child {
+	border-top: 1px solid #ebebeb !important;
+}
+/*Here your can change the breakpoint to set the accordion,when screen resolution changed*/
+@media only screen and (max-width:768px) {
+	ul.resp-tabs-list {
+		display:none;
+	}
+	h2.resp-accordion {
+		display:block;
+	}
+	.resp-vtabs .resp-tab-content {
+		border:1px solid #ebebeb;
+	}
+	.resp-vtabs .resp-tabs-container {
+		border:none;
+		float:none;
+		width:100%;
+		min-height:initial;
+		clear:none;
+	}
+	.resp-accordion-closed {
+		display:none !important;
+	}
+	.resp-vtabs .resp-tab-content:last-child {
+		border-bottom: 1px solid #ebebeb !important;
+	}
+}
+/*================================================== * Pricing Tables* ===============================================*/
+.vuzz-pricing-table {
+	list-style:none;
+	margin:0;
+	padding:0;
+	font-size:16px;
+	-webkit-transition:0.3s;
+	-moz-transition:0.3s;
+	transition:0.3s;
+}
+.vuzz-pricing-table div {
+	list-style:none
+}
+.vuzz-pricing-table>div {
+	border-top:#666 3px solid;
+	list-style:none;
+	text-shadow:none;
+	margin-bottom:0;
+	box-shadow:0 0 10px rgba(0,0,0,0.05);
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.05);
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.05);
+	border-top:#0E8FAB 3px solid;
+	border:1px solid #e6e6e6;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.vuzz-pricing-table:hover {opacity:0.8;}
+
+.vuzz-pricing.popular {
+	webkit-box-shadow:0 0 20px 0 rgba(0,0,0,0.4);
+	-moz-box-shadow:0 0 20px 0 rgba(0,0,0,0.4);
+	box-shadow:0 0 20px 0 rgba(0,0,0,0.4);
+	z-index:1;
+}
+.vuzz-pricing-table .vuzz-pricing-header {
+	text-align:center;
+	padding:20px 0 0px;
+}
+.vuzz-pricing-table .vuzz-pricing-header h5 {
+	color:#333;
+	font-size:1.313em;
+	margin:0;
+	padding:0 20px 20px;
+}
+.vuzz-pricing-table .vuzz-pricing-cost {
+	color:#fff;
+	font-size:1.500em;
+	line-height:1em;
+	padding-top:20px;
+	background:#666;
+}
+.vuzz-pricing-table .vuzz-pricing-per {
+	font-size:0.786em;
+	color:#fff;
+	background:#666;
+	padding-bottom:10px;
+}
+.vuzz-pricing-table .vuzz-pricing-content {
+	background:#fff;
+	font-size:0.857em;
+	text-align:center;
+}
+.vuzz-pricing-table .vuzz-pricing-content ul {
+	margin:0 !important;
+	list-style:none !important;
+}
+.vuzz-pricing-table .vuzz-pricing-content ul li {
+	margin:0 !important;
+	padding:10px 20px !important;
+	border-bottom:1px solid #ebebeb;
+	list-style:none !important;
+}
+.vuzz-pricing-table .vuzz-pricing-content ul li:nth-child(2n+2) {
+	background:#F9F9F9
+}
+.vuzz-pricing-table .vuzz-pricing-button {
+	background:#fff;
+	text-align:center;
+	border-top:1px solid #fff;
+	padding:20px;
+}
+.vuzz-pricing-table .vuzz-pricing-button .vuzz-button {
+	float:none;
+	margin:0 auto;
+	background:#444;
+	color:#fff;
+	padding:7px 15px;
+}
+.vuzz-pricing-table>div {
+	border-top:#444 3px solid;
+}
+.vuzz-pricing-table .vuzz-pricing-cost {
+	background:#444;
+}
+.vuzz-pricing-table .vuzz-pricing-per {
+	background:#444;
+}
+.vuzz-pricing-table>div.popular {
+	border-top:#e7402f 3px solid;
+}
+.popular .vuzz-pricing-cost {
+	background:#e7402f;
+}
+.popular .vuzz-pricing-per {
+	background:#e7402f;
+}
+.popular .vuzz-button {
+	background:#e7402f;
+}
+.popular .vuzz-button.buttonprice {
+	background: #e7402f;
+}
+/* ----------------------------------		Dark Rounded Theme	----------------------------------- */
+div.dark_rounded .pp_top .pp_left {
+	background: url(/assets/sprite.png) -88px -53px no-repeat;
+}
+/* Top left corner */
+div.dark_rounded .pp_top .pp_middle {
+	background: url(/assets/contentPattern.png) top left repeat;
+}
+/* Top pattern/color */
+div.dark_rounded .pp_top .pp_right {
+	background: url(/assets/sprite.png) -110px -53px no-repeat;
+}
+/* Top right corner */
+div.dark_rounded .pp_content_container .pp_left {
+	background: url(/assets/contentPattern.png) top left repeat-y;
+}
+/* Left Content background */
+div.dark_rounded .pp_content_container .pp_right {
+	background: url(/assets/contentPattern.png) top right repeat-y;
+}
+/* Right Content background */
+div.dark_rounded .pp_content {
+	background: url(/assets/contentPattern.png) top left repeat;
+}
+/* Content background */
+div.dark_rounded .pp_next:hover {
+	background:url(/assets/btnNext.png) center right no-repeat;
+	cursor: pointer;
+}
+/* Next button */
+div.dark_rounded .pp_previous:hover {
+	background:url(/assets/btnPrevious.png) center left no-repeat;
+	cursor: pointer;
+}
+/* Previous button */
+div.dark_rounded .pp_expand {
+	background:url(/assets/sprite.png) -31px -26px no-repeat;
+	cursor: pointer;
+}
+/* Expand button */
+div.dark_rounded .pp_expand:hover {
+	background:url(/assets/sprite.png) -31px -47px no-repeat;
+	cursor: pointer;
+}
+/* Expand button hover */
+div.dark_rounded .pp_contract {
+	background:url(/assets/sprite.png) 0 -26px no-repeat;
+	cursor: pointer;
+}
+/* Contract button */
+div.dark_rounded .pp_contract:hover {
+	background:url(/assets/sprite.png) 0 -47px no-repeat;
+	cursor: pointer;
+}
+/* Contract button hover */
+div.dark_rounded .pp_close {
+	width:75px;
+	height:22px;
+	background:url(/assets/sprite.png) -1px -1px no-repeat;
+	cursor: pointer;
+}
+/* Close button */
+div.dark_rounded .pp_details {
+	position:relative;
+}
+div.dark_rounded .pp_description {
+	margin-right:85px;
+}
+div.dark_rounded .currentTextHolder {
+	color:#c4c4c4;
+}
+div.dark_rounded .pp_description {
+	color:#fff;
+	font-size:12px;
+}
+div.dark_rounded #pp_full_res .pp_inline {
+	color:#fff;
+}
+div.dark_rounded .pp_gallery a.pp_arrow_previous,div.dark_rounded .pp_gallery a.pp_arrow_next {
+	margin-top:12px !important;
+}
+div.dark_rounded .pp_nav .pp_play {
+	background:url(/assets/sprite.png) -1px -100px no-repeat;
+	height:15px;
+	width:14px;
+}
+div.dark_rounded .pp_nav .pp_pause {
+	background:url(/assets/sprite.png) -24px -100px no-repeat;
+	height:15px;
+	width:14px;
+}
+div.dark_rounded .pp_arrow_previous {
+	background: url(/assets/sprite.png) 0 -71px no-repeat;
+}
+/* The previous arrow in the bottom nav */
+div.dark_rounded .pp_arrow_previous.disabled {
+	background-position:0 -87px;
+	cursor:default;
+}
+div.dark_rounded .pp_arrow_next {
+	background: url(/assets/sprite.png) -22px -71px no-repeat;
+}
+/* The next arrow in the bottom nav */
+div.dark_rounded .pp_arrow_next.disabled {
+	background-position:-22px -87px;
+	cursor:default;
+}
+div.dark_rounded .pp_bottom .pp_left {
+	background: url(/assets/sprite.png) -88px -80px no-repeat;
+}
+/* Bottom left corner */
+div.dark_rounded .pp_bottom .pp_middle {
+	background: url(/assets/contentPattern.png) top left repeat;
+}
+/* Bottom pattern/color */
+div.dark_rounded .pp_bottom .pp_right {
+	background: url(/assets/sprite.png) -110px -80px no-repeat;
+}
+/* Bottom right corner */
+div.dark_rounded .pp_loaderIcon {
+	background: url(/assets/loader.gif) center center no-repeat;
+}
+/* Loader icon */
+/* ----------------------------------		Dark Square Theme	----------------------------------- */
+div.dark_square .pp_left,div.dark_square .pp_middle,div.dark_square .pp_right,div.dark_square .pp_content {
+	background:#000;
+}
+	div.dark_square .currentTextHolder {
+	color:#c4c4c4;
+}
+div.dark_square .pp_description {
+	color:#fff;
+}
+div.dark_square .pp_loaderIcon {
+	background: url(/assets/loader.gif) center center no-repeat;
+}
+/* Loader icon */
+div.dark_square .pp_expand {
+	background:url(/assets/sprite.png) -31px -26px no-repeat;
+	cursor: pointer;
+}
+/* Expand button */
+div.dark_square .pp_expand:hover {
+	background:url(/assets/sprite.png) -31px -47px no-repeat;
+	cursor: pointer;
+}
+/* Expand button hover */
+div.dark_square .pp_contract {
+	background:url(/assets/sprite.png) 0 -26px no-repeat;
+	cursor: pointer;
+}
+/* Contract button */
+div.dark_square .pp_contract:hover {
+	background:url(/assets/sprite.png) 0 -47px no-repeat;
+	cursor: pointer;
+}
+/* Contract button hover */
+div.dark_square .pp_close {
+	width:75px;
+	height:22px;
+	background:url(/assets/sprite.png) -1px -1px no-repeat;
+	cursor: pointer;
+}
