@@ -9404,10 +9404,6 @@ div.pp_overlay {
 }​
 
 /* Opera */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}​
 
 .simplefade{ -webkit-animation: fadein 2s; /* Safari and Chrome */
        -moz-animation: fadein 2s; /* Firefox */
