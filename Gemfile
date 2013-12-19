@@ -55,3 +55,4 @@ gem "paperclip"
 gem 'aws-s3', :require => 'aws/s3'
 gem 'aws-sdk'
 gem 'rails_12factor', group: :production
+gem 'friendly_id', '~> 5.0.0' 

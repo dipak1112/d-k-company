@@ -18,8 +18,8 @@ ActiveAdmin.register Project do
       f.input :long_description
       f.input :project_type, :collection => ["ROR", "Android", "Iphone"]
       f.input :avatar
-      f.input :is_new_project
     end
     f.actions
   end
+
 end
