@@ -1384,16 +1384,7 @@ ul.social-icons li a:hover {
 				opacity: 1;
 	}
 }
-@-o-keyframes fadein {
-	/* Opera */
-	from {
-				opacity:0;
-	}
-	to {
-				opacity:1;
-	}
-}
-​.quote_wrap {
+.quote_wrap {
 	height:100% !Important;
 }
 .textItem {
