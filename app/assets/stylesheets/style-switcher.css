@@ -66,7 +66,7 @@ display:block;width:200px;float:left;margin:5px 0;
  
  .color-box:hover,.bg-box:hover,.pattern-box:hover{
  	 
- 	 box-shadow:inset 2px 2px 0px 0 rgba(255, 255, 255, 100),inset -2px -2px 0px 0 rgba(255, 255, 255, 100);
+ 	 box-shadow:inset 2px 2px 0px 0 rgba(255, 255, 255, 0),inset -2px -2px 0px 0 rgba(255, 255, 255, 0);
  }
 .colors-holder{float:left;display:block;}
 
