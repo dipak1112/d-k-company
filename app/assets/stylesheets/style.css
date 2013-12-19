@@ -1726,3 +1726,512 @@ ul.social-icons li a:hover {
 	background:#fff;
 	color: #f54828;
 }
+/*--------------------------------------------------	ACCORDION---------------------------------------------------*/
+#accordion {
+	margin-bottom:0;
+}
+#accordion div h4 {
+	position:relative;
+	font-size:15px;
+	color:#444;
+	font-weight:300;
+	padding:15px 0px 15px 70px;
+	border:1px solid #ebebeb;
+	margin-top:0;
+	cursor:pointer;
+	transition:all 0.17s ease-in-out;
+	-moz-transition:all 0.17s ease-in-out;
+	-webkit-transition:all 0.17s ease-in-out;
+	-o-transition:all 0.17s ease-in-out;
+}
+#accordion div.active h4 {
+	border:1px solid transparent;
+	color:#fff;
+	background:#444;
+	margin-bottom:0;
+}
+#accordion div h4:before {
+	position:absolute;
+	content:'';
+	top:-1px;
+	left:-1px;
+	height:48px;
+	width:48px;
+	background:#f54828 url('/assets/plus.png') center center no-repeat;
+	transition:all 0.17s ease-in-out;
+	-moz-transition:all 0.17s ease-in-out;
+	-webkit-transition:all 0.17s ease-in-out;
+	-o-transition:all 0.17s ease-in-out;
+}
+#accordion div.active h4:before {
+	background:#f54828 url('/assets/minus.png') center center no-repeat;
+}
+#accordion div p {
+	display:none;
+	transition:all 0.17s ease-in-out;
+	-moz-transition:all 0.17s ease-in-out;
+	-webkit-transition:all 0.17s ease-in-out;
+	-o-transition:all 0.17s ease-in-out;
+}
+#accordion div p span {
+	color:#666666;
+	font-weight:bold;
+}
+#accordion div.active p {
+	display:block;
+	border-left:1px solid #ebebeb;
+	border-right:1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	padding:20px;
+	margin:0;
+	margin-bottom: 10px;
+
+}
+#accordion div:last-child.active p {
+	border-bottom: 1px solid #ebebeb;
+}
+/*--------------------------------------------------	PAGE HEADER STYLES---------------------------------------------------*/
+.breadcr {
+	margin-top:28px;
+}
+.pageheader {
+	padding-top:30px;
+}
+.pageheader h1 {
+	text-transform:uppercase;
+	font-size:27px;
+	text-align:center;
+}
+.page-description {
+	color:#fff;
+	font-size:20px;
+	line-height:30px;
+	font-weight:300;
+	text-align:center;
+	margin-bottom:0;
+	margin:0px auto;
+	margin-top:15px;
+}
+.page-description2 {
+	font-size:20px;
+	line-height:30px;
+	font-weight:300;
+	margin-bottom:0;
+	margin:0px auto;
+	margin-top:15px;
+}
+.wowbreadcr {
+	color:#fff;
+	font-size:15px;
+	line-height:36px;
+	font-weight:300;
+	text-align:center;
+	margin-bottom:0;
+	margin-top:15px;
+}
+
+.text-left {
+	text-align:left;
+}
+.pageheader-default {
+	-webkit-background-size:cover !Important;
+	-moz-background-size:cover !Important;
+	-o-background-size:cover !Important;
+	background-size:cover !Important;
+	background:url(/assets/3.jpg);
+	color:#fff;
+	background-attachment:fixed;
+}
+.pageheader-default h1 {
+	color:#fff;
+	display:inline-block;
+	font-weight:700;
+	
+	margin-top:30px;
+	margin-bottom:0;
+	line-height:0;
+	font-size:35px;
+	text-shadow:0 2px 0 rgba(0,0,0,0.1);
+}
+
+.pageheader-default .semitransparentbg {
+	background:rgba(245,72,40,0.80) !important;
+	padding-bottom:35px;
+	padding-top:20px;
+}
+.semitransparentbg {
+	background: rgba(0,0,0,0.70) !important;
+}
+/*--------------------------------------------------	PAGE HEADER STYLES---------------------------------------------------*/
+.thumbnail {
+	border:1px solid #f3f3f3;
+	font-size:13px;
+	background:#fff;
+	-webkit-border-radius:0px;
+	-moz-border-radius:0px;
+	border-radius:0px;
+	padding:0px;
+	border-bottom:medium double #ddd;
+	text-align:center;
+	line-height:25px;
+}
+.thumbnail h4 {
+		font-size:16px;
+	line-height:0.5;
+	margin-top:20px;
+}
+.thumbnail .caption {
+	color:#888;
+	padding:10px 20px 15px;
+	background:#f7f7f7;
+}
+.thumbnail .caption span {
+	font-style:italic;
+}
+.thumbnail img {
+	-webkit-transition:all 1s ease;
+			-moz-transition:all 1s ease;
+			-o-transition:all 1s ease;
+			-ms-transition:all 1s ease;
+			transition:all 1s ease;
+}
+.iconmargin {
+	margin-right: 5px;
+}
+/* --------------------------------------------------------	*/
+/* SIDEBAR */
+/* --------------------------------------------------------	*/
+.sidebar .categories>li {
+	position:relative;
+	display:block;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+	background-position:9px 16px;
+	background-repeat:no-repeat;
+	border-bottom:1px solid #EDEDDE;
+	padding:10px 0;
+	transition:all 0.3s;
+}
+.sidebar .categories>li a {
+	color:#666;
+}
+.sidebar .categories>li a:before {
+	font-family:'FontAwesome';
+	content:"\f101";
+	margin-right:5px;
+}
+.sidebar .categories>li:hover {
+	background:#f6f6f6;
+	padding-left:15px;
+}
+.sidebar h4 {
+	color:#f54828;
+	font-size:19px;
+}
+.wowwidget {
+	margin-bottom:35px;
+	clear:both;
+	float:none;
+}
+.tab-content .tabbedwidget img {
+	width:50px;
+	height:50px;
+	margin-bottom:0;
+	padding:4px;
+	line-height:1.428571429;
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-radius:4px;
+	margin-right:10px;
+	margin-top:5px;
+}
+.tab-content li {
+	float:none;
+	clear: both;
+}
+/* --------------------------------------------------------	*/
+/* Tabs */
+/* --------------------------------------------------------	*/
+.nav-tabs {
+	border:0px;
+	margin-bottom:0px;
+}
+.nav-tabs li a {
+	color:#444;
+	background:#F8F8F8;
+	font-weight:300;
+	font-size:13px;
+	padding:15px 25px;
+	margin-right:0px;
+	-webkit-border-radius:0px;
+	-moz-border-radius:0px;
+	border-radius:0px;
+	border:1px solid #e5e5e5;
+	border-right:0px !important;
+	text-transform:uppercase;
+}
+.nav-tabs li:last-child>a,.nav-tabs li:last-child>a:hover {
+	border-right:1px solid #e5e5e5 !important;
+}
+.nav-tabs li a:hover {
+	background:#ffffff !important;
+	border:1px solid #e5e5e5;
+}
+.nav-tabs i {
+	padding-right:10px;
+}
+.tab-content {
+	background:#ffffff;
+	border:1px solid #e5e5e5;
+	padding:25px;
+}
+.tab-content img {
+	max-width:150px;
+	height:auto;
+	width:auto;
+	margin-right:20px;
+	margin-bottom:5px;
+	float:left;
+	-webkit-border-radius:0px;
+	-moz-border-radius:0px;
+	border-radius:0px;
+}
+.nav-tabs>.active>a,.nav-tabs>.active>a:hover {
+	background-color:#ffffff !important;
+	border-color:#e5e5e5 #e5e5e5 transparent;
+	border-style:solid;
+	border-right:1px !important;
+	color: #f54828 !important;
+}
+/* =============================================================== */
+/* Blockquote================================================================ */
+blockquote {
+	border-left:5px solid #f54828;
+	padding:20px 20px 20px 30px;
+	background:#f8f8f8;
+}
+blockquote p {
+	font-size:13px;
+	line-height:22px;
+	font-weight: 400;
+}
+/* =============================================================== */
+/* Table================================================================ */
+th {
+	font-size:14px;
+	background:#f9f9f9;
+	border-bottom:0 !Important;
+	font-weight:normal;
+	color: #444;
+}
+/* Skills /* ============================================================== */
+ul#skill {
+	list-style:none;
+}
+#skill {
+	list-style:none;
+	font-size:12px;
+	position:relative;
+	line-height:2em;
+}
+#skill li {
+	margin-bottom:20px;
+	height:45px;
+	background:#f5f5f5;
+}
+#skill li:last-child {
+	margin-bottom:0px;
+}
+#skill li h3 {
+	position:relative;
+	font-size:14px;
+	color:#fff;
+	padding-left:10px;
+	font-weight:300;
+	margin-top:0;
+	padding:13px;
+	display:inline;
+	line-height:45px;
+}
+#skill i {
+	background:#f54828;
+	color:#fff;
+	margin-left:-13px;
+	margin-right:10px;
+	width:45px;
+	display:inline-block;
+	text-align:center;
+	height:45px;
+	padding:18px 0;
+}
+.thebar {
+	height:45px;
+	position:absolute;
+	width:100%;
+}
+.progressdefault {
+	background-color:#444;
+}
+.progresspink {
+	background-color:#f674a4
+}
+.progressorange {
+	background:orange
+}
+.progressgreen {
+	background-color:#a1ce5b
+}
+.progressblue {
+	background-color: #0E8FAB
+}
+/* Video /* ============================================================== */
+.flex-video {
+	position:relative;
+	padding-top:25px;
+	padding-bottom:67.5%;
+	height:0;
+	margin-bottom:16px;
+	overflow:hidden;
+}
+.flex-video.widescreen {
+	padding-bottom:57.25%;
+}
+.flex-video.vimeo {
+	padding-top:0;
+}
+.flex-video iframe,.flex-video object,.flex-video embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+@media only screen and (max-device-width:800px),only screen and (device-width:1024px) and (device-height:600px),only screen and (width:1280px) and (orientation:landscape),only screen and (device-width:800px),only screen and (max-width:767px) {
+	.flex-video {
+			padding-top: 0;
+	}
+}
+/* =========================================================== */
+/* Box Shadow Effects /* ============================================================== */
+.box {
+	background:#f7f7f7;
+	padding: 22px;
+}
+/*================================================== * Effect 1 * ===============================================*/
+.effect1 {
+	-webkit-box-shadow:0 10px 6px -6px #777;
+	 -moz-box-shadow:0 10px 6px -6px #777;
+	 box-shadow: 0 10px 6px -6px #777;
+}
+/*================================================== * Effect 2 * ===============================================*/
+.effect2 {
+	position:relative;
+}
+.effect2:before,.effect2:after {
+	z-index:-1;
+	position:absolute;
+	content:"";
+	bottom:15px;
+	left:10px;
+	width:50%;
+	top:80%;
+	max-width:300px;
+	background:#777;
+	-webkit-box-shadow:0 15px 10px #777;
+	-moz-box-shadow:0 15px 10px #777;
+	box-shadow:0 15px 10px #777;
+	-webkit-transform:rotate(-3deg);
+	-moz-transform:rotate(-3deg);
+	-o-transform:rotate(-3deg);
+	-ms-transform:rotate(-3deg);
+	transform:rotate(-3deg);
+}
+.effect2:after {
+	-webkit-transform:rotate(3deg);
+	-moz-transform:rotate(3deg);
+	-o-transform:rotate(3deg);
+	-ms-transform:rotate(3deg);
+	transform:rotate(3deg);
+	right:10px;
+	left: auto;
+}
+/*================================================== * Effect 3 * ===============================================*/
+.effect3 {
+	position:relative;
+}
+.effect3:before {
+	z-index:-1;
+	position:absolute;
+	content:"";
+	bottom:15px;
+	left:10px;
+	width:50%;
+	top:80%;
+	max-width:300px;
+	background:#777;
+	-webkit-box-shadow:0 15px 10px #777;
+	-moz-box-shadow:0 15px 10px #777;
+	box-shadow:0 15px 10px #777;
+	-webkit-transform:rotate(-3deg);
+	-moz-transform:rotate(-3deg);
+	-o-transform:rotate(-3deg);
+	-ms-transform:rotate(-3deg);
+	transform: rotate(-3deg);
+}
+/*================================================== * Effect 4 * ===============================================*/
+.effect4 {
+	position:relative;
+}
+.effect4:after {
+	z-index:-1;
+	position:absolute;
+	content:"";
+	bottom:15px;
+	right:10px;
+	left:auto;
+	width:50%;
+	top:80%;
+	max-width:300px;
+	background:#777;
+	-webkit-box-shadow:0 15px 10px #777;
+	-moz-box-shadow:0 15px 10px #777;
+	box-shadow:0 15px 10px #777;
+	-webkit-transform:rotate(3deg);
+	-moz-transform:rotate(3deg);
+	-o-transform:rotate(3deg);
+	-ms-transform:rotate(3deg);
+	transform: rotate(3deg);
+}
+/*================================================== * Effect 5 * ===============================================*/
+.effect5 {
+	position:relative;
+}
+.effect5:before,.effect5:after {
+	z-index:-1;
+	position:absolute;
+	content:"";
+	bottom:25px;
+	left:10px;
+	width:50%;
+	top:80%;
+	max-width:300px;
+	background:#777;
+	-webkit-box-shadow:0 35px 20px #777;
+	-moz-box-shadow:0 35px 20px #777;
+	box-shadow:0 35px 20px #777;
+	-webkit-transform:rotate(-8deg);
+	-moz-transform:rotate(-8deg);
+	-o-transform:rotate(-8deg);
+	-ms-transform:rotate(-8deg);
+	transform:rotate(-8deg);
+}
+.effect5:after {
+	-webkit-transform:rotate(8deg);
+	-moz-transform:rotate(8deg);
+	-o-transform:rotate(8deg);
+	-ms-transform:rotate(8deg);
+	transform:rotate(8deg);
+	right:10px;
+	left: auto;
+}
