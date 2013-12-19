@@ -9,15 +9,12 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require bootstrap.min.css
- *= require animate.min.css
- *= require prettyPhoto.css
- *= require isotop-style.css
- *= require supersized.css
- *= require supersized.shutter.css
- *= require custom-icons.css
- *= require custom-icons-ie7.css
- *= require layout.css
- *= require colors.css
+ *= require bootstrap.css
+ *= require style.css
+ *= require responsive.css
+ *= require layout-semiboxed.css
+ *= require skin-red.css
  *= require font-awesome
+ *= require style-switcher.css
+ *= require colorpicker.css
 */
