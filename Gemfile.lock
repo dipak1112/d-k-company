@@ -83,6 +83,8 @@ GEM
       railties (>= 3.2, < 5.0)
     formtastic (2.3.0.rc2)
       actionpack (>= 3.0)
+    friendly_id (5.0.2)
+      activerecord (~> 4.0.0)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -202,6 +204,7 @@ DEPENDENCIES
   aws-sdk
   coffee-rails (~> 4.0.0)
   font-awesome-rails
+  friendly_id (~> 5.0.0)
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
