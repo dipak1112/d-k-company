@@ -8,13 +8,13 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
  *= require bootstrap.css
+ *= require style.css
  *= require responsive.css
  *= require layout-semiboxed.css
  *= require skin-red.css
- *= require font-awesome
  *= require style-switcher.css
  *= require colorpicker.css
- *= require style.css
+ *= require font-awesome
+ *= require_self
  */
