@@ -1,9 +1,8 @@
 <section class="pageheader-default text-center">
 	<div class="semitransparentbg">
-		<h1 class="animated fadeInLeftBig notransition">Project Title</h1>
+		<h1 class="animated fadeInLeftBig notransition"><%= @project.project_title %></h1>
 		<p class="animated fadeInRightBig notransition container page-description">
-			 Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>
-			 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			 <%= @project.short_description %>
 		</p>
 	</div>
 </section>
