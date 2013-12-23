@@ -13,11 +13,11 @@ class HomeController < ApplicationController
   end
 
   def portfolio_list
-  	@projects = Project.all#where(:status => "active")
+  	@projects = Project.all
   end
 
   def portfolio
-    @project = Project.find_by_slug(params[:id])
+    @project = Project.find(params[:id])
   end
 
   def blogs
