@@ -1813,7 +1813,8 @@ ul.social-icons li a:hover {
 	margin-top:15px;
 }
 .page-description2 {
-	font-size:20px;
+	font-size:17px;
+	text-align: left;
 	line-height:30px;
 	font-weight:300;
 	margin-bottom:0;
@@ -9781,3 +9782,4 @@ padding-bottom: 10px;
 }
 
 ul.ca-menu {list-style:none;}
+.justify{text-align: justify;}
