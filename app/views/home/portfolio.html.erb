@@ -15,8 +15,8 @@
 	<div class="animated fadeInLeft notransition" style="margin-top:-40px;">
 		<div class="carousel carousel-fade slide carousel-featuredwork projectdetail" id="carousel-featuredwork">
 			<div>
-					<!-- <img src="/assets/projectdetail3.jpg" alt="" width="800" height="400"> -->
-					<%= image_tag(@project.avatar) %>
+					 <!-- <img src="/assets/projectdetail3.jpg" alt="" width="100%" height="50%">  -->
+					<%= image_tag(@project.avatar, :style=> "width:100%;") %>
 			</div>
 		</div>
 	</div>
@@ -36,3 +36,4 @@
 			</div>
 		</div>
 	</section>
+</div>
