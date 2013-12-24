@@ -7,7 +7,9 @@ KeshariyaCompany::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
   get 'about-us'       => 'home#about_us',       :as => :about_us
-  get 'contact-us'     => 'home#contact_us',     :as => :contact_us
+  #get 'contact-us'     => 'home#contact_us',     :as => :contact_us
+  #post 'contact'       => 'home#contact',        :as => :contact
+  match "contact-us"   => "home#contact_us", :as => :contact_us,  via: [:get, :post]
   get 'services'       => 'home#services',       :as => :services
   get 'blogs'          => 'home#blogs',          :as => :blogs
   get 'portfolio-list' => 'home#portfolio_list', :as => :portfolio_list

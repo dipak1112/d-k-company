@@ -18,3 +18,5 @@
  *= require font-awesome
  *= require_self
  */
+
+ .error{color:red;}

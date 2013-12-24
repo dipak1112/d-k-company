@@ -11,24 +11,25 @@
 		<div class="semiboxshadow text-center">
 			<img src="/assets/shp.png" class="img-responsive" alt="">
 		</div>
-		<!-- CONTACT
-================================================== -->
-		
 		<section class="container">
 		<div class="row">
 			<div class="col-md-8 animated fadeInLeft notransition">
 				<h1 class="smalltitle">
 				<span>Get in Touch</span>
 				</h1>
-				<form action="http://www.wowthemes.net/demo/calypso/contact.html#" name="MYFORM" id="MYFORM">
-					<input name="name" size="30" type="text" id="name" class="col-md-6 leftradius" placeholder="Your Name">
-					<input name="email" size="30" type="text" id="email" class="col-md-6 rightradius" placeholder="E-mail Address">
-					<textarea id="message" name="message" class="col-md-12 allradius" placeholder="Message" rows="9"></textarea>
-					
-					<br><input name="code" type="text" id="code" placeholder="Enter Captcha" class="top10">
-					<br>
-					<input value="Send" type="submit" id="Send" class="btn btn-default btn-md">
-				</form>
+				<%= form_for @contact, :url => {:controller => 'home', :action => 'contact_us' }, :html => {:id => "contact-form" } do |f| %>
+	        <%= f.text_field :name, :placeholder=> "Your Name", :class => "col-md-6 leftradius" %>
+	        <%= f.text_field :email, :placeholder=> "E-mail Address", :class => "col-md-6 rightradius" %>
+	        <span class="error col-md-6 leftradius"><%= display_error_messages @contact.errors, [:name] %> </span>
+	        <span class="error col-md-6 rightradius"><%= display_error_messages @contact.errors, [:email] %> </span>
+
+          <%= f.text_area :message, :placeholder=> "Type a message here...", :class => "col-md-12 allradius", :style => "height:200px;" %>
+          <span class="error">
+            <p style="margin-top:10px;"><%= display_error_messages @contact.errors, [:message] %></p> 
+          </span>
+          <br>
+          <%= f.submit "Send your message", :class => "btn btn-default btn-md" %>
+	      <% end %>
 			</div>
 			<div class="col-md-4 animated fadeInRight notransition">
 				<h1 class="smalltitle">
@@ -39,15 +40,18 @@
 				</p>
 				<h4 class="font100">The Office</h4>
 				<ul class="unstyled">
-					<li><span style="margin-right:5px;"><i class="icon-map-marker"></i></span> Address: 1234 Disney Paris, France</li>
-					<li><span style="margin-right:3px;"><i class="icon-phone"></i></span> Phone: (123) 456-7890</li>
-					<li><span style="margin-right:2px;"><i class="icon-envelope"></i></span> Email: <a href="mailto:wowthemesnet@gmail.com">wowthemesnet@gmail.com</a></li>
-				</ul>
-				<h4 class="font100">Business Hours</h4>
-				<ul class="unstyled">
-					<li><i class="icon-time"></i> Monday - Friday 9am to 5pm</li>
-					<li><i class="icon-time"></i> Saturday - 9am to 2pm</li>
-					<li><i class="icon-time"></i> Sunday - Closed</li>
+					<li>
+						<span style="margin-right:5px;"><i class="icon-map-marker"></i></span> 
+						<b>Address:</b> <br> F-302, Titanium City Center, <br> Opp. Seema Hall, Anandnagar Road, <br>Prahlad Nagar, Ahmedabad, Gujarat 
+					</li>
+					<li>
+						<span style="margin-right:3px;"><i class="icon-phone"></i></span> 
+						<b>Phone: </b>(+91) 99797 56868
+					</li>
+					<li>
+						<span style="margin-right:2px;"><i class="icon-envelope"></i></span>
+						<b> Email: </b><a href="mailto:apsolutetechnology@gmail.com">apsolutetechnology@gmail.com</a>
+					</li>
 				</ul>
 			</div>
 		</div>
