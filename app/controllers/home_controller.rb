@@ -21,6 +21,9 @@ class HomeController < ApplicationController
     end
   end
 
+  def careers
+  end
+  
   def services
   end
 

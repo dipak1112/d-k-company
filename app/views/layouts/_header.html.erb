@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 top-text pull-left animated fadeInLeft">
-        <i class="icon-phone"></i> Phone: +91 99797 56868 <span class="separator"></span><i class="icon-envelope"></i> Email: <a href="mailto:apsolutetechnology@gmail.com">apsolutetechnology@gmail.com</a>
+        <i class="icon-phone"></i> Phone: +91 79 40326868 <span class="separator"></span><i class="icon-envelope"></i> Email: <a href="mailto:apsolutetechnology@gmail.com">apsolutetechnology@gmail.com</a>
       </div>
       <div class="col-md-6 text-right animated fadeInRight">
         <div class="social-icons">
@@ -23,7 +23,7 @@
  <nav class="navbar navbar-fixed-top wowmenu" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand logo-nav" href="<%= root_path %>"><img src="/assets/logo104.png" alt="logo" width="300" height="40"></a>
+      <a class="navbar-brand logo-nav" href="<%= root_path %>"><img src="/assets/logo104.png" alt="logo" width="150" height="40"></a>
     </div>
     <ul id="nav" class="nav navbar-nav pull-right l_tinynav1">
       <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
@@ -31,8 +31,15 @@
       <li class="<%= 'active' if current_page?(services_path) %>"><%= link_to "Services", services_path %></li>
       <li class="<%= 'active' if current_page?(portfolio_list_path) %>"><%= link_to "Portfolio", portfolio_list_path %></li>
       <!-- <li class="<%#= 'active' if current_page?(blogs_path) %>"><%#= link_to "Blog", blogs_path %></li> -->
+            <li class="<%= 'active' if current_page?(careers_path) %>"><%= link_to "Careers", careers_path %></li>
+
+
       <li class="<%= 'active' if current_page?(contact_us_path) %>"><%= link_to "Contact", contact_us_path %></li>
+
+
     </ul>
+
+    
   </div>  
 </nav>
  

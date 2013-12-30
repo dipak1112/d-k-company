@@ -12,6 +12,7 @@ KeshariyaCompany::Application.routes.draw do
   match "contact-us"   => "home#contact_us", :as => :contact_us,  via: [:get, :post]
   get 'services'       => 'home#services',       :as => :services
   get 'blogs'          => 'home#blogs',          :as => :blogs
+  get 'careers'          => 'home#careers',          :as => :careers
   get 'portfolio-list' => 'home#portfolio_list', :as => :portfolio_list
   get '/portfolio/:id' => 'home#portfolio',      :as => :portfolio
   # Example of regular route:

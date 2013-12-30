@@ -1,16 +1,12 @@
 <section class="pageheader-default text-center">
 	<div class="semitransparentbg">
-		<h1 class="animated fadeInDown">Portfolio Three</h1>
-		<p class="animated fadeInUp container page-description">
-			 Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>
-			 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		</p>
+		<h1 class="animated fadeInDown">Portfolio</h1>
+		<p class="animated fadeInUp container page-description"></p>
 	</div>
 </section>
 
 <div class="wrapsemibox">
 	<div class="semiboxshadow text-center">
-		<img src="/assets/shp.png" class="img-responsive" alt="">
 	</div>
 	
 	<section class="container">
@@ -22,6 +18,7 @@
 						<li><a href="" data-filter=".ROR"><i class="icon icon-th-large"></i> Ruby on Rails</a></li>
 						<li><a href="" data-filter=".Android"><i class="icon icon-th-list"></i> Android </a></li>
 						<li><a href="" data-filter=".Iphone"><i class="icon icon-th"></i> IPhone </a></li>
+						<li><a href="" data-filter=".Windows"><i class="icon icon-th"></i> Windows </a></li>
 					</ul>
 				</div>
 			</div>
@@ -40,7 +37,7 @@
 							</div>
 						</div>
 						<h1><%= link_to project.project_title, portfolio_url(project) %></h1>
-						<p><%= project.short_description %></p>
+						<p><%= project.short_description.truncate(50) %></p>
 					</div>
 				</div>
 			<% end %>

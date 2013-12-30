@@ -1,47 +1,56 @@
-  <section>
-    <div class="footer">
-      <div class="container animated fadeInUpNow notransition">
-        <div class="row">
-          <div class="col-md-6">
+  <div class="footer">
+    <div class="container animated fadeInUpNow notransition fadeInUp">
+      <div class="row">
+        <div class="col-md-4">
+          <h1 class="footerbrand">ApSolute</h1>
+          <p>
+             ApSolute Technologies a passionate group of developers, designers, thinkers and doers. </p>
+             <p> Our team is happiest when challenged to turn difficult problems into elegant solutions. </p>
+            <p> Our mission is to create and launch amazing products.
+          </p>
+        </div>
+        <div class="col-md-4">
             <h1 class="title"><span class="colortext">F</span>ind <span class="font100">Us</span></h1>
             <div class="footermap">
-              <p> <strong>Address: </strong> F-302, Titanium City Center, Ahmedabad, India </p>
-              <p> <strong>Phone: </strong> + 91 9979756868 </p>
+              <p> <strong>Address: </strong> 
+                F-302, Titanium City Center, Opp. Seema Hall, Anandnagar Road, Prahlad Nagar, <br> Ahmedabad, Gujarat
+              </p>
+              <p> <strong>Phone: </strong> +91 79 40326868 </p>
               <p> <strong>Email: </strong> apsolutetechnology@gmail.com </p>
             </div>
-          </div>
-          <div class="col-md-6">
-            <h1 class="title"><span class="colortext">S</span>ocial <span class="font100">Media </span></h1>
-            <ul class="social-icons list-soc">
+             <ul class="social-icons list-soc">
               <li><a href="http://www.facebook.com"><i class="icon-facebook"></i></a></li>
               <li><a href="http://www.twitter.com"><i class="icon-twitter"></i></a></li>
               <li><a href="http://www.linkedin"><i class="icon-linkedin"></i></a></li>
               <li><a href="http://www.google.com"><i class="icon-google-plus"></i></a></li>
               <li><a href="http://www.skype"><i class="icon-skype"></i></a></li>
             </ul>
-          </div>      
-        </div>
-      </div>
-    </div>
-    <p id="back-top" style="display: none;"><a href="<%= root_path %>#top"><span></span></a></p>
-    <div class="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4"> <p class="pull-left">Copyright © 2013 ApSolute Technologies All rights reserved. </p> </div>
-          <div class="col-md-8">
-            <ul class="footermenu pull-right">
-              <li><a href="<%= root_path %>">Home</a></li>
-              <li><a href="<%= portfolio_list_path %>">Works</a></li>
-              <li><a href="<%= about_us_path %>">About Us</a></li>
-              <li><a href="<%= blogs_path %>">Blog</a></li>
-              <li><a href="<%= contact_us_path %>">Contact</a></li>
-            </ul>
+
+          </div>
+
+        <div class="col-md-4">
+          <h1 class="title"><span class="colortext">T</span>estimonials</h1>
+          <div id="quotes">
+            <div id="quote_wrap" style="height: 121px;"><div class="textItem" style="display: block;">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" alt="avatar">
+              </div>
+               "Before turning to those moral and mental aspects of the matter which present the greatest difficulties, let the inquirer begin by mastering more elementary problems.<span style="font-family:arial;">"</span><br><b> Jesse T, Los Angeles </b>
+            </div><div class="textItem" style="display: none;">
+              <div class="avatar">
+                <img src="/assets/avatar.jpg" alt="avatar">
+              </div>
+               "How often have I said to you that when you have eliminated the impossible, whatever remains, however improbable, must be the truth?<span style="font-family:arial;">"</span><br><b>Ralph G. Flowers </b>
+            </div></div>
+            
+          </div>
+          <div class="clearfix">
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- /footer section end-->
+  </div>
+
 
 
 <%= javascript_include_tag "application" %>
