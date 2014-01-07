@@ -46,6 +46,7 @@ jQuery(document).ready(function($){
 //----FOOTER TESTIMONIAL---//  
 jQuery(document).ready(function ($) {
 $('.textItem').quovolver();
+$('.textItem1').quovolver();
   });
 
 

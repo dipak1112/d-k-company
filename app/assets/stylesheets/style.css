@@ -272,7 +272,7 @@ font-weight: 500;}
 	top:0px !Important;
 	background:rgba(255,255,255,0.97) !important;
 	padding-top:10px;
-	padding-bottom:10px;
+	padding-bottom:4px;
 }
 .wowmenu.tiny .navbar-nav>li>a {
 	line-height:24px;
