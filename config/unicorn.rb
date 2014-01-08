@@ -1,5 +1,5 @@
 # config/unicorn.rb
-@dir = "/sites/d-k-company"
+@dir = "/sites/d-k-company/"
 # /home/dipak/sites/rails4/keshariya/keshariya-company
 worker_processes 2
 working_directory @dir
