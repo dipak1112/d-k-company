@@ -42,7 +42,7 @@ end
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
@@ -52,7 +52,7 @@ end
 gem "font-awesome-rails"
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem "paperclip"
-gem 'aws-s3', :require => 'aws/s3'
-gem 'aws-sdk'
+#gem 'aws-s3', :require => 'aws/s3'
+#gem 'aws-sdk'
 gem 'rails_12factor', group: :production
 gem 'friendly_id', '~> 5.0.0' 
