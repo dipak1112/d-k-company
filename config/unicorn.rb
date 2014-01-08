@@ -1,25 +1,17 @@
 # config/unicorn.rb
-worker_processes Integer(ENV["WEB_CONCURRENCY"] || 2)
+@dir = "/sites/d-k-company"
+# /home/dipak/sites/rails4/keshariya/keshariya-company
+worker_processes 2
+working_directory @dir
+
 timeout 100
-preload_app true
-listen 8080
 
 
-before_fork do |server, worker|
-  Signal.trap 'TERM' do
-    puts 'Unicorn master intercepting TERM and sending myself QUIT instead'
-    Process.kill 'QUIT', Process.pid
-  end
+listen "#{@dir}tmp/sockets/unicorn.sock", :backlog => 64
 
-  defined?(ActiveRecord::Base) and
-    ActiveRecord::Base.connection.disconnect!
-end 
 
-after_fork do |server, worker|
-  Signal.trap 'TERM' do
-    puts 'Unicorn worker intercepting TERM and doing nothing. Wait for master to send QUIT'
-  end
+pid "#{@dir}tmp/pids/unicorn.pid"
 
-  defined?(ActiveRecord::Base) and
-    ActiveRecord::Base.establish_connection
-end
+
+stderr_path "#{@dir}log/unicorn.stderr.log"
+stdout_path "#{@dir}log/unicorn.stdout.log"
