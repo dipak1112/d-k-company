@@ -43,7 +43,7 @@ KeshariyaCompany::Application.configure do
   # config.force_ssl = true
 
   # Set to :debug to see everything in the log.
-  config.log_level = :info
+  config.log_level = :debug
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
@@ -77,4 +77,15 @@ KeshariyaCompany::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  DOMAIN_CONFIG = "http://www.apsolutetechnologies.com/"
+  config.action_mailer.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+    :address => "smtp.gmail.com",
+    :port => 25,
+    :domain => "gmail.com",
+    :authentication => :plain,
+    :user_name => "soffy.wright@gmail.com",
+    :password => "soffygmail"
+  }
+
 end
