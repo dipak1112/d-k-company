@@ -79,6 +79,6 @@ KeshariyaCompany::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
   #config.action_mailer.raise_delivery_errors = false
   #config.active_support.deprecation = :log
-  config.active_record.migration_error = :page_load
+  #config.active_record.migration_error = :page_load
   config.assets.debug = true
 end
