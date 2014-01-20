@@ -28,7 +28,7 @@ KeshariyaCompany::Application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
-  
+
   # Generate digests for assets URLs.
   config.assets.digest = true
 
@@ -68,7 +68,16 @@ KeshariyaCompany::Application.configure do
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).
   config.i18n.fallbacks = true
-  config.action_mailer.raise_delivery_errors = false
+
+  # Send deprecation notices to registered listeners.
+  config.active_support.deprecation = :notify
+
+  # Disable automatic flushing of the log to improve performance.
+  # config.autoflush_log = false
+
+  # Use default logging formatter so that PID and timestamp are not suppressed.
+  config.log_formatter = ::Logger::Formatter.new
+  ##config.action_mailer.raise_delivery_errors = false
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
