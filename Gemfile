@@ -14,6 +14,7 @@ end
 gem 'unicorn'
 gem "font-awesome-rails"
 gem 'activeadmin', github: 'gregbell/active_admin'
-gem "paperclip"
-gem 'rails_12factor', group: :production
+gem 'bootstrap-sass', '~> 3.0.3.0'
+gem 'simple_form', '>= 3.0.0.rc'
+gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'friendly_id', '~> 5.0.0' 
