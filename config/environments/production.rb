@@ -60,7 +60,7 @@ KeshariyaCompany::Application.configure do
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
   # config.assets.precompile += %w( search.js )
-  config.assets.precompile += %w( active_admin.css active_admin/print.css active_admin.js application.css application.js )
+  #config.assets.precompile += %w( active_admin.css active_admin/print.css active_admin.js application.css application.js )
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
@@ -81,5 +81,12 @@ KeshariyaCompany::Application.configure do
   #config.action_mailer.raise_delivery_errors = false
   #config.active_support.deprecation = :log
   #config.active_record.migration_error = :page_load
-  config.assets.debug = true
+  #config.assets.debug = true
+
+  config.log_formatter = ::Logger::Formatter.new
+
+  DOMAIN_CONFIG = "http://www.apsolutetechnologies.com/"  
+
+  config.action_mailer.default_url_options   = { :host => 'www.apsolutetechnologies.com' }
+
 end
