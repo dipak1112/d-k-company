@@ -29,7 +29,7 @@
 			<% @projects.each do |project| %>			
 				<div class="boxportfolio3 item <%= project.project_type %> isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate(0px, 1289px);">
 					<div class="boxcontainer">
-						<%= image_tag(project.avatar)%>
+						<%= image_tag(project.avatar(:pfolio, false))%>
 						<div class="roll" style="opacity: 0;">
 							<div class="wrapcaption">
 								<a href="<%= portfolio_path(project) %>"><i class="icon-link captionicons"></i></a>

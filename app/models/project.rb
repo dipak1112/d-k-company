@@ -4,9 +4,11 @@ class Project < ActiveRecord::Base
   #friendly_id :slug, use: :history
 	
 	has_attached_file :avatar, 
-    :styles => { :pfolio_e => "650x600!",:pfolio => "370x289!" },
+    :styles => { :pfolio_e => "550x650!",:pfolio => "355x289!" },
     :url => "/project/:id/:style/:basename.:extension",
     :path => ":rails_root/public/project/:id/:style/:basename.:extension"
+
+	validates_attachment_content_type :avatar, :content_type => ["image/jpg", "image/jpeg", "image/png"]
 
 	validates :project_title, :short_description, :project_type, :long_description, :presence => true
 

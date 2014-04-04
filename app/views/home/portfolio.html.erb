@@ -2,9 +2,6 @@
 	<div class="semitransparentbg">
 			<h1 class="animated fadeInLeftBig notransition">
 			<%= @project.project_title %></h1>
-		<p class="animated fadeInRightBig notransition container page-description">
-			 <%= @project.short_description %>
-		</p>
 	</div>
 </section>
 	
@@ -12,22 +9,23 @@
 	<div class="semiboxshadow text-center">
 		<img src="/assets/shp.png" class="img-responsive" alt="">
 	</div>
-	<div class="col-md-2"></div>
-	<div class="col-md-8 animated fadeInLeft notransition" style="margin-top:-40px;">
+	<div class="col-md-1"></div>
+	<div class="col-md-6 animated fadeInLeft notransition">
 		<div class="carousel carousel-fade slide carousel-featuredwork projectdetail" id="carousel-featuredwork">
-			<div>
-					<%= image_tag(@project.avatar, :class => "imgresize") %>
+			<div class="frame">
+					<%= image_tag(@project.avatar(:pfolio_e, false), :class => "imgresize") %>
 			</div>
 		</div>
 	</div>
 	<div class="col-md-2"></div>
-	<section class="container">
+		<section class="container">
 		<div class="row">
-			<div class="col-md-8 animated fadeInLeft notransition">
+			<div class="col-md-4 animated fadeInRight notransition">
+				<h1 class="smalltitle"> <span>Project Name</span> </h1>
+				<p><%= @project.project_title %>	</p>
+
 				<h1 class="smalltitle"> <span>Project Description</span> </h1>
-				<p> 
-					<%= @project.long_description %>
-				</p>
+				<p><%= @project.long_description %>	</p>
 			</div>
 		</div>
 	</section>
