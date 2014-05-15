@@ -5,7 +5,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Keshariya Company"
+  config.site_title = "ApSolute Technologies"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -121,7 +121,7 @@ ActiveAdmin.setup do |config|
   # config.allow_comments = false
   #
   # You can disable the menu item for the comments index page:
-  # config.show_comments_in_menu = false
+  config.show_comments_in_menu = false
   #
   # You can change the name under which comments are registered:
   # config.comments_registration_name = 'AdminComment'

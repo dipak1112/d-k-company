@@ -6,7 +6,7 @@ ActiveAdmin.register Project do
     column :project_type
     column :is_new_project
     column :short_description
-    default_actions
+    actions defaults: true
   end
 
   filter :project_type
@@ -22,4 +22,16 @@ ActiveAdmin.register Project do
     f.actions
   end
 
+  show :title => :project_title do |project|
+    attributes_table do
+      row :project_title
+      row :project_type
+      row :is_new_project
+      row :short_description
+      row :long_description
+      row :avatar do
+        image_tag(project.avatar.url, :size => "500x400")
+      end
+    end
+  end
 end
