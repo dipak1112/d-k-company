@@ -1,10 +1,9 @@
 ActiveAdmin.register Project do
-  permit_params :project_title, :project_type, :is_new_project, :short_description, :long_description, :avatar
+  permit_params :project_title, :project_type_id, :is_new_project, :short_description, :long_description, :avatar
 
   index do
     column :project_title
     column :project_type
-    column :is_new_project
     column :short_description
     actions defaults: true
   end
@@ -12,11 +11,12 @@ ActiveAdmin.register Project do
   filter :project_type
 
   form do |f|
-    f.inputs "Admin Details" do
+    f.semantic_errors *f.object.errors.keys
+    f.inputs "Project Details" do
       f.input :project_title
       f.input :short_description
       f.input :long_description
-      f.input :project_type, :collection => ["ROR", "Android", "Iphone", "Windows"]
+      f.input :project_type_id, as: :select, :collection => ProjectType.where(active: true)
       f.input :avatar
     end
     f.actions
@@ -26,7 +26,6 @@ ActiveAdmin.register Project do
     attributes_table do
       row :project_title
       row :project_type
-      row :is_new_project
       row :short_description
       row :long_description
       row :avatar do
