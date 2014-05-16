@@ -15,7 +15,7 @@
 				<div id="filter" class="animated fadeInRight">
 					<ul>
 						<li><a href="" data-filter="*" class="selected"><i class="icon icon-reorder"></i> All Items</a></li>
-						<% ProjectType.all.each do |project_type| %>
+						<% @project_types.each do |project_type| %>
 							<li><a href="" data-filter=".<%= project_type.name.gsub(' ','_') %>"><i class="icon icon-th-large"></i> <%= project_type.name %></a></li>
 						<% end %>
 					</ul>
