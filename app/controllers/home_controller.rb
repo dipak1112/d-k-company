@@ -29,6 +29,7 @@ class HomeController < ApplicationController
 
   def portfolio_list
   	@projects = Project.all
+    @project_types = ProjectType.all
   end
 
   def portfolio
