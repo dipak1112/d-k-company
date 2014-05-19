@@ -5,4 +5,6 @@ $(document).ready ->
     mode: "textareas"
     theme: "modern"
     editor_selector: "tinymce"
+    plugins: "hr,link,image,code"
+    image_advtab: true
   return
