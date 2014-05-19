@@ -4,6 +4,7 @@ class HomeController < ApplicationController
   end
 
   def about_us
+    @page = Page.find_by(name: "Home")
   end
 
   def contact_us

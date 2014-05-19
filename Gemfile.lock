@@ -1,24 +1,23 @@
 GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: 51792c7924372fc0c8789bc849f82e09041e1218
+  revision: f5affaeb84a5c1a86ecefb48ec1099921787e6d9
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0)
       bourbon
       coffee-rails
-      devise (~> 3.2)
-      formtastic (~> 2.3.0.rc2)
+      formtastic (~> 2.3.0.rc3)
       inherited_resources (~> 1.3)
       jquery-rails
       jquery-ui-rails
-      kaminari (~> 0.14)
-      rails (>= 3.2, < 4.1)
+      kaminari (~> 0.15)
+      rails (>= 3.2, < 4.2)
       ransack (~> 1.0)
       sass-rails
 
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
-  revision: 113198f979bc793882506114fcc3dc9f6c4e4575
+  revision: 266a32a5230af67e397e92a9e8c2f314ff4fe555
   specs:
     paperclip (4.1.1)
       activemodel (>= 3.0.0)
@@ -55,13 +54,12 @@ GEM
       tzinfo (~> 0.3.37)
     arbre (1.0.1)
       activesupport (>= 3.0.0)
-    arel (4.0.1)
-    atomic (1.1.14)
+    arel (4.0.2)
     bcrypt-ruby (3.1.2)
     bootstrap-sass (3.0.3.0)
       sass (~> 3.2)
-    bourbon (3.1.8)
-      sass (>= 3.2.0)
+    bourbon (3.2.1)
+      sass (~> 3.2)
       thor
     builder (3.1.4)
     climate_control (0.0.3)
@@ -74,7 +72,7 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.3)
+    coffee-script-source (1.7.0)
     devise (3.2.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -83,12 +81,12 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.0.2)
-    font-awesome-rails (4.0.3.0)
+    font-awesome-rails (4.1.0.0)
       railties (>= 3.2, < 5.0)
-    formtastic (2.3.0.rc2)
+    formtastic (2.3.0.rc3)
       actionpack (>= 3.0)
-    friendly_id (5.0.2)
-      activerecord (~> 4.0.0)
+    friendly_id (5.0.3)
+      activerecord (>= 4.0.0)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -100,28 +98,28 @@ GEM
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
-    jquery-rails (3.0.4)
+    jquery-rails (3.1.0)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    jquery-ui-rails (4.1.1)
-      railties (>= 3.1.0)
+    jquery-ui-rails (4.2.1)
+      railties (>= 3.2.16)
     json (1.8.1)
-    kaminari (0.15.0)
+    kaminari (0.15.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-    kgio (2.8.1)
+    kgio (2.9.2)
     libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (4.7.5)
-    multi_json (1.8.2)
-    mysql2 (0.3.14)
+    multi_json (1.10.0)
+    mysql2 (0.3.16)
     orm_adapter (0.5.0)
-    polyamorous (0.6.4)
+    polyamorous (1.0.0)
       activerecord (>= 3.0)
-    polyglot (0.3.3)
+    polyglot (0.3.4)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -138,29 +136,32 @@ GEM
       activesupport (= 4.0.2)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    raindrops (0.12.0)
-    rake (10.1.0)
-    ransack (1.1.0)
+    raindrops (0.13.0)
+    rake (10.3.1)
+    ransack (1.2.3)
       actionpack (>= 3.0)
       activerecord (>= 3.0)
-      polyamorous (~> 0.6.0)
-    rdoc (3.12.2)
+      activesupport (>= 3.0)
+      i18n
+      polyamorous (~> 1.0.0)
+    rdoc (4.1.1)
       json (~> 1.4)
     ref (1.0.5)
     responders (1.0.0)
       railties (>= 3.2, < 5)
-    sass (3.2.12)
-    sass-rails (4.0.1)
+    sass (3.2.19)
+    sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
-      sass (>= 3.1.10)
-      sprockets-rails (~> 2.0.0)
-    sdoc (0.3.20)
-      json (>= 1.1.3)
-      rdoc (~> 3.10)
-    simple_form (3.0.1)
-      actionpack (>= 4.0.0, < 4.1)
-      activemodel (>= 4.0.0, < 4.1)
-    sprockets (2.10.1)
+      sass (~> 3.2.0)
+      sprockets (~> 2.8, <= 2.11.0)
+      sprockets-rails (~> 2.0)
+    sdoc (0.4.0)
+      json (~> 1.8)
+      rdoc (~> 4.0, < 5.0)
+    simple_form (3.1.0.rc1)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
+    sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -169,23 +170,24 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    therubyracer (0.12.0)
+    therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
-    thor (0.18.1)
-    thread_safe (0.1.3)
-      atomic
+    thor (0.19.1)
+    thread_safe (0.3.3)
     tilt (1.4.1)
+    tinymce-rails (4.0.19)
+      railties (>= 3.1.1)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (2.0.0)
+    turbolinks (2.2.2)
       coffee-rails
-    tzinfo (0.3.38)
-    uglifier (2.3.3)
+    tzinfo (0.3.39)
+    uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicorn (4.7.0)
+    unicorn (4.8.3)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
@@ -199,6 +201,7 @@ DEPENDENCIES
   activeadmin!
   bootstrap-sass (~> 3.0.3.0)
   coffee-rails (~> 4.0.0)
+  devise
   font-awesome-rails
   friendly_id (~> 5.0.0)
   jbuilder (~> 1.2)
@@ -210,6 +213,7 @@ DEPENDENCIES
   sdoc
   simple_form (>= 3.0.0.rc)
   therubyracer
+  tinymce-rails
   turbolinks
   uglifier (>= 1.3.0)
   unicorn
