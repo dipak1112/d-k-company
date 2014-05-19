@@ -4,10 +4,11 @@ class HomeController < ApplicationController
   end
 
   def about_us
-    @page = Page.find_by(name: "About us")
+    #@page = Page.find_by(name: "About us")
   end
 
   def contact_us
+    #@page = Page.find_by(name: "Contact us")
     if request.get?
       @contact = Contact.new
     else

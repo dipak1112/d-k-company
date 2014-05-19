@@ -3,35 +3,36 @@
 		<h1 class="animated fadeInLeftBig notransition">Contact</h1>
 		<p class="animated fadeInUp container page-description"></p>
 	</div>
-	</section>
-	<div class="wrapsemibox">
-		<div class="semiboxshadow text-center">
-			<img src="/assets/shp.png" class="img-responsive" alt="">
-		</div>
-		<section class="container">
+</section>
+<div class="wrapsemibox">
+	<div class="semiboxshadow text-center">
+		<img src="/assets/shp.png" class="img-responsive" alt="">
+	</div>
+	<section class="container">
 		<div class="row">
 			<div class="col-md-8 animated fadeInLeft notransition">
 				<h1 class="smalltitle">
-				<span>Get in Touch</span>
+					<span>Get in Touch</span>
 				</h1>
 				<%= form_for @contact, :url => {:controller => 'home', :action => 'contact_us' }, :html => {:id => "contact-form" } do |f| %>
-	        <%= f.text_field :name, :placeholder=> "Your Name", :class => "col-md-6 leftradius" %>
-	        <%= f.text_field :email, :placeholder=> "E-mail Address", :class => "col-md-6 rightradius" %>
-	        <span class="error col-md-6 leftradius"><%= display_error_messages @contact.errors, [:name] %> </span>
-	        <span class="error col-md-6 rightradius"><%= display_error_messages @contact.errors, [:email] %> </span>
+	        		<%= f.text_field :name, :placeholder=> "Your Name", :class => "col-md-6 leftradius" %>
+	        		<%= f.text_field :email, :placeholder=> "E-mail Address", :class => "col-md-6 rightradius" %>
+	        		<span class="error col-md-6 leftradius"><%= display_error_messages @contact.errors, [:name] %> </span>
+	        		<span class="error col-md-6 rightradius"><%= display_error_messages @contact.errors, [:email] %> </span>
 
-          <%= f.text_area :message, :placeholder=> "Type a message here...", :class => "col-md-12 allradius", :style => "height:200px;" %>
-          <span class="error">
-            <p style="margin-top:10px;"><%= display_error_messages @contact.errors, [:message] %></p> 
-          </span>
-          <br>
-          <%= f.submit "Send your message", :class => "btn btn-default btn-md" %>
-	      <% end %>
+          			<%= f.text_area :message, :placeholder=> "Type a message here...", :class => "col-md-12 allradius", :style => "height:200px;" %>
+          			<span class="error">
+            			<p style="margin-top:10px;"><%= display_error_messages @contact.errors, [:message] %></p> 
+          			</span>
+          			<br>
+          			<%= f.submit "Send your message", :class => "btn btn-default btn-md" %>
+	      		<% end %>
 			</div>
 			<div class="col-md-4 animated fadeInRight notransition">
 				<h1 class="smalltitle">
 				<span>Contacts</span>
 				</h1>
+				<%#= @page.page_content.html_safe %>
 				<p>
 					 If you're not failing every now and again, it's a sign you're not doing anything very innovative. If my films don't show a profit, I know I'm doing something right.
 				</p>
@@ -52,5 +53,5 @@
 				</ul>
 			</div>
 		</div>
-		</section>
-	</div>
+	</section>
+</div>
