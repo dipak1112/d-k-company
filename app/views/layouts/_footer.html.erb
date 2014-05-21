@@ -4,19 +4,23 @@
         <div class="col-md-4">
           <h1 class="footerbrand">ApSolute</h1>
           <p>
+            <% if @introduction.present? %>
+              <%= @introduction.page_content.html_safe %>
+            <% else %>
              ApSolute Technologies a passionate group of developers, designers, thinkers and doers. </p>
              <p> Our team is happiest when challenged to turn difficult problems into elegant solutions. </p>
             <p> Our mission is to create and launch amazing products.
+            <% end %>
           </p>
         </div>
         <div class="col-md-4">
             <h1 class="title"><span class="colortext">F</span>ind <span class="font100">Us</span></h1>
             <div class="footermap">
               <p> <strong>Address: </strong> 
-                Ahmedabad, Gujarat, India
+                <%= @address.present? ? @address.page_content.html_safe : "Ahmedabad, Gujarat, India"  %><span class="separator">
               </p>
-              <p> <strong>Phone: </strong> +91 79 40326868 </p>
-              <p> <strong>Email: </strong> apsolutetechnology@gmail.com </p>
+              <p> <strong>Phone: </strong> <%= @phone.present? ? @phone.page_content.html_safe : "(+91)79 40326868"  %><span class="separator"> </p>
+              <p> <strong>Email: </strong> <%= @email.present? ? @email.page_content.html_safe : "apsolutetechnology@gmail.com"  %> </p>
             </div>
              <ul class="social-icons list-soc">
               <li><a href="http://www.facebook.com"><i class="icon-facebook"></i></a></li>
@@ -31,18 +35,34 @@
         <div class="col-md-4">
           <h1 class="title"><span class="colortext">T</span>estimonials</h1>
           <div id="quotes">
-            <div id="quote_wrap" style="height: 121px;"><div class="textItem" style="display: block;">
-              <div class="avatar">
-                <img src="/assets/avatar.jpg" alt="avatar">
+            <div id="quote_wrap" style="height: 121px;">
+              <% if @testimonials.present? %>
+              <% @testimonials.each do |testimonial| %>
+                  <div class="textItem" style="display: block;">
+                    <%= image_tag testimonial.client_picture, :class => "avatar" %>
+                    <%= testimonial.testimonial_content.truncate(200) %>
+                    <span style="font-family:arial;">"</span><br>
+                    <b> <%= testimonial.client_name %> </b>
+                  </div>
+                <% end %>
+              <% end %>
+              <!--
+              <div class="textItem" style="display: block;">
+                <div class="avatar">
+                  <img src="/assets/avatar.jpg" alt="avatar">
+                </div>
+                "Before turning to those moral and mental aspects of the matter which present the greatest difficulties, let the inquirer begin by mastering more elementary problems.<span style="font-family:arial;">"</span><br>
+                <b> Jesse T, Los Angeles </b>
               </div>
-               "Before turning to those moral and mental aspects of the matter which present the greatest difficulties, let the inquirer begin by mastering more elementary problems.<span style="font-family:arial;">"</span><br><b> Jesse T, Los Angeles </b>
-            </div><div class="textItem" style="display: none;">
-              <div class="avatar">
-                <img src="/assets/avatar.jpg" alt="avatar">
+              <div class="textItem" style="display: none;">
+                <div class="avatar">
+                  <img src="/assets/avatar.jpg" alt="avatar">
+                </div>
+                "How often have I said to you that when you have eliminated the impossible, whatever remains, however improbable, must be the truth?<span style="font-family:arial;">"</span><br>
+                <b>Ralph G. Flowers </b>
               </div>
-               "How often have I said to you that when you have eliminated the impossible, whatever remains, however improbable, must be the truth?<span style="font-family:arial;">"</span><br><b>Ralph G. Flowers </b>
-            </div></div>
-            
+              -->
+            </div>
           </div>
           <div class="clearfix">
           </div>

@@ -2,7 +2,11 @@
 	<div class="semitransparentbg">
 		<h1 class="animated fadeInLeftBig notransition"><%#= @page.name %>About Us</h1>
 		<p class="animated fadeInRightBig  notransition container page-description">
-			ApSolute Technologies aims to turn your imagination real.
+			<% if @description_line.present? %>
+				<%= @description_line.page_content.html_safe %>
+			<% else %>
+				ApSolute Technologies aims to turn your imagination real.
+			<% end %>
 		</p>
 	</div>
 </section>
@@ -16,18 +20,19 @@
 	<section class="container">
 		<div class="row">
 			<div class="col-md-12 animated anim-slide notransition">
-			<!--
-				<p class="animated fadeInRightBig  notransition container page-description2">
-				<%#= @page.page_content.html_safe %>
-				</p>
-			-->
-				<p class="animated fadeInRightBig  notransition container page-description2">  
-					ApSolute Technologies was founded in the year 2013 by a group of dedicated professionals and young entrepreneur who strive for excellence all in their endeavors. ApSolute Technologies is a professional Web Development, Web Design and Software Development company. ApSolute Technology is offerings services in Website Development, Software Development, Web Design, eCommerce Development, Mobile Application Development and SEO. Our core business objective is to provide superior Managed IT Services and Solutions to corporate clients. Our mission is to achieve your 100% satisfaction, which is guaranteed by our professional service and friendly support with 24x7 support staff.
+				<% if @page.present? %>
+					<p class="animated fadeInRightBig  notransition container page-description2">
+						<%= @page.page_content.html_safe %>
+					</p>
+				<% else %>
+					<p class="animated fadeInRightBig  notransition container page-description2">  
+						ApSolute Technologies was founded in the year 2013 by a group of dedicated professionals and young entrepreneur who strive for excellence all in their endeavors. ApSolute Technologies is a professional Web Development, Web Design and Software Development company. ApSolute Technology is offerings services in Website Development, Software Development, Web Design, eCommerce Development, Mobile Application Development and SEO. Our core business objective is to provide superior Managed IT Services and Solutions to corporate clients. Our mission is to achieve your 100% satisfaction, which is guaranteed by our professional service and friendly support with 24x7 support staff.
 
-				</p>	
-				<p class="animated fadeInRightBig  notransition container page-description2">  
-					ApSolute Technologies assures that if your company is in need of any Offshore PHP, . Net, Desktop Application development, Web Design, Graphic Design and Mobile Application Development then definitely choose us. We are sure that our relations will be mutually beneficial, and we will be able to satisfy your needs and meet all your standards.Our experienced and talented professionals are committed to give quality output, and to meet all the challenges to provide the best results. Our Web and Software developers have the expertise to accomplish all challenging tasks comfortably. Our Core Team of skilled perofessional will ensure that time spent with us will be a pleasure and also being productive. Apsolute Technologies is proud of its achievements and is committed to going even further.
-				</p>
+					</p>	
+					<p class="animated fadeInRightBig  notransition container page-description2">  
+						ApSolute Technologies assures that if your company is in need of any Offshore PHP, . Net, Desktop Application development, Web Design, Graphic Design and Mobile Application Development then definitely choose us. We are sure that our relations will be mutually beneficial, and we will be able to satisfy your needs and meet all your standards.Our experienced and talented professionals are committed to give quality output, and to meet all the challenges to provide the best results. Our Web and Software developers have the expertise to accomplish all challenging tasks comfortably. Our Core Team of skilled perofessional will ensure that time spent with us will be a pleasure and also being productive. Apsolute Technologies is proud of its achievements and is committed to going even further.
+					</p>
+				<% end %>
 				<h1 class="small text-center">Our Mission</h1>
 					<div class="br-hr type_short">
         				<span class="br-hr-h">
@@ -35,7 +40,11 @@
         				</span>
       			</div>
 				<p class="animated fadeInRightBig  notransition container page-description2">  
-					Our team has been built creatively, effectively and passionately to offer world class, comprehensive yet cost-effective IT solutions and services to our Global clienteles enabling to face any challenges.
+					<% if @our_mission.present? %>
+						<%= @our_mission.page_content.html_safe %>
+					<% else %>
+						Our team has been built creatively, effectively and passionately to offer world class, comprehensive yet cost-effective IT solutions and services to our Global clienteles enabling to face any challenges.
+					<% end %>
 				</p>
 				<h1 class="small text-center">Our Vision</h1>
 					<div class="br-hr type_short">
@@ -43,8 +52,12 @@
         				<i class="icon-pencil"></i>
         				</span>
       			</div>
-				<p class="animated fadeInRightBig  notransition container page-description2">  
-				To be a globally acclaimed web solution company known for reliable support system, Customer satisfaction responsiveness, constantly strive to excellence with value added solutions, state of the art technology and cost effective solutions ApSolute Technologies was founded in the year 2013 by a group of dedicated professionals and young entrepreneur who strive for excellence all in their endeavors. ApSolute Technologies is a professional Web Development, Web Design and Software Development company. ApSolute Technology is offerings services in Website Development, Software Development, Web Design, eCommerce Development, Mobile Application Development and SEO. Our core business objective is to provide superior Managed IT Services and Solutions to corporate clients. Our mission is to achieve your 100% satisfaction, which is guaranteed by our professional service and friendly support with 24x7 support staff.
+				<p class="animated fadeInRightBig  notransition container page-description2"> 
+					<% if @our_vision.present? %>
+						<%= @our_vision.page_content.html_safe %>
+					<% else %>
+						To be a globally acclaimed web solution company known for reliable support system, Customer satisfaction responsiveness, constantly strive to excellence with value added solutions, state of the art technology and cost effective solutions ApSolute Technologies was founded in the year 2013 by a group of dedicated professionals and young entrepreneur who strive for excellence all in their endeavors. ApSolute Technologies is a professional Web Development, Web Design and Software Development company. ApSolute Technology is offerings services in Website Development, Software Development, Web Design, eCommerce Development, Mobile Application Development and SEO. Our core business objective is to provide superior Managed IT Services and Solutions to corporate clients. Our mission is to achieve your 100% satisfaction, which is guaranteed by our professional service and friendly support with 24x7 support staff.
+					<% end %>
 				</p>
 			</div>
 		</div>

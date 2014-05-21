@@ -16,19 +16,37 @@
 			<div class="col-md-4">
 				<i class="icon-mobile-phone"></i>
 				<h4>Mobile Development</h4>
-				<p class="justify"> ApSolute Technologies offer complete Android/IPhone /Widnows/BlackBarry Apps Development Solutions and has established expertise in mobile space. The company provides complete Android Apps Development Lifecycle ranging from conceptualization, designing, development, integration, testing, app store deployment and maintenance. Apart from this company also offers value added services such as Android Apps Testing and Android Porting-Migration Services. </p>
+				<p class="justify"> 
+					<% if @service_mobile_development.present? %>
+						<%= @service_mobile_development.page_content.html_safe %>
+					<% else %>
+						ApSolute Technologies offer complete Android/IPhone /Widnows/BlackBarry Apps Development Solutions and has established expertise in mobile space. The company provides complete Android Apps Development Lifecycle ranging from conceptualization, designing, development, integration, testing, app store deployment and maintenance. Apart from this company also offers value added services such as Android Apps Testing and Android Porting-Migration Services.
+					<% end %>
+			 	</p>
 			</div>
 			<!-- col-md-4 -->
 			<div class="col-md-4">
 				<i class="icon-globe"></i>
 				<h4>Website Development</h4>
-				<p class="justify"> Are your getting your website updated regularly? If yes, are you spending a hoarded wealth on website maintenance? Does your website maintenance company take too long to take care of your needs? Our website maintenance package enables us to manage your site while you get on with your business! Once your website is launched we undertake a whole range of key activities to accomplish the website maintenance activities. </p>
+				<p class="justify">
+					<% if @service_website_development %>
+                		<%= @service_website_development.page_content.html_safe %>
+              		<% else %>
+						Are your getting your website updated regularly? If yes, are you spending a hoarded wealth on website maintenance? Does your website maintenance company take too long to take care of your needs? Our website maintenance package enables us to manage your site while you get on with your business! Once your website is launched we undertake a whole range of key activities to accomplish the website maintenance activities.
+					<% end %>
+				</p>
 			</div>
 			<!-- col-md-4 -->
 			<div class="col-md-4">
 				<i class="icon-building"></i>
 				<h4>SEO & Designing </h4>
-				<p class="justify"> Have you been in search for the best web design company to get your corporate website designed? Do you want your website to stand out from the rest of the competition? Do you want to launch a website that performs well online? We have the best answers for all your requirements. We offer the most comprehensive range of web design services. We offer top-notch web design services that will help you impress your customers.  </p>
+				<p class="justify">
+					<% if @servive_seo_desining %>
+              			<%= @servive_seo_desining.page_content.html_safe %>
+            		<% else %>
+						Have you been in search for the best web design company to get your corporate website designed? Do you want your website to stand out from the rest of the competition? Do you want to launch a website that performs well online? We have the best answers for all your requirements. We offer the most comprehensive range of web design services. We offer top-notch web design services that will help you impress your customers.
+					<% end %>
+				</p>
 			</div>
 			<!-- col-md-4 -->
 		</div>

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 top-text pull-left animated fadeInLeft">
-        <i class="icon-phone"></i> Phone: +91 79 40326868 <span class="separator"></span><i class="icon-envelope"></i> Email: <a href="mailto:apsolutetechnology@gmail.com">apsolutetechnology@gmail.com</a>
+        <i class="icon-phone"></i> Phone: <%= @phone.present? ? @phone.page_content.html_safe : "(+91)79 40326868"  %><span class="separator"></span><i class="icon-envelope"></i> Email: <a href="mailto:apsolutetechnology@gmail.com"><%= @email.present? ? @email.page_content.html_safe : "apsolutetechnology@gmail.com"  %></a>
       </div>
       <div class="col-md-6 text-right animated fadeInRight">
         <div class="social-icons">

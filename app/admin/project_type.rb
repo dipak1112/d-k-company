@@ -4,13 +4,13 @@ ActiveAdmin.register ProjectType do
   index do
     column :name
     column :active
-    actions defaults: true
-    #actions :defaults => false do |type|
-      #link_to "View", admin_project_type_path(type)
-      #link_to "Edit", edit_admin_project_type_path(type)
-      #link_to "#{type.active ? 'Deactivate' : 'Activate'}", admin_project_type_path(type), :method => :delete     
-    #end
-    
+    column "Actions" do |type|
+      text_node link_to "View", admin_project_type_path(type)
+      text_node "&nbsp".html_safe
+      text_node link_to "Edit", edit_admin_project_type_path(type)
+      text_node "&nbsp".html_safe
+      text_node link_to "#{type.active ? 'Deactivate' : 'Activate'}", admin_project_type_path(type), :method => :delete
+    end    
   end
 
   filter :name

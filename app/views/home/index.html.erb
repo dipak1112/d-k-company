@@ -124,7 +124,11 @@
         <div class="col-md-12 text-center">
           <h2>Introducing <span class="colortext">ApSolute</span> Technology</h2>
           <p>
+            <% if @introduction.present? %>
+              <%= @introduction.page_content.html_safe %>
+            <% else %>
              ApSolute Technologies a passionate group of developers, designers, thinkers and doers. Our team is happiest when challenged to turn difficult problems into elegant solutions. Our mission is to create and launch amazing products.
+            <% end %>
           </p>
         </div>
       </div>
@@ -153,24 +157,35 @@
             <h4><i class="icon icon-mobile-phone">
             </i> Mobile Development</h4>
             <div class="bottomspace30">
-            ApSolute Technologies offer complete Android/IPhone/Widnows/BlackBerry Apps Development Solutions and has established expertise in mobile space.
+            <% if @service_mobile_development %>
+              <%= @service_mobile_development.page_content.html_safe %>
+            <% else %>
+              ApSolute Technologies offer complete Android/IPhone/Widnows/BlackBerry Apps Development Solutions and has established expertise in mobile space.
+            <% end %>
             </div>
           </div>
           <div class="col-md-4">
             <h4><i class="icon icon-globe">
             </i> Web Development</h4>
             <div class="bottomspace30">
+              <% if @service_website_development %>
+                <%= @service_website_development.page_content.html_safe %>
+              <% else %>
                Are your getting your website updated regularly? If yes, are you spending a hoarded wealth on website maintenance?
+              <% end %>
             </div>
           </div>
           <div class="col-md-4">
             <h4><i class="icon icon-building">
             </i> SEO & Designing</h4>
+            <% if @servive_seo_desining %>
+              <%= @servive_seo_desining.page_content.html_safe %>
+            <% else %>
              Have you been in search for the best web design company to get your corporate website designed? <br>
+            <% end %>
           </div>
         </div>
       </div>
     </div>
     </section>
-
   </div>

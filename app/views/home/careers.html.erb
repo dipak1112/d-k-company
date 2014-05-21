@@ -5,73 +5,104 @@
 	</div>
 </section>
 
-	<div class="wrapsemibox">
-		<div class="semiboxshadow text-center">
-			<img src="/assets/shp.png" class="img-responsive" alt="">
-		</div>
-		
-		<section class="container">
-			<div class="row">
-				<div class="col-md-8 animated fadeInLeft notransition">
-     			<h3> Current Openings </h3>
-      		<span class="cbp-qtprogress" style="transition: width 8000ms linear; -webkit-transition: width 8000ms linear; width: 100%;"></span>
-			</div>
-			<div class="col-md-8 animated fadeInLeft notransition">
-				<h4 style="font-size: 15px;"> (1) &nbsp; Jr. Business Development Manager </h4>
-				<table>
-					<tr>
-						<td>Experience :</td>
-						<td>0-1 Year</td>
-					</tr>
-					
-					<tr>
-						<td>Involvement : &nbsp;</td>
-						<td>Full Time</td>
-					</tr>
-
-					<tr>
-						<td>Location: </td>
-						<td>Ahmedabad, Gujarat</td>
-					</tr>
-
-					<tr>
-						<td>Package :</td>
-						<td>Package will be ever best as per industry standards.</td>
-					</tr>					
-				</table>
-				<br>
-				<h4 style="font-size: 15px;"> (2) &nbsp; Fresher Designer </h4>
-				<table>
-					<tr>
-						<td>Experience :</td>
-						<td>0-1 Year</td>
-					</tr>
-					
-					<tr>
-						<td>Involvement : &nbsp;</td>
-						<td>Full Time</td>
-					</tr>
-
-					<tr>
-						<td>Location : </td>
-						<td>Ahmedabad, Gujarat</td>
-					</tr>
-
-					<tr>
-						<td>Package :</td>
-						<td>Package will be ever best as per industry standards.</td>
-					</tr>					
-
-					<tr>
-						<td>Skills :</td>
-						<td>Storng knowledge of Photoshop, CSS 3.0, HTML, HTML5, XHTML, JavaScript and Dreamweaver.</td>
-					</tr>					
-
-				</table>
-<br>
-<h4> Send your resume on apsolutetechnology@gmail.com </h4>
-
-			</div>
-		</div>
-		</section>
+<div class="wrapsemibox">
+	<div class="semiboxshadow text-center">
+		<img src="/assets/shp.png" class="img-responsive" alt="">
 	</div>
+	
+	<section class="container">
+		<div class="row">
+			<div class="col-md-8 animated fadeInLeft notransition">
+ 				<h3> Current Openings </h3>
+  				<span class="cbp-qtprogress" style="transition: width 8000ms linear; -webkit-transition: width 8000ms linear; width: 100%;"></span>
+			</div>
+			<% if @careers.present? %>
+				<% @careers.each do |career| %>
+					<div class="col-md-8 animated fadeInLeft notransition">
+						<h4 style="font-size: 15px;"><%= career.title %></h4>
+						<table>
+							<tr>
+								<td>Experience :</td>
+								<td><%= career.experience %></td>
+							</tr>
+							
+							<tr>
+								<td>Involvement : &nbsp;</td>
+								<td><%= career.involvement %></td>
+							</tr>
+
+							<tr>
+								<td>Location: </td>
+								<td><%= career.location %></td>
+							</tr>
+
+							<tr>
+								<td>Package :</td>
+								<td><%= career.package %></td>
+							</tr>					
+						</table>
+						<br>
+					</div>
+				<% end %>
+			<% end %>
+		<!--
+		<div class="col-md-8 animated fadeInLeft notransition">
+			<h4 style="font-size: 15px;"> (1) &nbsp; Jr. Business Development Manager </h4>
+			<table>
+				<tr>
+					<td>Experience :</td>
+					<td>0-1 Year</td>
+				</tr>
+				
+				<tr>
+					<td>Involvement : &nbsp;</td>
+					<td>Full Time</td>
+				</tr>
+
+				<tr>
+					<td>Location: </td>
+					<td>Ahmedabad, Gujarat</td>
+				</tr>
+
+				<tr>
+					<td>Package :</td>
+					<td>Package will be ever best as per industry standards.</td>
+				</tr>					
+			</table>
+			<br>
+			<h4 style="font-size: 15px;"> (2) &nbsp; Fresher Designer </h4>
+			<table>
+				<tr>
+					<td>Experience :</td>
+					<td>0-1 Year</td>
+				</tr>
+				
+				<tr>
+					<td>Involvement : &nbsp;</td>
+					<td>Full Time</td>
+				</tr>
+
+				<tr>
+					<td>Location : </td>
+					<td>Ahmedabad, Gujarat</td>
+				</tr>
+
+				<tr>
+					<td>Package :</td>
+					<td>Package will be ever best as per industry standards.</td>
+				</tr>					
+
+				<tr>
+					<td>Skills :</td>
+					<td>Storng knowledge of Photoshop, CSS 3.0, HTML, HTML5, XHTML, JavaScript and Dreamweaver.</td>
+				</tr>					
+
+			</table>
+		</div>
+		-->
+			<div class="col-md-8 animated fadeInLeft notransition">
+				<h4 style="font-size: 15px;">Send your resume on <%= @email.present? ? @email.page_content.html_safe : "apsolutetechnology@gmail.com" %></h4>
+			<div>
+		</div>
+	</section>
+</div>

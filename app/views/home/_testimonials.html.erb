@@ -1,5 +1,22 @@
 <div id="quotes">
   <div id="quote_wrap">
+    <% if @testimonials.present? %>
+      <% @testimonials.each do |testimonial| %>
+        <div class="textItem1" style="display: block;">
+          <div class="cbp-qtcontent cbp-qtcurrent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
+            <%= image_tag testimonial.client_picture %>
+            <blockquote>
+              <p class="bigquote">
+                <i class="icon-quote-left colortext quoteicon"></i> 
+                <%= testimonial.testimonial_content %>
+              </p>
+              <footer><%= testimonial.client_name %></footer>
+            </blockquote>
+          </div>
+        </div>  
+      <% end %>
+    <% end %>
+    <!--
     <div class="textItem1" style="display: block;">
       <div class="cbp-qtcontent cbp-qtcurrent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
         <img src="/assets/t5.jpg" alt="">
@@ -73,6 +90,6 @@
         </blockquote>
       </div>
     </div>
-
+-->
   </div>
 </div>
