@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   	@phone = Page.find_by(name: "Phone")
   	@email = Page.find_by(name: "Email")
   	@introduction = Page.find_by(name: "Introducing ApSolute Technology")
-    @testimonials = Testimonial.all
+    @all_testimonials = Testimonial.all
   end
 end

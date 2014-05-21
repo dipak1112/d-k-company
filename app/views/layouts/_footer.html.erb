@@ -37,7 +37,7 @@
           <div id="quotes">
             <div id="quote_wrap" style="height: 121px;">
               <% if @testimonials.present? %>
-              <% @testimonials.each do |testimonial| %>
+              <% @all_testimonials.each do |testimonial| %>
                   <div class="textItem" style="display: block;">
                     <%= image_tag testimonial.client_picture, :class => "avatar" %>
                     <%= testimonial.testimonial_content.truncate(200) %>
