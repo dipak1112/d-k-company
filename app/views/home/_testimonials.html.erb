@@ -1,7 +1,7 @@
 <div id="quotes">
   <div id="quote_wrap">
     <% if @all_testimonials.present? %>
-      <% @testimonials.each do |testimonial| %>
+      <% @all_testimonials.each do |testimonial| %>
         <div class="textItem1" style="display: block;">
           <div class="cbp-qtcontent cbp-qtcurrent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
             <%= image_tag testimonial.client_picture %>
