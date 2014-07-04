@@ -1,4 +1,10 @@
 KeshariyaCompany::Application.routes.draw do
+  devise_for :admin_users
+  resource :admin_users, only: [:edit] do
+    collection do
+      patch 'update_password'
+    end
+  end
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -6,12 +12,12 @@ KeshariyaCompany::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
   get 'about-us'       => 'home#about_us',       :as => :about_us
-  #get 'contact-us'     => 'home#contact_us',     :as => :contact_us
-  #post 'contact'       => 'home#contact',        :as => :contact
+ #get 'contact-us'     => 'home#contact_us',     :as => :contact_us
+ #post 'contact'       => 'home#contact',        :as => :contact
   match "contact-us"   => "home#contact_us", :as => :contact_us,  via: [:get, :post]
   get 'services'       => 'home#services',       :as => :services
   get 'blogs'          => 'home#blogs',          :as => :blogs
-  get 'careers'          => 'home#careers',          :as => :careers
+  get 'careers'        => 'home#careers',          :as => :careers
   get 'portfolio-list' => 'home#portfolio_list', :as => :portfolio_list
   get '/portfolio/:id' => 'home#portfolio',      :as => :portfolio
   # Example of regular route:

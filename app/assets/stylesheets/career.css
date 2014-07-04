@@ -1,0 +1,71 @@
+
+/*career page collapsing*/
+
+.collapsing h4.open {
+    display:inline-block;
+ background-color: #28465E; background-image: -webkit-gradient(linear, left top, left bottom, from(#28465E), to(#1D232E));
+ background-image: -webkit-linear-gradient(top, #28465E, #1D232E);
+ background-image: -moz-linear-gradient(top, #28465E, #1D232E);
+ background-image: -ms-linear-gradient(top, #28465E, #1D232E);
+ background-image: -o-linear-gradient(top, #28465E, #1D232E);
+ background-image: linear-gradient(to bottom, #28465E, #1D232E);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#28465E, endColorstr=#1D232E);
+}
+/* collapse links in captions should be inline */
+#content-expand {
+  
+  overflow:hidden
+}
+.collapsing {
+ 
+  position:relative;
+  overflow:hidden;
+}
+/* --- Headings  --- */
+
+.expand{padding-bottom:.75em}
+
+/* --- Links  --- */
+.expand a:link, .expand a:visited {
+  
+  background-image:url('expand_arrow.png');
+  background-repeat:no-repeat;
+  background-position:0% 50%;
+}
+.expand a, .expand a:hover, .expand a:focus {
+	color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  /*border-bottom: 1px solid rgba(128, 10, 85, 0.5);*/
+  text-shadow: 1px 1px 1px rgb(47, 10, 127);
+}
+.expand a.open:link, .expand a.open:visited {
+  
+  background:url('collapse_arrow.png') no-repeat 0% 50%;
+}
+.collapsing h4:hover {
+    background-color: #6a5498; background-image: -webkit-gradient(linear, left top, left bottom, from(#6a5498), to(#2f283f));
+ background-image: -webkit-linear-gradient(top, #6a5498, #2f283f);
+ background-image: -moz-linear-gradient(top, #6a5498, #2f283f);
+ background-image: -ms-linear-gradient(top, #6a5498, #2f283f);
+ background-image: -o-linear-gradient(top, #6a5498, #2f283f);
+ background-image: linear-gradient(to bottom, #6a5498, #2f283f);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#6a5498, endColorstr=#2f283f);
+}
+.collapsing h4 {
+	
+    cursor:pointer;
+    /*min-height:50px;*/
+    clear:both;
+    
+    position:relative;
+	border-radius: 14px;
+	background-color: #846FB0; background-image: -webkit-gradient(linear, left top, left bottom, from(#846FB0), to(#473C5E));
+	background-image: -webkit-linear-gradient(top, #846FB0, #473C5E);
+	background-image: -moz-linear-gradient(top, #846FB0, #473C5E);
+	background-image: -ms-linear-gradient(top, #846FB0, #473C5E);
+	background-image: -o-linear-gradient(top, #846FB0, #473C5E);
+	background-image: linear-gradient(to bottom, #846FB0, #473C5E);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#846FB0, endColorstr=#473C5E);
+    padding:10px;
+	
+	
+}
+.expand .colps-heading{padding-left:22px;}

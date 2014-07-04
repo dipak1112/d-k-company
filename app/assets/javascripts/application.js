@@ -10,13 +10,20 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require jquery.js
+//= require jquery.min.js
 //= require bootstrap.js
+//= require jquery-migrate
+//= require jquery_revslider.js
+//= require modernizr.js
+//= require jquery.templateaccess.plugins.min.js
+//= require jquery.templateaccess.revolution.js
+//= require raphael-min.js
+//= require script_animation.js
+//= require hoverIntent.js
+//= require ubermenu.js
+//= require jquery_carouFredSel.js
 //= require plugins.js
-//= require common.js
-//= require jquery.cookie.js
-//= require styleswitch.js
-//= require colorpicker.js
-//= require switcher.js
+//= require superfish_menu.js
+//= require expand.js
+//= require znscript.js
+//= require cubeportfolio-plugin.js

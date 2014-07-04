@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row ">
+    <div class="span3">
+      <h3 class="m_title">TESTIMONIALS</h3>
+      <p></p>
+      <p>What They Say</p>
+      <p></p>
+    </div>
+    <div class="span9 testimonials_fader">
+      <div  class="caroufredsel_wrapper">
+        <ul  id="testimonials_fader" class="fixclear">
+          <% if @all_testimonials.present? %>
+            <% @all_testimonials.each do |testimonial| %>
+              <li >
+                <blockquote>
+                  <%= testimonial.testimonial_content %>
+                  <p class="testimonial-name">- <%= testimonial.client_name %> </p>
+                </blockquote>
+              </li>
+            <% end %>
+          <% else %>
+            <li >
+              <blockquote>I just had the ApSolute pleasure of working with ApSolute Technologies on my website design project. I have been so protective of my business and its image and took a long time to look for the right fit in a website development company. The site needed to reflect who I am and how I treat my clients, and it needed to embrace the fun, creative, laid-back but business mode that we operate in. It was hard for me to let this go to a designer to translate.<p class="testimonial-name">- Ophellia McKnight, CEO Technix world </p></blockquote>
+            </li>
+            <li >
+              <blockquote>ApSolute Technologies exceeded every one of my expectations, by a long way! Finding a true service partner to take our idea to reality was a major concern, so teaming up with a company like Spudd Mobile was a true blessing. I was really pleased with their responsiveness and willingness to go the extra mile to achieve the goals set out.I am extremely happy with ApSolute Technologies and would refer them to others with ApSolute Technologies confidence.<p class="testimonial-name">- Ryan Lacey, CEO TRC Group </p></blockquote>
+            </li>
+            <li >
+              <blockquote>We engaged ApSolute Technologies on a number of strategic projects. They brought exceptional technical acumen and professionalism in building and deploying complex CRM solutions. My team and I thoroughly enjoyed working with ApSolute Technologies and found them always willing to go the extra mile. I trust them implicitly and would engage them again for future projects.<p class="testimonial-name">- Penny Christian, BTC entertainment </p></blockquote>
+            </li>
+            <li >
+              <blockquote>I really do appreciate all your efforts and hard work to be responsive, flexible, creative and overall to make this a killer app. You've handled everything (including me) very gracefully. I appreciate it, and I'm here now because I've never had anything but great confidence that ApSolute Technologies will deliver a fantastic end product and that says a lot.<p class="testimonial-name">- Stephanie Lynn,Manager HTPC world </p></blockquote>
+            </li>
+            <li >
+              <blockquote>ApSolute Technologies has provided us with a very cost-effective and very hands-on monitoring solution. We're thrilled with the results that we've realized thus far from themMonitoring. Our subscribers benefit from network performance that we can prove is effective.<p class="testimonial-name">- Michael,Director Trinx </p></blockquote>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+jQuery('#testimonials_fader').carouFredSel({
+        responsive:true,
+        auto:{timeoutDuration:5000},
+        scroll: { fx: "fade", duration: "1500" }
+      });
+</script>

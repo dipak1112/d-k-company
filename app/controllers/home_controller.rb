@@ -1,19 +1,20 @@
 class HomeController < ApplicationController
+  layout false, only: [:portfolio]
 
-  before_action :fetch_services, only: [:home, :services]
+  #before_action :fetch_services, only: [:home, :services]
   
   def index
   end
 
   def about_us
-    @page = Page.find_by(name: "About us")
-    @description_line = Page.find_by(name: "About us discription line")
-    @our_mission = Page.find_by(name: "Our Mission")
-    @our_vision = Page.find_by(name: "Our Vision")
+    # @page = Page.find_by(name: "About us")
+    # @description_line = Page.find_by(name: "About us discription line")
+    # @our_mission = Page.find_by(name: "Our Mission")
+    # @our_vision = Page.find_by(name: "Our Vision")
   end
 
   def contact_us
-    @page = Page.find_by(name: "Contact")
+    #@page = Page.find_by(name: "Contact")
     if request.get?
       @contact = Contact.new
     else
@@ -36,7 +37,7 @@ class HomeController < ApplicationController
   end
 
   def portfolio_list
-  	@projects = Project.all
+  	@projects = Project.all.includes(:project_type)
     @project_types = ProjectType.all
   end
 
@@ -54,8 +55,8 @@ class HomeController < ApplicationController
   end
 
   def fetch_services
-    @service_mobile_development = Page.find_by(name: "Service Mobile Development")
-    @service_website_development = Page.find_by(name: "Service Website Development")
-    @servive_seo_desining = Page.find_by(name: "Service SEO & Designing")
+    # @service_mobile_development = Page.find_by(name: "Service Mobile Development")
+    # @service_website_development = Page.find_by(name: "Service Website Development")
+    # @servive_seo_desining = Page.find_by(name: "Service SEO & Designing")
   end
 end

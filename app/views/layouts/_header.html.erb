@@ -1,43 +1,66 @@
-<section class="toparea">
+<header id="header" class="style4 ">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 top-text pull-left animated fadeInLeft">
-        <i class="icon-phone"></i> Phone: <%= @phone.present? ? @phone.page_content.html_safe : "(+91)79 40326868"  %><span class="separator"></span><i class="icon-envelope"></i> Email: <a href="mailto:apsolutetechnology@gmail.com"><%= @email.present? ? @email.page_content.html_safe : "apsolutetechnology@gmail.com"  %></a>
-      </div>
-      <div class="col-md-6 text-right animated fadeInRight">
-        <div class="social-icons">
-          <a class="icon icon-facebook" href="https://www.facebook.com/dipak.keshariya.3"></a>
-          <a class="icon icon-twitter" href="https://twitter.com/ApSoluteTech"></a>
-          <a class="icon icon-linkedin" href="http://www.linkedin.com/pub/apsolute-technologie-hiring-ror-wordpress-cocos-2dx-developer/88/67/410"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
-  <!-- /.toparea end-->
-  <!-- NAV
-================================================== -->
-
- <nav class="navbar navbar-fixed-top wowmenu" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand logo-nav" href="<%= root_path %>"><img src="/assets/logo104.png" alt="logo" width="150" height="40"></a>
-    </div>
-    <ul id="nav" class="nav navbar-nav pull-right l_tinynav1">
-      <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
-      <li class="<%= 'active' if current_page?(about_us_path) %>"><%= link_to "About Us", about_us_path %></li>
-      <li class="<%= 'active' if current_page?(services_path) %>"><%= link_to "Services", services_path %></li>
-      <li class="<%= 'active' if current_page?(portfolio_list_path) %>"><%= link_to "Portfolio", portfolio_list_path %></li>
-      <!-- <li class="<%#= 'active' if current_page?(blogs_path) %>"><%#= link_to "Blog", blogs_path %></li> -->
-            <li class="<%= 'active' if current_page?(careers_path) %>"><%= link_to "Careers", careers_path %></li>
-
-
-      <li class="<%= 'active' if current_page?(contact_us_path) %>"><%= link_to "Contact", contact_us_path %></li>
-
-
+    <!-- logo -->
+    <h1 id="logo"><a href="#"><img src="/assets/logo.png" alt="Apsolute Technoloy" title="Apsolute Technology"></a></h1>
+    <!-- HEADER ACTION -->
+    <ul class="social-icons  topnav navRight">
+      <li class="social-facebook">
+                <a href="https://www.facebook.com/dipak.keshariya.3" target="_blank">Facebook</a>
+              </li>
+              <li class="social-twitter">
+                <a href="https://twitter.com/ApSoluteTech" target="_blank">Twitter</a>
+              </li>
+              <li class="social-gplus">
+                <a href="https://plus.google.com/u/0/113683917761543645898/posts?rel=auther" target="_blank">Google+</a>
+              </li>
+              <li class="social-linkedin">
+                <a href="http://www.linkedin.com/pub/apsolute-technologie-hiring-ror-wordpress-cocos-2dx-developer/88/67/410" target="_blank">Linkedin</a>
+              </li>
+              <li class="social-skype">
+                <a href="skype:dipak.aplosute?userinfo" target="_blank">Skype</a>
+              </li>
     </ul>
-
-    
-  </div>  
-</nav>
- 
+    <!-- search -->
+    <!-- main menu -->
+    <nav id="main_menu" class="">
+      <div id="megaMenu" class="megaMenuContainer megaResponsive megaResponsiveToggle wpmega-withjs megaMenuOnHover megaFullWidthSubs megaFullWidth megaMenuHorizontal wpmega-autoAlign wpmega-noconflict megaMinimizeResiduals megaResetStyles megaMenu-withjs">
+        <div id="megaMenuToggle" class="megaMenuToggle">
+          <span class="megaMenuToggle-icon"></span>
+        </div>
+        <ul id="megaUber" class="megaMenu">
+          <li id="menu-item-718" class="menu-item menu-item-type-post_type menu-item-object-page  page_item page-item-7 ss-nav-menu-item-0 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter <%= 'active current-menu-item current_page_item' if current_page?(root_path) %>">
+            <%= link_to  (root_path) do %>
+              <span class="wpmega-link-title">Home</span>
+            <% end %>
+          </li>
+          <li id="menu-item-763" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mega-with-sub ss-nav-menu-item-1 ss-nav-menu-item-depth-0 ss-nav-menu-reg um-flyout-align-center <%= 'active current-menu-item current_page_item' if current_page?(about_us_path) %>">
+            <%= link_to (about_us_path) do %>
+              <span class="wpmega-link-title">About Us</span>
+            <% end %>
+          </li>
+          <li id="menu-item-753" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children mega-with-sub ss-nav-menu-item-2 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-fullWidth mega-colgroup mega-colgroup-3 ss-nav-menu-mega-alignLeft <%= 'active current-menu-item current_page_item' if current_page?(services_path) %>">
+            <%= link_to (services_path) do %>
+              <span class="wpmega-link-title">Services</span>
+            <% end %>
+          </li>
+          <li id="menu-item-728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children mega-with-sub ss-nav-menu-item-3 ss-nav-menu-item-depth-0 ss-nav-menu-reg um-flyout-align-center <%= 'active current-menu-item current_page_item' if current_page?(portfolio_list_path) %>">
+            <%= link_to (portfolio_list_path) do %>
+              <span class="wpmega-link-title">Portfolio</span>
+            <% end %>
+          </li>
+          <li id="menu-item-766" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-4 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter <%= 'active current-menu-item current_page_item' if current_page?(careers_path) %>">
+            <%= link_to (careers_path) do %>
+              <span class="wpmega-link-title">Career</span>
+            <% end %>
+          </li>
+          <li id="menu-item-766" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-4 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter <%= 'active current-menu-item current_page_item'if current_page?(contact_us_path) %>">
+            <%= link_to (contact_us_path) do %>
+              <span class="wpmega-link-title">Contact Us</span>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end main_menu -->
+  </div>
+</header>

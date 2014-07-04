@@ -1,200 +1,96 @@
-  <div class="footer">
-    <div class="container animated fadeInUpNow notransition fadeInUp">
-      <div class="row">
-        <div class="col-md-4">
-          <h1 class="footerbrand">ApSolute</h1>
-          <p>
-            <% if @introduction.present? %>
-              <%= @introduction.page_content.html_safe %>
-            <% else %>
-             ApSolute Technologies a passionate group of developers, designers, thinkers and doers. </p>
-             <p> Our team is happiest when challenged to turn difficult problems into elegant solutions. </p>
-            <p> Our mission is to create and launch amazing products.
-            <% end %>
-          </p>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <div id="text-2" class="widget widget_text">
+          <h3 class="widgettitle title m_title">About Apsolute</h3>
+          <div class="textwidget"> ApSolute Technologies a passionate group of developers, designers, thinkers and doers.<br/><br/>Our team is happiest when challenged to turn difficult problems into elegant solutions.<br/><br/>Our mission is to create and launch amazing products. .</div>
         </div>
-        <div class="col-md-4">
-            <h1 class="title"><span class="colortext">F</span>ind <span class="font100">Us</span></h1>
-            <div class="footermap">
-              <p> <strong>Address: </strong> 
-                <%= @address.present? ? @address.page_content.html_safe : "Ahmedabad, Gujarat, India"  %><span class="separator">
-              </p>
-              <p> <strong>Phone: </strong> <%= @phone.present? ? @phone.page_content.html_safe : "(+91)79 40326868"  %><span class="separator"> </p>
-              <p> <strong>Email: </strong> <%= @email.present? ? @email.page_content.html_safe : "apsolutetechnology@gmail.com"  %> </p>
+      </div>
+      <div class="span4">
+        <div id="sbs_nav_menu-2" class="widget widget_sbs_nav_menu">
+          <h3 class="widgettitle m_title">Menus</h3>
+          <div class="zn_sbs">
+            <div class="menu-footer-menu-container">
+              <ul id="menu-footer-menu" class="menu">
+                <li id="menu-item-768" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item menu-item-768 active">
+                  <%= link_to "Home", root_path %>
+                </li>
+                <li id="menu-item-769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-769">
+                  <%= link_to "About Us", about_us_path %>
+                </li>
+                <li id="menu-item-772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-772">
+                  <%= link_to "Services", services_path %>
+                </li>
+                <li id="menu-item-773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-773">
+                  <%= link_to "Portfolio", portfolio_list_path %>
+                </li>
+                <li id="menu-item-771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-771">
+                  <%= link_to "Careers", careers_path %>
+                </li>
+                <li id="menu-item-770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-770">
+                  <%= link_to "Contact", contact_us_path %>
+                </li>
+              </ul>
             </div>
-             <ul class="social-icons list-soc">
-              <li><a href="https://www.facebook.com/dipak.keshariya.3"><i class="icon-facebook"></i></a></li>
-              <li><a href="https://twitter.com/ApSoluteTech"><i class="icon-twitter"></i></a></li>
-              <li><a href="http://www.linkedin.com/pub/apsolute-technologie-hiring-ror-wordpress-cocos-2dx-developer/88/67/410"><i class="icon-linkedin"></i></a></li>
-              <li><a href="https://plus.google.com/u/0/113683917761543645898/posts?rel=auther"><i class="icon-google-plus"></i></a></li>
-              <li><a href="skype:dipak.aplosute?userinfo"><i class="icon-skype"></i></a></li>
+          </div>
+        </div>
+      </div>
+      <div class="span4">
+        <div id="text_contact-2" class="widget widget_text_contact">
+          <h3 class="widgettitle m_title">GET IN TOUCH</h3>
+          <div class="textwidget contact-details">
+            <p>
+              Address:&nbsp;Ahmedabad, Gujarat, India
+            </p>
+            <p>
+              Email:&nbsp;<a href="#">apsolutetechnology@gmail.com</a>
+            </p>
+            <p> 
+              <strong>Phone:&nbsp;(9179) 40326868</strong>
+            </p>
+            <p>
+            <ul class="social-icons  socnav navRight">
+              <li class="social-facebook">
+                <a href="https://www.facebook.com/dipak.keshariya.3" target="_blank">Facebook</a>
+              </li>
+              <li class="social-twitter">
+                <a href="https://twitter.com/ApSoluteTech" target="_blank">Twitter</a>
+              </li>
+              <li class="social-gplus">
+                <a href="https://plus.google.com/u/0/113683917761543645898/posts?rel=auther" target="_blank">Google+</a>
+              </li>
+              <li class="social-linkedin">
+                <a href="http://www.linkedin.com/pub/apsolute-technologie-hiring-ror-wordpress-cocos-2dx-developer/88/67/410" target="_blank">Linkedin</a>
+              </li>
+              <li class="social-skype">
+                <a href="skype:dipak.aplosute?userinfo" target="_blank">Skype</a>
+              </li>
             </ul>
-
-          </div>
-
-        <div class="col-md-4">
-          <h1 class="title"><span class="colortext">T</span>estimonials</h1>
-          <div id="quotes">
-            <div id="quote_wrap" style="height: 121px;">
-              <% if @all_testimonials.present? %>
-              <% @all_testimonials.each do |testimonial| %>
-                  <div class="textItem" style="display: block;">
-                    <%= image_tag testimonial.client_picture, :class => "avatar" %>
-                    <%= testimonial.testimonial_content.truncate(200) %>
-                    <span style="font-family:arial;">"</span><br>
-                    <b> <%= testimonial.client_name %> </b>
-                  </div>
-                <% end %>
-              <% end %>
-              <!--
-              <div class="textItem" style="display: block;">
-                <div class="avatar">
-                  <img src="/assets/avatar.jpg" alt="avatar">
-                </div>
-                "Before turning to those moral and mental aspects of the matter which present the greatest difficulties, let the inquirer begin by mastering more elementary problems.<span style="font-family:arial;">"</span><br>
-                <b> Jesse T, Los Angeles </b>
-              </div>
-              <div class="textItem" style="display: none;">
-                <div class="avatar">
-                  <img src="/assets/avatar.jpg" alt="avatar">
-                </div>
-                "How often have I said to you that when you have eliminated the impossible, whatever remains, however improbable, must be the truth?<span style="font-family:arial;">"</span><br>
-                <b>Ralph G. Flowers </b>
-              </div>
-              -->
-            </div>
-          </div>
-          <div class="clearfix">
+            </p>
           </div>
         </div>
       </div>
     </div>
+    <!-- end row -->
+    <div class="row">
+      <div class="span12">
+        <div class="bottom fixclear">
+          <div class="copyright">
+            <a href="http://www.apsolutetechnologies.com/"><img src="/assets/logo2.png" alt=""></a>
+            <p>&copy; 2014 Copyright by Apsolute Technologies. All rights reserved.</p>
+          </div>
+          <!-- end copyright -->
+        </div>
+        <!-- end bottom -->
+      </div>
+    </div>
+    <!-- end row -->
   </div>
+</footer>
+<script type="text/javascript">
 
-
-
-<%= javascript_include_tag "application" %>
-<script>
-  /* ---------------------------------------------------------------------- */
-  /*  Carousel
-  /* ---------------------------------------------------------------------- */
-  $(window).load(function(){      
-    $('#carousel-projects').carouFredSel({
-    responsive: true,
-    items       : {
-        width       : 200,
-        height      : 295,
-        visible     : {
-            min         : 1,
-            max         : 4
-        }
-    },
-    width: '200px',
-    height: '295px',
-    auto: true,
-    circular  : true,
-    infinite  : false,
-    prev : {
-      button    : "#car_prev",
-      key     : "left",
-        },
-    next : {
-      button    : "#car_next",
-      key     : "right",
-          },
-    swipe: {
-      onMouse: true,
-      onTouch: true
-      },
-    scroll: {
-        easing: "",
-        duration: 1200
-    }
-  });
-    });
-</script>
-<script>
-  //CALL TESTIMONIAL ROTATOR
-  $( function() {
-    /*
-    - how to call the plugin:
-    $( selector ).cbpQTRotator( [options] );
-    - options:
-    {
-      // default transition speed (ms)
-      speed : 700,
-      // default transition easing
-      easing : 'ease',
-      // rotator interval (ms)
-      interval : 8000
-    }
-    - destroy:
-    $( selector ).cbpQTRotator( 'destroy' );
-    */
-    $( '#cbp-qtrotator' ).cbpQTRotator();
-  } );
-</script>
-<script>
-  //CALL PRETTY PHOTO
-  $(document).ready(function(){
-    $("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});
-  });
-</script>
-<script>
-  //MASONRY
-  $(document).ready(function(){
-  var $container = $('#content');
-    $container.imagesLoaded( function(){
-    $container.isotope({
-    filter: '*',  
-    animationOptions: {
-     duration: 750,
-     easing: 'linear',
-     queue: false,   
-     }
-  });
-  });
-  $('#filter a').click(function (event) {
-    $('a.selected').removeClass('selected');
-    var $this = $(this);
-    $this.addClass('selected');
-    var selector = $this.attr('data-filter');
-    $container.isotope({
-       filter: selector
-    });
-    return false;
-  });
-  });
-</script>
-<script>
-//ROLL ON HOVER
-  $(function() {
-  $(".roll").css("opacity","0");
-  $(".roll").hover(function () {
-  $(this).stop().animate({
-  opacity: .8
-  }, "slow");
-  },
-  function () {
-  $(this).stop().animate({
-  opacity: 0
-  }, "slow");
-  });
-  });
-</script>
-
-<script>
-/* ---------------------------------------------------------------------- */
-  /*  Accordion
-  /* ---------------------------------------------------------------------- */
-  var clickElem = $('#accordion div h4');
-  clickElem.on('click', function(){
-    var $this = $(this),
-      parentCheck = $this.parent('div');
-    if( !parentCheck.hasClass('active')) {
-      var accordItems = $('#accordion div');
-      accordItems.removeClass('active');
-      parentCheck.addClass('active');
-    }
-  });
+  /* <![CDATA[ */
+  var uberMenuSettings = {"speed":"300","trigger":"hoverIntent","orientation":"horizontal","transition":"slide","hoverInterval":"20","hoverTimeout":"400","removeConflicts":"on","autoAlign":"on","noconflict":"off","fullWidthSubs":"on","androidClick":"off","iOScloseButton":"on","loadGoogleMaps":"off","repositionOnLoad":"on"};
+  /* ]]> */
 </script>

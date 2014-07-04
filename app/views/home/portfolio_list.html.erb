@@ -1,45 +1,126 @@
-<section class="pageheader-default text-center">
-	<div class="semitransparentbg">
-		<h1 class="animated fadeInLeftBig notransition">Portfolio</h1>
-		<p class="animated fadeInUp container page-description"></p>
-	</div>
-</section>
-
-<div class="wrapsemibox">
-	<div class="semiboxshadow text-center">
-	</div>
-	
-	<section class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<div id="filter" class="animated fadeInRight">
-					<ul>
-						<li><a href="" data-filter="*" class="selected"><i class="icon icon-reorder"></i> All Items</a></li>
-						<% @project_types.each do |project_type| %>
-							<li><a href="" data-filter=".<%= project_type.name.gsub(' ','_') %>"><i class="icon icon-th-large"></i> <%= project_type.name %></a></li>
-						<% end %>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- END filtering menu -->
-		<div id="content" style="position: relative; overflow: hidden; height: 3242px;" class="isotope">
-			
-			<% @projects.each do |project| %>			
-				<div class="boxportfolio3 item <%= project.project_type.name.gsub(' ','_') %> isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate(0px, 1289px);">
-					<div class="boxcontainer">
-						<%= image_tag(project.avatar(:pfolio, false))%>
-						<div class="roll" style="opacity: 0;">
-							<div class="wrapcaption">
-								<a href="<%= portfolio_path(project) %>"><i class="icon-link captionicons"></i></a>
-								<a data-gal="prettyPhoto[gallery1]" href="<%= project.avatar %>" title="Title Here"><i class="icon-zoom-in captionicons"></i></a>
-							</div>
-						</div>
-						<h1><%= link_to project.project_title, portfolio_url(project) %></h1>
-						<p><%= project.short_description.truncate(50) %></p>
-					</div>
-				</div>
-			<% end %>
-		</div>
-	</section>
+<!--start page banner-->
+<div id="page_header" class="uh_about-us">
+  <!--start page banner background image-->
+  <div class="bgback"><img src="/assets/portfolio.png" alt="Portfolio"></div>
+  <!--end page banner background image-->
+  <div class="container">
+    <div class="row">
+      <div class="span6"></div>
+      <div class="span6">
+        <div class="header-titles"></div>
+      </div>
+    </div>
+    <!-- end row -->
+  </div>
 </div>
+<!-- end page banner -->
+<!-- start page heading -->
+<div id="action_box" data-arrowpos="center">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h4 class="text">
+          <div align="center">Portfolio: Apsolute Technologies</div>
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end page heading -->
+<!-- start inner content section-->
+<section id="content">
+  <!--start 1st container-->
+  <div class="container">
+    <div class="row ">
+      <div id="filters-container" class="cbp-l-filters-button">      
+        <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+          All
+          <div class="cbp-filter-counter"></div>
+        </div>
+        <% @project_types.each do |project_type| %>
+          <div data-filter=".<%= project_type.name.gsub(' ','_') %>" class="cbp-filter-item">
+            <%= project_type.name %>
+            <div class="cbp-filter-counter"></div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="row">
+      <div id="grid-container" class="cbp-l-grid-projects">
+        <ul class="cbp-wrapper">
+          <% @projects.each do |project| %>
+            <li class="cbp-item <%= project.project_type.name.gsub(' ','_') %>">
+              <div class="cbp-item-wrapper">
+                <div class="cbp-caption">
+                  <div class="cbp-caption-defaultWrap">
+                    <%= image_tag(project.avatar(:pfolio, false))%>
+                    <!-- <img src="/assets/portfolio/small/1.jpg" alt="" width="100%"> -->
+                  </div>
+                  <div class="cbp-caption-activeWrap">
+                    <div class="cbp-l-caption-alignCenter">
+                      <div class="cbp-l-caption-body">
+                        <a href="<%= portfolio_path(project) %>" class="cbp-singlePage cbp-l-caption-buttonLeft"><img src="/assets/link.png"></a>
+                        <a href="<%= project.avatar(:pfolio, false) %>" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="<%= project.project_title %>"><img src="/assets/lupe.png"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cbp-l-grid-projects-title"><a href="<%= portfolio_path(project) %>" class="cbp-singlePage"><%= project.project_title %></a></div>
+                <div class="cbp-l-grid-projects-desc"><%= project.short_description.truncate(50) %></div>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--end 1st container-->
+</section>
+<!-- end inner content section-->
+<!-- load main js -->
+<script type="text/javascript" src="/assets/portfoliomain.js"></script>
+<!-- <section class="pageheader-default text-center">
+  <div class="semitransparentbg">
+    <h1 class="animated fadeInLeftBig notransition">Portfolio</h1>
+    <p class="animated fadeInUp container page-description"></p>
+  </div>
+  </section>
+  
+  <div class="wrapsemibox">
+  <div class="semiboxshadow text-center">
+  </div>
+  
+  <section class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div id="filter" class="animated fadeInRight">
+          <ul>
+            <li><a href="" data-filter="*" class="selected"><i class="icon icon-reorder"></i> All Items</a></li>
+            <%# @project_types.each do |project_type| %>
+              <li><a href="" data-filter=".<%#= project_type.name.gsub(' ','_') %>"><i class="icon icon-th-large"></i> <%#= project_type.name %></a></li>
+            <%# end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div id="content" style="position: relative; overflow: hidden; height: 3242px;" class="isotope">
+      
+      <%# @projects.each do |project| %>
+        <div class="boxportfolio3 item <%#= project.project_type.name.gsub(' ','_') %> isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate(0px, 1289px);">
+          <div class="boxcontainer">
+            <%#= image_tag(project.avatar(:pfolio, false))%>
+            <div class="roll" style="opacity: 0;">
+              <div class="wrapcaption">
+                <a href="<%#= portfolio_path(project) %>"><i class="icon-link captionicons"></i></a>
+                <a data-gal="prettyPhoto[gallery1]" href="<%#= project.avatar %>" title="Title Here"><i class="icon-zoom-in captionicons"></i></a>
+              </div>
+            </div>
+            <h1><%#= link_to project.project_title, portfolio_url(project) %></h1>
+            <p><%#= project.short_description.truncate(50) %></p>
+          </div>
+        </div>
+      <%# end %>
+    </div>
+  </section>
+  </div> -->

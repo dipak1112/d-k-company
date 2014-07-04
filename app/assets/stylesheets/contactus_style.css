@@ -1,0 +1,175 @@
+.post_enquiry {
+margin-left: 0px;
+margin-top: 25px;
+float:left;
+}
+.post_enquiry {
+background: none repeat scroll 0 0 #E1E1E1;
+border: 1px solid #B9B9B9;
+border-radius: 3px;
+width: 100%;
+}
+div.post_enquiry h2 {
+font-family: monospace;
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 5px;
+margin-top: 0;
+padding-bottom: 0;
+padding-left: 21px;
+text-transform: uppercase;
+text-align:center;
+}
+form.quick_enquiry {
+display: block;
+padding: 0 0 15px 10px;
+}
+form.quick_enquiry input.name[type="text"] {
+background-color: #FFFFFF;
+background-position: 11px 5px;
+}
+form.quick_enquiry input.email[type="text"] {
+background-color: #FFFFFF;
+background-position: 10px -173px;
+display: list-item;
+}
+/*form.quick_enquiry input[type="text"], form.quick_enquiry textarea, form.quick_enquiry select {
+background-color: #FFFFFF;
+background-image: url("../images/form_icon.png");
+background-repeat: no-repeat;
+border: 1px solid #CCCCCC;
+color: #333333;
+font: 15px 'HelveticaLight',sans-serif;
+margin: 5px 0 5px 10px;
+padding: 11px 5px 11px 45px;
+width: 72%;
+}*/
+form.quick_enquiry label {
+display: none;
+}
+form.quick_enquiry input.country_call_code[type="text"] {
+background-image: none;
+padding-left: 0;
+padding-right: 0;
+text-align: center;
+width: 16%;
+}
+form.quick_enquiry input.phone[type="text"] {
+background-color: #FFFFFF;
+background-position: 6px -54px;
+margin-left: 3px;
+padding-left: 35px;
+width: 29% !important;
+}
+form.quick_enquiry label {
+display: none;
+}
+form.quick_enquiry select {
+background: none repeat scroll 0 0 #FFFFFF;
+margin-bottom: 5px;
+padding: 10px;
+width: 90%;
+}
+form.quick_enquiry option{
+padding:10px;
+}
+form.quick_enquiry input[type="text"] {
+background-color: #FFFFFF;
+background-image: url('form_icon.png');
+background-repeat: no-repeat;
+border: 1px solid #CCCCCC;
+color: #333333;
+font: 15px 'HelveticaLight',sans-serif;
+margin: 5px 0 5px 3px;
+padding: 11px 5px 11px 45px;
+width: 84%;
+height:auto !important;
+}
+form.quick_enquiry textarea, form.quick_enquiry select {
+background-color: #FFFFFF;
+background-image: url('form_icon.png');
+background-repeat: no-repeat;
+border: 1px solid #CCCCCC;
+color: #333333;
+font: 15px 'HelveticaLight',sans-serif;
+margin: 5px 0 0px 3px ;
+padding: 11px 5px 11px 45px;
+width: 84%;
+}
+form.quick_enquiry select
+{
+background-position: 12px -113px;
+width: 98%;
+height: 43px;
+}
+form.quick_enquiry div.mandatory input[type="text"], form.quick_enquiry div.mandatory input[type="text"]:focus, form.quick_enquiry div.mandatory select, form.quick_enquiry div.mandatory select:focus, form.quick_enquiry div.mandatory textarea, form.quick_enquiry div.mandatory textarea:focus {
+border: 1px solid #FF0000;
+color: #FF0000;
+}
+form.quick_enquiry textarea {
+background-image: none;
+padding-left: 11px;
+resize: none;
+width: 96%;
+}
+form.quick_enquiry div.post_enquiry_btn {
+padding: 7px 0 5px;
+}
+form.quick_enquiry input.submit_button {
+background: url('get_started-red.png') no-repeat scroll center center rgba(0, 0, 0, 0);
+border: medium none;
+cursor: pointer;
+font-size: 1px;
+height: 63px;
+text-indent: -5000px;
+width: 100%;
+background-size:100% 100%;
+}
+.contact-us .post_enquiry {
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border: medium none;
+}
+.contact-us .post_enquiry input {
+float: left;
+margin: 0 15px 15px 0px !important;
+width: 40% !important;
+}
+.contact-us .quick_enquiry .phone {
+width: 34% !important;
+}
+.contact-us .quick_enquiry select {
+margin-top: 0 !important;
+width: 97%;
+}
+.contact-us .messenger_option {
+background-image: none !important;
+padding-left: 7px !important;
+width: auto !important;
+float:left !important;
+}
+.contact-us #messanger_id {
+width: 33% !important;
+margin-left: 10px !important;
+background-image:none !important;
+}
+.contact-us #countrycallingcode .country_call_code {
+width: 50px !important;
+}
+.contact-us .quick_enquiry .submit_button {
+float: none;
+margin: 0 auto;
+width: 300px;
+float: right;
+}
+
+form.quick_enquiry span.error{
+    color: #f00;
+    float: left;
+    position: relative;
+    padding-bottom:15px;
+}
+form.quick_enquiry .contact-person-email{
+    margin-right:18px; /*change to suit */
+    float:left;
+    width:47%;
+}

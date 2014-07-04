@@ -8,19 +8,22 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require basic.css
+ *= require custom.css
  *= require bootstrap.css
- *= require style.css
- *= require responsive.css
- *= require layout-semiboxed.css
- *= require skin-red.css
- *= require style-switcher.css
- *= require colorpicker.css
- *= require font-awesome
- *= require_self
+ *= require superfish.css
+ *= require template.css
+ *= require bootstrap-responsive.css
+ *= require css.css
+ *= require css_003.css
+ *= require css_002.css
+ *= require career.css
+ *= require innerpage_options.css
+ *= require captions.css
+ *= require settings.css
+ *= require upermenu_advance_setting.css
+ *= require animation.css
+ *= require contactus_style.css
+ *= require cubeportfolio-plugincss.css
+ *= require porfoliomain.css
  */
-
- .error{color:red;}
- .frame {
-	border: 10px solid #FFFFFF;
-	box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
-}

@@ -1,72 +1,456 @@
-<section class="pageheader-default text-center">
-	<div class="semitransparentbg">
-		<h1 class="animated fadeInLeftBig notransition"><%#= @page.name %>About Us</h1>
-		<p class="animated fadeInRightBig  notransition container page-description">
-			<% if @description_line.present? %>
-				<%= @description_line.page_content.html_safe %>
-			<% else %>
-				ApSolute Technologies aims to turn your imagination real.
-			<% end %>
-		</p>
-	</div>
-</section>
-
-
-<div class="wrapsemibox">
-	<div class="semiboxshadow text-center">
-		<img src="/assets/shp.png" class="img-responsive" alt="">
-	</div>
-
-	<section class="container">
-		<div class="row">
-			<div class="col-md-12 animated anim-slide notransition">
-				<% if @page.present? %>
-					<p class="animated fadeInRightBig  notransition container page-description2">
-						<%= @page.page_content.html_safe %>
-					</p>
-				<% else %>
-					<p class="animated fadeInRightBig  notransition container page-description2">  
-						ApSolute Technologies was founded in the year 2013 by a group of dedicated professionals and young entrepreneur who strive for excellence all in their endeavors. ApSolute Technologies is a professional Web Development, Web Design and Software Development company. ApSolute Technology is offerings services in Website Development, Software Development, Web Design, eCommerce Development, Mobile Application Development and SEO. Our core business objective is to provide superior Managed IT Services and Solutions to corporate clients. Our mission is to achieve your 100% satisfaction, which is guaranteed by our professional service and friendly support with 24x7 support staff.
-
-					</p>	
-					<p class="animated fadeInRightBig  notransition container page-description2">  
-						ApSolute Technologies assures that if your company is in need of any Offshore PHP, . Net, Desktop Application development, Web Design, Graphic Design and Mobile Application Development then definitely choose us. We are sure that our relations will be mutually beneficial, and we will be able to satisfy your needs and meet all your standards.Our experienced and talented professionals are committed to give quality output, and to meet all the challenges to provide the best results. Our Web and Software developers have the expertise to accomplish all challenging tasks comfortably. Our Core Team of skilled perofessional will ensure that time spent with us will be a pleasure and also being productive. Apsolute Technologies is proud of its achievements and is committed to going even further.
-					</p>
-				<% end %>
-				<h1 class="small text-center">Our Mission</h1>
-					<div class="br-hr type_short">
-        				<span class="br-hr-h">
-        				<i class="icon-pencil"></i>
-        				</span>
-      			</div>
-					<% if @our_mission.present? %>
-						<p class="animated fadeInRightBig  notransition container page-description2">  
-							<%= @our_mission.page_content.html_safe %>
-						</p>
-					<% else %>
-						<p class="animated fadeInRightBig  notransition container page-description2">  
-							Our team has been built creatively, effectively and passionately to offer world class, comprehensive yet cost-effective IT solutions and services to our Global clienteles enabling to face any challenges.
-						</p>
-					<% end %>
-				</p>
-				<h1 class="small text-center">Our Vision</h1>
-					<div class="br-hr type_short">
-        				<span class="br-hr-h">
-        				<i class="icon-pencil"></i>
-        				</span>
-      			</div>
-				
-					<% if @our_vision.present? %>
-						<p class="animated fadeInRightBig  notransition container page-description2"> 
-							<%= @our_vision.page_content.html_safe %>
-						</p>
-					<% else %>
-						<p class="animated fadeInRightBig  notransition container page-description2"> 
-							To be a globally acclaimed web solution company known for reliable support system, Customer satisfaction responsiveness, constantly strive to excellence with value added solutions, state of the art technology and cost effective solutions ApSolute Technologies was founded in the year 2013 by a group of dedicated professionals and young entrepreneur who strive for excellence all in their endeavors. ApSolute Technologies is a professional Web Development, Web Design and Software Development company. ApSolute Technology is offerings services in Website Development, Software Development, Web Design, eCommerce Development, Mobile Application Development and SEO. Our core business objective is to provide superior Managed IT Services and Solutions to corporate clients. Our mission is to achieve your 100% satisfaction, which is guaranteed by our professional service and friendly support with 24x7 support staff.
-						</p>
-					<% end %>
-				</p>
-			</div>
-		</div>
-	</section>
+<!--start page banner-->
+<div id="page_header" class="uh_about-us">
+  <!--start page banner background image-->
+  <div class="bgback"><img src="assets/about-us.png" alt="About us"></div>
+  <!--end page banner background image-->
+  <div class="container">
+    <div class="row">
+      <div class="span6"></div>
+      <div class="span6">
+        <div class="header-titles"></div>
+      </div>
+    </div>
+    <!-- end row -->
+  </div>
 </div>
+<!-- end page banner -->
+<!-- start page heading -->
+<div id="action_box" data-arrowpos="center">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h4 class="text">
+          <div align="center">About US: Apsolute Technologies</div>
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end page heading -->
+<!-- start inner content section-->
+<section id="content">
+  <!--start 1st container-->
+  <div class="container">
+    <!--start 1st row about us content-->
+    <div class="row">
+      <div class="span12">
+        <p>Give you the solution you need to succeed. Have a passion for building remarkable software that people love to use. We are proud to be able to contribute to our clients successes. We build solution to facilitate high performance, scalability and high standard code quality. We bring you quality of performance. Offer services in website development, software development, web design, e-commerce development, mobile development and SEO. Our team of skilled professional will ensure that time spent with us will be pleasure and also being productive. We proud of our achievements and we commit to go even further.</p>
+      </div>
+    </div>
+    <!--end 1st row about us content-->
+    <!--start 2nd row our expertise heading-->
+    <div class="row">
+      <div class="span12">
+        <h4 class="m_title">
+        </h4>
+        <h4 class="smallm_title centered bigger">
+          <span>
+          OUR Expertise
+          </span>
+        </h4>
+      </div>
+    </div>
+    <!--end 2nd row our expertise heading-->
+    <!--start 3rd row OUR Expertise content-->
+    <div class="row">
+      <!--start Web Development service box-->
+      <div class="span4 services_box">
+        <div class="fixclear">
+          <h4 class="title"> Web Development</h4>
+          <ul class="list-style1">
+            <li>
+              WordPress Development
+            </li>
+            <li>
+              Payment gateway integration
+            </li>
+            <li>
+              Online Store Management
+            </li>
+            <li>
+              X-Cart Ecommerce solutions
+            </li>
+            <li>
+              Social networking apps,
+            </li>
+            <li>
+              eCommerce Websites
+            </li>
+            <li>
+              ROR 
+            </li>
+            <li>
+              PHP Development
+            </li>
+            <li>
+              Microsoft .net Development
+            </li>
+            <li>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--end Web Development service box-->
+      <!--start Mobile Application Development service box-->
+      <div class="span4 services_box">
+        <div class="fixclear">
+          <h4 class="title">Mobile Application Development</h4>
+          <ul class="list-style1">
+            <li>
+              Native Mobile Apps Development 
+            </li>
+            <li>
+              Crossed Platform Apps Development
+            </li>
+            <li>
+              HTML5 mobile development
+            </li>
+            <li>
+              Iphone development
+            </li>
+            <li>
+              Android development
+            </li>
+            <li>
+              Windows development
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--end Mobile Application Development service box-->
+      <!--start Dedicated Services service box-->
+      <div class="span4 services_box">
+        <div class="fixclear">
+          <h4 class="title">Dedicated Services</h4>
+          <ul class="list-style1">
+            <li>
+              Hire PHP Developer
+            </li>
+            <li>
+              Hire WordPress Developer
+            </li>
+            <li>
+              Hire Android Developer
+            </li>
+            <li>
+              Hire iphone Developer
+            </li>
+            <li>
+              Hire magento Developer
+            </li>
+            <li>
+              Hire joomla Developer
+            </li>
+            <li>
+              Hire asp.net Develope
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--end Dedicated Services service box-->
+    </div>
+    <!--end 3rd row OUR Expertise content-->
+    <!--start 4th row Core Values header-->
+    <div class="row ">
+      <!--start core value header-->
+      <div class="span12 feature_box style3">
+        <h4 class="smallm_title centered bigger"><span>Core Values</span></h4>
+      </div>
+      <!--end core value header-->
+      <!--start commitment feature box-->
+      <div class="span3 feature_box style3">
+        <div class="box">
+          <h4 class="title">Commitment</h4>
+          <span class="icon ico1"></span>
+          <p>
+            To finish first, you must first finish.
+          </p>
+        </div>
+      </div>
+      <!--end commitment feature box-->
+      <!--start Loyalty for Client feature box-->
+      <div class="span3 feature_box style3">
+        <div class="box">
+          <h4 class="title"> Loyalty for Client</h4>
+          <span class="icon ico2"></span>
+          <p>
+            Hold faithfulness and sincerity as first principles.
+          </p>
+        </div>
+      </div>
+      <!--end Loyalty for Client feature box-->
+      <!--start Continuous Support feature box-->
+      <div class="span3 feature_box style3">
+        <div class="box">
+          <h4 class="title">Continuous Support</h4>
+          <span class="icon ico3"></span>
+          <p>
+            Excellence is a continuous process and not an accident.
+          </p>
+        </div>
+      </div>
+      <!--end Continuous Support feature box-->
+      <!--start Obsession for Excellent feature box-->
+      <div class="span3 feature_box style3">
+        <div class="box">
+          <h4 class="title"> Obsession for Excellent</h4>
+          <span class="icon ico4"></span>
+          <p>
+            It's always too early to quit.<br><br>
+          </p>
+        </div>
+      </div>
+      <!--end Obsession for Excellent feature box-->
+    </div>
+    <!--end 4th row Core Values header-->
+  </div>
+  <!--end 1st container-->
+  <!--start 2nd container gray-area Why To Choose Us-->
+  <div class="gray-area ">
+    <!--start gray-area container-->
+    <div class="container">
+      <!--start 1st row why to choose us heading-->
+      <div class="row ">
+        <div class="span12">
+          <h4 class="m_title">
+            <div class="span12">
+              <h4 class="smallm_title centered bigger"><span>Why To Choose Us</span></h4>
+            </div>
+          </h4>
+        </div>
+      </div>
+      <!--end 1st row why to choose us heading-->
+      <!--start 1st row why to choose us heading-->
+      <div class="row ">
+        <!--start span of why to choose us-->
+        <div class="span12">
+          <!--start vertical toggle tabs of why to choose us-->
+          <div class="vertical_tabs">
+            <!--start vertical toggle tab's content table-->
+            <div class="tabbable">
+              <!--start tab's name in ul-->
+              <ul class="nav fixclear">
+                <li class="active">
+                  <a href="#tabs_importntQ" data-toggle="tab">
+                  <span><span class="icon-question-sign  icon-white"></span></span>
+                  An Important question
+                  </a>
+                </li>
+                <li>
+                  <a href="#tabs_needs" data-toggle="tab">
+                  <span><span class="icon-user  icon-white"></span></span>
+                  We understand your needs
+                  </a>
+                </li>
+                <li>
+                  <a href="#tabs_promises" data-toggle="tab">
+                  <span><span class="icon-thumbs-up  icon-white"></span></span>
+                  We know how to keep promises
+                  </a>
+                </li>
+                <li>
+                  <a href="#tabs_believe" data-toggle="tab">
+                  <span><span class="icon-signal  icon-white"></span></span>
+                  What we believe
+                  </a>
+                </li>
+                <li>
+                  <a href="#tabs_idea" data-toggle="tab">
+                  <span><span class="icon-check  icon-white"></span></span>
+                  We make your idea real
+                  </a>
+                </li>
+                <li>
+                  <a href="#tabs_price" data-toggle="tab">
+                  <span><span class="icon-barcode  icon-white"></span></span>
+                  Worth price
+                  </a>
+                </li>
+              </ul>
+              <!--end tab's name in ul-->
+              <!--start ul tab's content-->
+              <div class="tab-content">
+                <div class="tab-pane active" id="tabs_importntQ">
+                  <h4> An Important Big Question</h4>
+                  <p></p>
+                  <blockquote>
+                    <p>An important question always arise when you need to choose solution provider. Why to choose one company over another. Here is what you need to know why you should choose us over other IT service providers.</p>
+                  </blockquote>
+                  <p></p>
+                </div>
+                <div class="tab-pane" id="tabs_needs">
+                  <h4>Our loyalty to client one of the core value</h4>
+                  <p></p>
+                  <blockquote>
+                    <p>We always try to walk in your shoes to understand your requirements. Our team is full of doers who don’t just talk, but  reacts and show you practical solutions to your problem.</p>
+                  </blockquote>
+                  <p></p>
+                </div>
+                <div class="tab-pane" id="tabs_promises">
+                  <h4>We don't give Promises until we are sure</h4>
+                  <p></p>
+                  <blockquote>
+                    <p>We always keep our promises. the size and complexity doesn't matter because we only promise that we can keep.We provede 24x7 support.</p>
+                  </blockquote>
+                  <p></p>
+                </div>
+                <div class="tab-pane" id="tabs_believe">
+                  <h4>We focus from start till End</h4>
+                  <p></p>
+                  <blockquote>
+                    <p>Our promise is not only to finish the project. But finish with accuracy and provide support after finish, we believe in long term professional relationship. </p>
+                  </blockquote>
+                  <p></p>
+                </div>
+                <div class="tab-pane" id="tabs_idea">
+                  <h4>We enhance your idea and make it real</h4>
+                  <p></p>
+                  <blockquote>
+                    <p>We don’t just code for projects, we communicate with you to understand your goal, requirements and idea to understand it thoroughly.</p>
+                  </blockquote>
+                  <p></p>
+                </div>
+                <div class="tab-pane" id="tabs_price">
+                  <h4>Worth to pay </h4>
+                  <p></p>
+                  <blockquote>
+                    <p>We charge competitive than others but never compromise with efficiency and accuracy. You will get more than your expectation.</p>
+                  </blockquote>
+                  <p></p>
+                </div>
+              </div>
+              <!--end ul tab's content-->
+            </div>
+            <!--end vertical toggle tab's content table-->
+          </div>
+          <!--end vertical toggle tabs of why to choose us-->
+        </div>
+        <!--end span of why to choose us-->
+      </div>
+      <!--end 1st row why to choose us heading-->
+    </div>
+    <!--end gray-area container-->
+  </div>
+  <!--end 2nd container gray-area Why To Choose Us-->
+  <!--start 3rd container vision mission-->
+  <div class="container">
+    <!--start 1st row vision misson-->
+    <div class="row ">
+      <!--start 1st span Let us open a thread-->
+      <div class="span6">
+        <h3></h3>
+        <h3 class="m_title">Let us open a thread for simplify things for you</h3>
+        <p>
+          In today’s world being online is not just on desktops, it also includes mobiles. There are 1.75 billion internet users who use internet via mobile. So one should consider. Mobile applications also to be online. Apsolute offers you complete solutions including website development, mobile application front-end, back-end development. Our team works with client in mind. 
+        </p>
+      </div>
+      <!--end 1st span Let us open a thread-->
+      <!--start 2nd span vision mission-->
+      <div class="span6">
+        <!--start tabbable vision mission-->
+        <div id="myTab" class="tabbable tabs_style1">
+          <!--start tabbable vision mission heading ul-->
+          <ul class="nav fixclear">
+            <li class="active">
+              <a href="#tabs_mission1" data-toggle="tab">
+              Our Mission
+              </a>
+            </li>
+            <li>
+              <a href="#tabs_vision1" data-toggle="tab">
+              Our Vision
+              </a>
+            </li>
+          </ul>
+          <!--end tabbable vision mission heading ul-->
+          <!--start tabbable vision mission inner content-->
+          <div class="tab-content">
+            <div class="tab-pane active" id="tabs_mission1">
+              <h4></h4>
+              <p></p>
+              <p>Our core business objective is to provide superior managed it. Service and solutions to corporate clients. Our mission is to achieve your 100% satisfaction, which is guaranteed by our professional service and friendly support with 24x7 support staff.</p>
+              <p></p>
+            </div>
+            <div class="tab-pane" id="tabs_vision1">
+              <h4></h4>
+              <p>To be a globally acclaimed web solution company known for reliable support system, custom satisfaction, responsiveness, constantly strive to excellent with value added solutions, state of the art technology and cost effective solutions.</p>
+            </div>
+          </div>
+          <!--end tabbable vision mission inner content-->
+        </div>
+        <!--end tabbable vision mission-->
+      </div>
+      <!--end 2nd span vision mission-->
+    </div>
+    <!--end 1st row vision misson-->
+    <!--start 2nd row Statistics-->
+    <div class="row">
+      <!--start Statistics span-->
+      <div class="span12">
+        <!--start Statistics heading-->
+        <div class="row zn_content_no_margin">
+          <div class="span12 zn_stats_box">
+            <h3 class="mb_title">
+              <span class="icon-tasks  icon-dark"></span>
+              Statistics
+            </h3>
+          </div>
+        </div>
+        <!--end Statistics heading-->
+        <!--start Statistics boxes-->
+        <div class="row zn_content_no_margin">
+          <!--start Statistics 1st box-->
+          <div class="span3">
+            <div class="statbox">
+              <img src="/assets/ico-04.png" alt="">
+              <h4>40 +</h4>
+              <h6>Countries Covered</h6>
+            </div>
+          </div>
+          <!--end Statistics 1st box-->
+          <!--start Statistics 2nd box-->
+          <div class="span3">
+            <div class="statbox">
+              <img src="/assets/ico-testimonials.png" alt="">
+              <h4>300 +</h4>
+              <h6>Satisfied Clients</h6>
+            </div>
+          </div>
+          <!--end Statistics 2nd box-->
+          <!--start Statistics 3rd box-->
+          <div class="span3">
+            <div class="statbox">
+              <img src="/assets/ico-finished-projects.png" alt="">
+              <h4>900+</h4>
+              <h6>Finished Projects</h6>
+            </div>
+          </div>
+          <!--end Statistics 3rd box-->
+          <!--start Statistics 4th box-->
+          <div class="span3">
+            <div class="statbox">
+              <img src="/assets/ico-01.png" alt="">
+              <h4>150 +</h4>
+              <h6>Resources Strength</h6>
+            </div>
+          </div>
+          <!--end Statistics 4th box-->
+        </div>
+        <!--end Statistics boxes-->
+      </div>
+      <!--end Statistics span-->
+    </div>
+    <!--end 2nd row Statistics-->
+    <!--start 3rd row Statistics-->
+    <div class="row ">
+      <div class="span12">
+        <div class="keywordbox">
+          Let us Connect and Discuss Further
+        </div>
+      </div>
+    </div>
+    <!--end 3rd row Statistics-->
+  </div>
+  <!--end 3rd container vision mission-->
+</section>
+<!-- end inner content section-->

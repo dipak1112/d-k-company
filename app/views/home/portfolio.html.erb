@@ -1,32 +1,46 @@
-<section class="pageheader-default text-center">
-	<div class="semitransparentbg">
-			<h1 class="animated fadeInLeftBig notransition">
-			<%= @project.project_title %></h1>
-	</div>
-</section>
-	
-<div class="wrapsemibox">
-	<div class="semiboxshadow text-center">
-		<img src="/assets/shp.png" class="img-responsive" alt="">
-	</div>
-	<div class="col-md-1"></div>
-	<div class="col-md-6 animated fadeInLeft notransition">
-		<div class="carousel carousel-fade slide carousel-featuredwork projectdetail" id="carousel-featuredwork">
-			<div class="frame">
-					<%= image_tag(@project.avatar(:pfolio_e, false), :class => "imgresize") %>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-2"></div>
-		<section class="container">
-		<div class="row">
-			<div class="col-md-4 animated fadeInRight notransition">
-				<h1 class="smalltitle"> <span>Project Name</span> </h1>
-				<p><%= @project.project_title %>	</p>
-
-				<h1 class="smalltitle"> <span>Project Description</span> </h1>
-				<p><%= @project.long_description %>	</p>
-			</div>
-		</div>
-	</section>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title><%= @project.project_title %></title>
+   </head>
+   <body>
+      
+      <div style="display: block;" data-action="" class="cbp-popup-wrap cbp-popup-singlePage cbp-popup-singlePage-open cbp-popup-singlePage-sticky">
+         <div class="cbp-popup-content">
+            <div class="cbp-l-project-title"><%= @project.project_title %></div>
+            <div class="cbp-slider">
+               <ul class="cbp-slider-wrap">
+                  <li class="cbp-slider-item">
+                  	<%= image_tag @project.avatar(:pfolio, false), :class => "cbp-l-project-img" %>
+                  </li>
+               </ul>
+            </div>
+            <div class="cbp-l-project-container">
+               <div class="cbp-l-project-desc">
+                  <div class="cbp-l-project-desc-title"><span>Project Description</span></div>
+                  <div class="cbp-l-project-desc-text">
+                     <%= @project.short_description %>
+                  </div>
+               </div>
+               <div class="cbp-l-project-details">
+                  <div class="cbp-l-project-details-title"><span>Project Details</span></div>
+                  <ul class="cbp-l-project-details-list">
+                     <li><strong>Categories</strong><%= @project.project_type.name %></li>
+                  </ul>
+               </div>
+            </div>
+            <br>
+            <br>
+            <br>
+         </div>
+         <div class="cbp-popup-loadingBox"></div>
+         
+         <div class="cbp-popup-navigation-wrap">
+            <div class="cbp-popup-navigation">
+               <button data-action="close" type="button" title="Close (Esc arrow key)" class="cbp-popup-close"></button>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
