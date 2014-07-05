@@ -1838,6 +1838,10 @@ padding: 10px 0 0;}
   }
 }
 
+.topnav.navRight > li.social-skype {
+  padding-right: 10px;
+}
+
 /* FIX IE10 MOBILE  1.6 */
 @-webkit-viewport{width:device-width}
 @-moz-viewport{width:device-width}

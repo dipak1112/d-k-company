@@ -1,0 +1,48 @@
+<section>
+	<div class="container">
+    <div class="mainbody ">
+       <div class="row zn_content_no_margin">
+          <div class="span12">
+             <h1 class="page-title margin-top-pgtitle">Sign in as Admin</h1>
+          </div>
+       </div>
+    </div>
+	</div>
+	<div class="container">
+	  <div class="row ">
+			<div class="auth-form">
+				<% if flash.present? %>
+					<div class="danger danger-notice">
+						<%- flash.each do |name, msg| -%>
+			        <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+						<%- end -%>
+					</div>
+				<% end %>
+				<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+					<div class="auth-inputs">
+						<label>Email address</label>
+						<%= f.email_field :email, :placeholder => "Email Address" %>
+						<span class="error"><%= display_error_messages f.object.errors, [:email] %> </span>
+						<div class="unmask-password">
+							<label>Password</label>
+							<div class="unmask-wrapper">
+								<%= f.password_field :password, :autocomplete => "off", :placeholder => "Password" %>
+								<span class="error"><%= display_error_messages f.object.errors, [:password] %> </span>
+							</div>
+						</div>
+					</div>
+					<div class="auth-rememberme">
+						<%= f.check_box :remember_me, :as => :boolean if devise_mapping.rememberable? %>
+						<label class="display-remembr">Remember me</label>
+					</div>
+					<div class="auth-button-div">
+            <%= f.submit "Sign in", :class => "button-48 blue auth-button button-content" %>
+          </div>
+					<div class="frgt-pass">
+						<a href="<%= new_admin_user_password_path %>" target="_blank" >Forgot Password?</a>
+					</div>
+				<% end %>
+			</div>
+  	</div>
+	</div>
+</section>

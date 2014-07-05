@@ -35,39 +35,57 @@
   <section id="content">
     <!--start 1st container-->
     <div class="container">
-      <div class="row ">
-        <div id="content-expand">
-          <div class="collapsing">
-            <% @careers.each do |career| %>
-              <h4 class="expand"><span class="colps-heading"><%= career.title %></span></h4>
-              <div class="collapse">
-                <table>
-                  <tbody>
-                    <tr>                          
-                      <td>Experience :</td>
-                      <td><%= career.experience %></td>
-                    </tr>
-                    <tr>
-                      <td>Involvement : &nbsp;</td>
-                      <td><%= career.involvement %></td>
-                    </tr>
-                    <% if career.location.present? %>
-                      <tr>
-                        <td>Location: </td>
-                        <td><%= career.location %></td>
+      <div class="row">
+        <p class="custom_text">
+          We are the perfect destination for every sedulous individual to give you career successful growth and evolution.
+          Our working ecosystem is the appropriate for every new member as there is always willingness from seniors and other employees to help you.
+          You can be sure at apsolute technologies that you always have your team to back you up.
+        </p>
+        <p class="custom_text">
+          We are always looking for talented and enthusiastic new employees who can  give contributions to the success of our company. Take a view to our career pages. We want you to realize your prospective. You want to be canonicalized for your work. We want you to consummate your ambitions.
+        </p>
+      </div>
+      <% if @careers.present? %>
+        <div class="row ">
+          <h3 class="m_title">Current Openings</h3>
+          <div id="content-expand">
+            <div class="collapsing">
+              <% @careers.each do |career| %>
+                <h4 class="expand"><span class="colps-heading"><%= career.title %></span></h4>
+                <div class="collapse">
+                  <table>
+                    <tbody>
+                      <tr>                          
+                        <td>Experience :</td>
+                        <td><%= career.experience %></td>
                       </tr>
-                    <% end %>
-                    <% if career.package.present? %>
                       <tr>
-                        <td>Package :</td>
-                        <td><%= career.package %></td>
+                        <td>Involvement : &nbsp;</td>
+                        <td><%= career.involvement %></td>
                       </tr>
-                    <% end %>
-                  </tbody>
-                </table>
-              </div>
-            <% end %>
+                      <% if career.location.present? %>
+                        <tr>
+                          <td>Location: </td>
+                          <td><%= career.location %></td>
+                        </tr>
+                      <% end %>
+                      <% if career.package.present? %>
+                        <tr>
+                          <td>Package :</td>
+                          <td><%= career.package %></td>
+                        </tr>
+                      <% end %>
+                    </tbody>
+                  </table>
+                </div>
+              <% end %>
+            </div>
           </div>
+        </div>
+      <% end %>
+      <div class="row ">
+        <div class="span12">
+          <div class="keywordbox">Send your resume on apsolutetechnology@gmail.com</div>
         </div>
       </div>
     </div>

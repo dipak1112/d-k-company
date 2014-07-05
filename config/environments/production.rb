@@ -85,8 +85,9 @@ KeshariyaCompany::Application.configure do
 
   config.log_formatter = ::Logger::Formatter.new
 
-  DOMAIN_CONFIG = "http://www.apsolutetechnologies.com/"  
+  DOMAIN_CONFIG = "http://apsolutetechnologies.com/"  
 
   config.action_mailer.default_url_options   = { :host => 'www.apsolutetechnologies.com' }
+  config.action_mailer.delivery_method = :smtp
 
 end

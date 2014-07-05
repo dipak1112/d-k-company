@@ -24,6 +24,3 @@
 //= require jquery_carouFredSel.js
 //= require plugins.js
 //= require superfish_menu.js
-//= require expand.js
-//= require znscript.js
-//= require cubeportfolio-plugin.js

@@ -1,0 +1,48 @@
+<!-- <h2>Forgot your password?</h2>
+
+<%= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :email, :required => true, :autofocus => true %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Send me reset password instructions" %>
+  </div>
+<% end %>
+ -->
+
+             <section>
+                     <div class="container">
+                        <div class="mainbody ">
+                           <div class="row zn_content_no_margin">
+                              <div class="span12">
+                                 <h1 class="page-title margin-top-pgtitle">Forgot Password</h1>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="container">
+                        <div class="row ">
+                           
+                              
+                            <div class="auth-form">
+								
+								<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+									
+									<div class="auth-inputs">
+						<label>Email address</label>
+						<%= f.email_field :email, :placeholder => "Email Address" %>
+						<span class="error"><%= display_error_messages f.object.errors, [:email] %> </span>
+					</div>
+									
+									<div class="auth-button-div">
+            <%= f.submit "Send me reset password instructions", :class => "button-48 blue auth-button button-content" %>
+          </div>
+									
+								<% end %>
+							</div>
+                        </div>
+                     </div>
+                  </section>

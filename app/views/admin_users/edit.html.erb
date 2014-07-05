@@ -1,20 +1,46 @@
-<%= form_for(@admin_user, url: main_app.update_password_admin_users_path) do |f| %>
-
-  <div class="field">
-    <%= f.label :password, "Password" %><br />
-    <%= f.password_field :password, :autocomplete => "off"  %>
+<section>
+  <div class="container">
+    <div class="mainbody ">
+      <div class="row zn_content_no_margin">
+        <div class="span12">
+          <h1 class="page-title margin-top-pgtitle">Change Password</h1>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
+  <div class="container">
+    <div class="row ">
+      <div class="auth-form">
+        <%= form_for(@admin_user, url: main_app.update_password_admin_users_path) do |f| %>
+          <div class="auth-inputs">
+            <div class="unmask-password">
+              <label>New Password</label>
+              <div class="unmask-wrapper">
+                <%= f.password_field :password, :autocomplete => "off", :placeholder => "New Password" %>
+                <span class="error"><%= display_error_messages @admin_user.errors, [:password] %> </span>
+              </div>
+            </div>
+            <div class="unmask-password">
+              <label>Confirm Password</label>
+              <div class="unmask-wrapper">
+                <%= f.password_field :password_confirmation, :autocomplete => "off", :placeholder => "Confirm New Password" %>
+                <span class="error"><%= display_error_messages @admin_user.errors, [:password_confirmation] %> </span>
+              </div>
+            </div>
+            <div class="unmask-password">
+              <label>Current Password</label>
+              <div class="unmask-wrapper">
+                <%= f.password_field :current_password, :autocomplete => "off", :placeholder => "Current Password" %>
+                <span class="error"><%= display_error_messages @admin_user.errors, [:current_password] %> </span>
+              </div>
+            </div>
+          </div>
+          <div class="auth-button-div">
+            <%= f.submit "Change Password", :class => "button-48 blue auth-button button-content" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password %>
-  </div>
-
-  <div class="action_container">
-    <%= f.submit %>
-  </div>
-<% end %>
+</section>
+<!-- end #content -->

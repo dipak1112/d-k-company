@@ -12,7 +12,7 @@ class AdminUsersController < ApplicationController
       flash[:success] = "Password Changed Successfully"
       redirect_to rails_admin.dashboard_path
     else
-      flash[:errors] = @admin_user.errors.full_messages
+      logger.warn(@admin_user.errors.full_messages)
       render "edit"
     end
   end

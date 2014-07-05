@@ -1,0 +1,171 @@
+/*admin page css*/
+
+.auth-form {
+    margin: 0 auto;
+    max-width: 480px;
+}
+.auth-inputs label {
+    margin: 0;
+}
+.auth-inputs label {
+    float: left;
+    height: 48px;
+    padding: 16px 16px 16px 0;
+    
+}
+.auth-inputs label {
+    display: block;
+    line-height: 16px;
+	font-size: 1.5rem;
+}
+.auth-inputs input[type="password"], .auth-inputs input[type="email"], .auth-inputs input[type="text"] {
+    margin: 0 0 7px 0;
+    width: 100%;
+}
+.auth-inputs input[type="password"], .auth-inputs input[type="email"], .auth-inputs input[type="text"] {
+    -moz-appearance: none;
+    border: 1px solid #c1cedb;
+    border-radius: 3px;
+    height: 48px;
+    padding: 15px;
+}
+.auth-inputs .unmask-password {
+    max-width: none;
+}
+.unmask-password {
+    position: relative;
+}
+.unmask-password label {
+    display: block;
+    font-size: 1.5rem;
+    margin: 0 0 4px;
+}
+
+.auth-rememberme .display-remembr{display:inline;}
+.auth-rememberme .check-box{margin:10px;}
+
+
+.button.blue,.button-48.blue{
+    box-shadow:inset 0 1px 0 #37a6fa;
+    background-color:#239bf6;
+    background-image:linear-gradient(to bottom,#239bf6 0%,#148fef 100%);
+    background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#239bf6),color-stop(100%,#148fef));
+    background-image:-webkit-linear-gradient(top,#239bf6 0%,#148fef 100%);
+    background-image:-moz-linear-gradient(top,#239bf6 0%,#148fef 100%);
+    background-image:-o-linear-gradient(top,#239bf6 0%,#148fef 100%);
+    background-image:linear-gradient(top,#239bf6 0%,#148fef 100%)}
+  .button.blue,.button.blue.hover,.button.blue:hover,.button.blue:active,.button.blue.active,.button-48.blue,.button-48.blue.hover,.button-48.blue:hover,.button-48.blue:active,.button-48.blue.active{
+    border-color:#1a76bf;
+    color:#fff}
+  .button.blue:before,.button.blue:after,.button-48.blue:before,.button-48.blue:after{
+    color:#fff}
+  .button.blue:hover,.button.blue.hover,.button-48.blue:hover,.button-48.blue.hover{
+    box-shadow:inset 0 1px 0 #39abfb;
+    background-color:#25a1f7;
+    background-image:linear-gradient(to bottom,#25a1f7 0%,#1695f1 100%);
+    background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#25a1f7),color-stop(100%,#1695f1));
+    background-image:-webkit-linear-gradient(top,#25a1f7 0%,#1695f1 100%);
+    background-image:-moz-linear-gradient(top,#25a1f7 0%,#1695f1 100%);
+    background-image:-o-linear-gradient(top,#25a1f7 0%,#1695f1 100%);
+    background-image:linear-gradient(top,#25a1f7 0%,#1695f1 100%)}
+  .button.blue:active,.button.blue.active,.button-48.blue:active,.button-48.blue.active{
+    box-shadow:inset 0 1px 0 #1f88da,0 1px 0 rgba(255,255,255,.05);
+    background-color:#1690f0;
+    background-image:linear-gradient(to bottom,#1690f0 0%,#219af5 100%);
+    background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#1690f0),color-stop(100%,#219af5));
+    background-image:-webkit-linear-gradient(top,#1690f0 0%,#219af5 100%);
+    background-image:-moz-linear-gradient(top,#1690f0 0%,#219af5 100%);
+    background-image:-o-linear-gradient(top,#1690f0 0%,#219af5 100%);
+    background-image:linear-gradient(top,#1690f0 0%,#219af5 100%)
+}
+.auth-form .auth-button-div{
+width:100%;
+float:right;
+}	
+
+
+.auth-button {
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.button-48 {
+    height: 48px;
+    min-width: 48px;
+    padding: 15px;
+}
+button, input[type="submit"], .button, .button-48 {
+    -moz-user-select: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 16px;
+    max-width: 100%;
+    outline: medium none;
+}
+
+.auth-button-div .button-content {
+    display: block;
+    height: 100%;
+    left: 0;
+    line-height: 16px;
+    padding: 15px;
+    position: relative;
+    top: 0;
+    transition: all 160ms ease-in-out 0s;
+	float: right;
+    margin: 10px 0 0;
+	font-weight: bold;
+    opacity: 1;
+    top: 0;
+    /*width: 100%;*/
+}
+
+.button,.auth-button .button-content{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden
+}
+.auth-form  .frgt-pass{padding-top:20px; float: right;}
+.auth-form  .frgt-pass a{font-weight:bold; color:#535353; font-size:15px;}
+.auth-form  .frgt-pass a:hover{text-decoration:underline; color:#28465e;}
+
+@media only screen 
+and (min-width : 381px) 
+and (max-width : 520px) {
+	button, input[type="submit"], .button, .button-48{
+	font-size: 1.4em;
+	}
+	
+}
+
+@media (max-width: 380px) {
+	button, input[type="submit"], .button, .button-48{
+	font-size: 1.1em;
+	}
+}
+
+.field_with_errors input[type="password"], .field_with_errors input[type="email"], .field_with_errors input[type="text"], .field_with_errors textarea {
+    border-color:#FF0000 !important;
+}
+
+.error {
+    color: #FF0000 !important;
+}
+
+.danger {
+    padding: 8px 35px 8px 14px;
+margin-bottom: 20px;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+background-color: #FCE3E4;
+border: 1px solid #FBD5D8;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+.danger, .danger h4 {
+    color: #FF0000;
+}
