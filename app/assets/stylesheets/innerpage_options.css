@@ -35,11 +35,12 @@ background-color:#AAAAAA;}
 /*----------------------  Unlimited Headers --------------------------*/
 
 
-#page_header.uh_services .bgback img, #slideshow.uh_services .bgback img{
+#page_header.uh_services .bgback img , #slideshow.uh_services .bgback img{
 	border: 0 none;
     height: 100%;
     max-width: 100%;
     vertical-align: middle;
+	width:100%;
    /* background-image: url("../images/services.png");*/
 }
 
@@ -72,6 +73,7 @@ background-color:#AAAAAA;}
     height: 100%;
     max-width: 100%;
     vertical-align: middle;
+	width:100%;
     /*background-image: url("../images/contact-us.png");*/
 	
 	
@@ -104,6 +106,7 @@ background-color:#AAAAAA;}
     height: 100%;
     max-width: 100%;
     vertical-align: middle;
+	width:100%;
     /*background-image: url("../images/career.png");*/
 }
 
@@ -134,7 +137,7 @@ background-color:#AAAAAA;}
     height: 100%;
     max-width: 100%;
     vertical-align: middle;
-	/*width:100%;*/
+	width:100%;
     /*background-image: url("../images/about-us.png");*/
 }
 
@@ -166,6 +169,7 @@ background-color:#AAAAAA;}
     height: 100%;
     max-width: 100%;
     vertical-align: middle;
+	width:100%;
     /*background-image: url("../images/portfolio.png");*/
 }
 

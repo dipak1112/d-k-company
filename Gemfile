@@ -19,3 +19,5 @@ gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'friendly_id', '~> 5.0.0' 
 gem 'devise'
 gem 'rails_admin', :github => 'sferik/rails_admin'
+gem "less-rails"
+gem "twitter-bootstrap-rails"

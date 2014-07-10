@@ -613,12 +613,6 @@ section {
     height: 100%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-    #process ul li .copycontent {
-        width: 740px;
-    };
-}
-
 #process ul li .copycontent h2 {
     padding: 15px 0 5px;
     margin: 0;
@@ -631,14 +625,6 @@ section {
     width: 330px;
 }
 
-@media only screen and (min-width: 1220px) {
-    #process ul li .copycontent h2 {
-        width: 300px;
-        font-size: 45px;
-        line-height: 40px;
-    };
-}
-
 #process ul li .copycontent h3 {
     padding: 20px 0 5px;
     margin: 0;
@@ -647,13 +633,6 @@ section {
     font-size: 21px;
     line-height: 24px;
     font-weight: 700;
-}
-
-@media only screen and (min-width: 1220px) {
-    #process ul li .copycontent h3 {
-        font-size: 32px;
-        line-height: 32px;
-    };
 }
 
 #process ul li .copycontent p {
@@ -671,12 +650,6 @@ section {
     top: inherit;
 }
 
-@media only screen and (min-width: 1220px) {
-    #process ul li .copycontent p {
-        font-size: 16px;
-        line-height: 24px;
-    };
-}
 
 #process ul li .copycontent p.shortcopy {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -704,12 +677,6 @@ section {
     min-height: 30px;
     height: 100%;
     background: transparent url('line.png') 0 center no-repeat;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-    #process ul li .copycontent .animation {
-        right: -60px;
-    };
 }
 
 #process ul li .copycontent .animation .ani {
@@ -883,10 +850,39 @@ section {
 #process ul li#part1.open {
     height: 42%;
 }
-
-@media only screen and (max-width: 480px) {
-    #process{display: none;}
+@media only screen and (min-width: 1220px) {
+    #process ul li .copycontent h2 {
+        width: 300px;
+        font-size: 45px;
+        line-height: 40px;
+    }
+	#process ul li .copycontent h3 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+	#process ul li .copycontent p {
+        font-size: 16px;
+        line-height: 24px;
+    };
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
     #process ul li .copycontent {
+        width: 740px;
+    }
+	#process ul li .copycontent .animation {
+        right: -60px;
+    };
+}
+@media only screen and (min-width: 591px) and (max-width: 767px) {
+    #process ul li .copycontent {
+        width: 740px;
+    }
+	
+}
+
+@media only screen and (min-width: 481px) and (max-width: 590px){
+	#process{height:378px !important;}
+	#process ul li .copycontent {
         margin: 0px;
         padding: 0;
         width: 100%;
@@ -900,7 +896,12 @@ section {
         display: block;
         width: auto;
     }
-
+	#process ul li.open {
+    height: 23%;
+	}
+	#process ul li#part1.open {
+    height: 27%;
+	}
     #process ul li .copycontent h2 i.badge {
         display: none;
     }
@@ -930,6 +931,10 @@ section {
     #process ul li#part1 h2 {
         margin-top: 45px;
     };
+}
+@media only screen and (max-width: 480px) {
+	#process{display:none;}
+    
 }
 
 @-moz-keyframes bg-ani-long-play {
@@ -1067,12 +1072,10 @@ section {
     position: relative;
     height: 100%;
 }
+#technology ul.stacks li.stacktitle .copycontent h2 span{
+	display:none;
+	}
 
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-    #technology ul.stacks li.stacktitle .copycontent {
-        width: 740px;
-    };
-}
 
 #technology ul.stacks li.stacktitle .copycontent h2 {
     padding: 54px 0 5px;
@@ -1085,15 +1088,9 @@ section {
     text-transform: uppercase;
     width: 340px;
     height: 195px;
+	/*height: 180px;*/
     overflow: hidden;
 /*text-indent:110%;white-space:nowrap*/;
-}
-
-@media only screen and (min-width: 1220px) {
-    #technology ul.stacks li.stacktitle .copycontent h2 {
-        font-size: 36px;
-        line-height: 45px;
-    };
 }
 
 #technology ul.stacks li.stacktitle .copycontent h2 br {
@@ -1111,15 +1108,10 @@ section {
     width: 300px;
 }
 
-@media only screen and (min-width: 1220px) {
-    #technology ul.stacks li.stacktitle .copycontent p {
-        font-size: 16px;
-        line-height: 24px;
-    };
-}
 
 #technology ul.stacks li.stacktitle .copycontent .stackcta {
     display: block;
+    background: rgba(0,0,0,0.25) url('stacksicon.png') left center no-repeat;
     padding: 5px 10px 5px 45px;
     text-decoration: none;
     color: #f5f5f5;
@@ -1144,12 +1136,15 @@ section {
     width: 100%;
     min-height: 30px;
     height: 100%;
+    background: transparent url('ani6.png') 0 0 no-repeat;
 }
 
 #technology ul.stacks li.stacktitle .copycontent .animation .ani {
     top: 0;
-    left: 46px;
-    width: 500px;
+    /*left: 150px;*/
+	left: 46px;
+    
+	width: 500px;
     height: 250px;
     margin-top: 0px;
     position: absolute;
@@ -1201,12 +1196,6 @@ section {
     height: 100%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-    #technology ul.stacks li.stack ul span {
-        width: 740px;
-    };
-}
-
 #technology ul.stacks li.stack ul span h3 {
     position: absolute;
     left: 0;
@@ -1222,12 +1211,7 @@ section {
     font-weight: 700;
 }
 
-@media only screen and (min-width: 1220px) {
-    #technology ul.stacks li.stack ul span h3 {
-        font-size: 32px;
-        line-height: 42px;
-    };
-}
+
 
 #technology ul.stacks li.stack ul span h3 em {
     font-size: 12px;
@@ -1505,6 +1489,7 @@ section {
 
 #technology ul.stacks li.stack.level1 ul li.bottom {
     margin-left: -10px;
+	
 }
 
 #technology ul.stacks li.stack.level2 ul span {
@@ -1559,10 +1544,32 @@ section {
 #technology ul.stacks.open li.stack ul li.bottom {
     margin-left: -100px;
 }
+@media only screen and (min-width: 1220px) {
+    #technology ul.stacks li.stacktitle .copycontent h2 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+	#technology ul.stacks li.stack ul span h3 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+	#technology ul.stacks li.stacktitle .copycontent p {
+        font-size: 16px;
+        line-height: 24px;
+    };
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+    #technology ul.stacks li.stacktitle .copycontent {
+        width: 740px;
+    }
+	#technology ul.stacks li.stack ul span {
+        width: 740px;
+    };
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+#technology{height:420px !important;}
 
-@media only screen and (max-width: 480px) {
-    #technology{display: none;}
-    #technology ul.stacks li.stacktitle {
+#technology ul.stacks li.stacktitle {
         height: 29%;
     }
 
@@ -1579,13 +1586,16 @@ section {
         width: auto;
         height: auto;
     }
-
+	#technology ul.stacks li.stacktitle .copycontent h2 span{
+	display:inline !important;
+	}
     #technology ul.stacks li.stacktitle .copycontent h2 br {
         display: inline;
     }
 
     #technology ul.stacks li.stacktitle .copycontent p {
-        display: none;
+        /*display: none;*/
+		margin-left:19px;
     }
 
     #technology ul.stacks li.stacktitle .copycontent .animation {
@@ -1663,6 +1673,7 @@ section {
     #technology ul.stacks li.stack ul li.top ul,#technology ul.stacks li.stack ul li.bottom ul {
         padding: 0 0 0 5px;
         overflow: hidden;
+		display:none;
     }
 
     #technology ul.stacks li.stack ul li.top ul li,#technology ul.stacks li.stack ul li.bottom ul li {
@@ -1873,4 +1884,8 @@ section {
     #technology ul.stacks.open li.stack ul li.top,#technology ul.stacks.open li.stack ul li.bottom {
         margin: 0;
     };
+}
+@media only screen and (max-width: 480px) {
+	#technology{display:none;}
+    
 }

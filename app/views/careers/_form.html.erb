@@ -1,0 +1,13 @@
+<%= simple_form_for @career, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :title %>
+  <%= f.input :experience %>
+  <%= f.input :involvement %>
+  <%= f.input :location %>
+  <%= f.input :package %>
+  <%= f.input :skills %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                careers_path, :class => 'btn' %>
+  </div>
+<% end %>
