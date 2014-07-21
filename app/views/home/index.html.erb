@@ -1,3 +1,4 @@
+<% provide(:title, 'Home') %>
 <%= render 'layouts/slider' %>
 <div id="action_box" data-arrowpos="center">
   <div class="container">
@@ -16,7 +17,11 @@
     <div class="row">
       <div class="span4">
         <p class="custom_text">
-          Give you the solution you need to succeed. Have a passion for building remarkable software that people love to use. We are proud to be able to contribute to our clients successes. We build solution to facilitate high performance, scalability and high standard code quality. We bring you quality of performance. Offer services in website development, software development, web design, e-commerce development, mobile development and SEO. Our team of skilled professional will ensure that time spent with us will be pleasure and also being productive. We proud of our achievements and we commit to go even further.
+          <% if @introduction.present? %>
+            <%= @introduction.page_content %>
+          <% else %>
+            Give you the solution you need to succeed. Have a passion for building remarkable software that people love to use. We are proud to be able to contribute to our clients successes. We build solution to facilitate high performance, scalability and high standard code quality. We bring you quality of performance. Offer services in website development, software development, web design, e-commerce development, mobile development and SEO. Our team of skilled professional will ensure that time spent with us will be pleasure and also being productive. We proud of our achievements and we commit to go even further.
+          <% end %>
         </p>
       </div>
       <div class="span8">

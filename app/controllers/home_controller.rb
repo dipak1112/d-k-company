@@ -4,13 +4,19 @@ class HomeController < ApplicationController
   #before_action :fetch_services, only: [:home, :services]
   
   def index
+    @introduction                = Page.find_by(name: "Home Page Introduction")
+    @staticts_countries_covered  = Page.find_by(name: "Staticts Countries Covered")
+    @staticts_satisfied_clients  = Page.find_by(name: "Staticts Satisfied Clients")
+    @staticts_finished_projects  = Page.find_by(name: "Staticts Finished Projects")
+    @staticts_resources_strength = Page.find_by(name: "Staticts Resources Strength")
   end
 
   def about_us
-    # @page = Page.find_by(name: "About us")
-    # @description_line = Page.find_by(name: "About us discription line")
-    # @our_mission = Page.find_by(name: "Our Mission")
-    # @our_vision = Page.find_by(name: "Our Vision")
+    @introduction                = Page.find_by(name: "About Us Page Introduction")
+    @staticts_countries_covered  = Page.find_by(name: "Staticts Countries Covered")
+    @staticts_satisfied_clients  = Page.find_by(name: "Staticts Satisfied Clients")
+    @staticts_finished_projects  = Page.find_by(name: "Staticts Finished Projects")
+    @staticts_resources_strength = Page.find_by(name: "Staticts Resources Strength")
   end
 
   def contact_us

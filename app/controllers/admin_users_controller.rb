@@ -1,4 +1,5 @@
 class AdminUsersController < ApplicationController
+  layout 'admin'
 	before_filter :authenticate_admin_user!
 
   def edit
@@ -10,7 +11,7 @@ class AdminUsersController < ApplicationController
     if @admin_user.update_with_password(admin_user_params)
       sign_in @admin_user, :bypass => true
       flash[:success] = "Password Changed Successfully"
-      redirect_to rails_admin.dashboard_path
+      redirect_to admin_path
     else
       logger.warn(@admin_user.errors.full_messages)
       render "edit"

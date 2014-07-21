@@ -1,3 +1,4 @@
+<% provide(:title, 'Careers') %>
 <%- model_class = Career -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
@@ -5,7 +6,6 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:experience) %></th>
       <th><%= model_class.human_attribute_name(:involvement) %></th>
@@ -18,8 +18,7 @@
   <tbody>
     <% @careers.each do |career| %>
       <tr>
-        <td><%= link_to career.id, career_path(career) %></td>
-        <td><%= career.title %></td>
+        <td><%= link_to career.title, career_path(career) %></td>
         <td><%= career.experience %></td>
         <td><%= career.involvement %></td>
         <td><%= career.location %></td>

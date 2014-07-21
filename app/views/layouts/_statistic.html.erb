@@ -9,28 +9,52 @@
       <div class="span3">
         <div class="statbox">
           <img src="/assets/ico-04.png" alt="">
-          <h4>40 +</h4>
+          <h4>
+            <% if @staticts_countries_covered.present? %>
+              <%= @staticts_countries_covered.page_content %> +
+            <% else %>
+              40 +
+            <% end %>
+          </h4>
           <h6>Countries Covered</h6>
         </div>
       </div>
       <div class="span3">
         <div class="statbox">
           <img src="/assets/ico-testimonials.png" alt="">
-          <h4>300 +</h4>
+          <h4>
+            <% if @staticts_satisfied_clients.present? %>
+              <%= @staticts_satisfied_clients.page_content %> +
+            <% else %>
+              300 +
+            <% end %>
+          </h4>
           <h6>Satisfied Clients</h6>
         </div>
       </div>
       <div class="span3">
         <div class="statbox">
           <img src="/assets/ico-finished-projects.png" alt="">
-          <h4>900+</h4>
+          <h4>
+            <% if @staticts_finished_projects.present? %>
+              <%= @staticts_finished_projects.page_content %> +
+            <% else %>
+              900 +
+            <% end %>
+          </h4>
           <h6>Finished Projects</h6>
         </div>
       </div>
       <div class="span3">
         <div class="statbox">
           <img src="/assets/ico-01.png" alt="">
-          <h4>150 +</h4>
+          <h4>
+            <% if @staticts_resources_strength.present? %>
+              <%= @staticts_resources_strength.page_content %> +
+            <% else %>
+              150 +
+            <% end %>
+          </h4>
           <h6>Resources Strength</h6>
         </div>
       </div>

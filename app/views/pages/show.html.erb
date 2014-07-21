@@ -1,0 +1,18 @@
+<%- model_class = Page -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @page.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:page_content) %>:</strong></dt>
+  <dd><%= @page.page_content %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              pages_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_page_path(@page), :class => 'btn' %>
+</div>

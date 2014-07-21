@@ -120,7 +120,7 @@ website:   	http://www.themepunch.com
 *********************************/
 
 .fullwidthbanner-container{
-	/*width:100% !important; */
+	/*width:100% !important;*/
 	position:relative;
 	padding:0;
 	overflow:hidden;
@@ -184,7 +184,10 @@ website:   	http://www.themepunch.com
 			-webkit-border-radius: 3px;
 			height:30px;
 			cursor:pointer;
-			color:#fff !important; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6) !important; font-size:15px; line-height:45px !important;
+			color:#fff !important; 
+			text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6) !important; 
+			font-size:15px; 
+			line-height:45px !important;
 			background:url('g30.png') repeat-x top; font-family: arial, sans-serif; font-weight: bold; letter-spacing: -1px;
 			text-decoration:none;
 		}
@@ -196,17 +199,27 @@ website:   	http://www.themepunch.com
 .tp-button:hover,
 .tp-button.big:hover		{	background-position:bottom, 15px 11px;}
 
-
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-		.tp-button	{	padding:4px 8px 3px; line-height:25px !important; font-size:11px !important;font-weight:normal;	}
+	@media only screen and (min-width: 768px) and (max-width: 900px) {
+		.tp-button {
+			
+			margin-left:-7px !important;
+		}
+		a.tp-button { -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none;}
+	}
+	@media only screen and (min-width: 525px) and (max-width: 767px) {
+		.tp-button	{	padding:4px 8px 3px; line-height:25px !important; font-size:11px !important;font-weight:normal;}
 		a.tp-button { -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none;	 }
 	}
-
-    @media only screen and (min-width: 0px) and (max-width: 479px) {
-		.tp-button	{	padding:2px 5px 2px; line-height:20px !important; font-size:10px !important;}
+	@media only screen and (min-width: 475px) and (max-width: 524px) {
+		.tp-button	{	padding:4px 8px 3px; line-height:25px !important; font-size:11px !important;font-weight:normal;	margin-left:-10px !important;}
+		a.tp-button { -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none;	 }
+	
+	}
+    @media only screen and (min-width: 0px) and (max-width: 474px) {
+		.tp-button	{	padding:2px 5px 2px; line-height:20px !important; font-size:10px !important; margin-left:-20px !important;}
 		a.tp-button { -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none;	 }
 	}
-
+	
 
 /*	BUTTON COLORS	*/
 
@@ -341,12 +354,12 @@ website:   	http://www.themepunch.com
 .tp-leftarrow.navbar-old.thumbswitharrow				{	margin-right:10px; }
 .tp-rightarrow.navbar-old.thumbswitharrow				{	margin-left:0px; }
 
-.tp-leftarrow.square									{	z-index:100;cursor:pointer; position:relative;	background: no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-right:0px; margin-top:-9px;}
-.tp-rightarrow.square									{	z-index:100;cursor:pointer; position:relative;	background: no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:-9px;}
+.tp-leftarrow.square									{	z-index:100;cursor:pointer; position:relative;	background:url('arrow_left2.png') no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-right:0px; margin-top:-9px;}
+.tp-rightarrow.square									{	z-index:100;cursor:pointer; position:relative;	background:url('arrow_right2.png') no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:-9px;}
 
 
-.tp-leftarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background: no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-right:0px; margin-top:-9px;}
-.tp-rightarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background: no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:-9px;}
+.tp-leftarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background:url('arrow_left2.png') no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-right:0px; margin-top:-9px;}
+.tp-rightarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background:url('arrow_right2.png') no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:-9px;}
 
 
 .tp-leftarrow.default									{	z-index:100;cursor:pointer; position:relative;	background:url('large_left.png') no-Repeat 0 0;	width:40px;	height:40px;

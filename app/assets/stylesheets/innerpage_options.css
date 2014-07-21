@@ -35,39 +35,6 @@ background-color:#AAAAAA;}
 /*----------------------  Unlimited Headers --------------------------*/
 
 
-#page_header.uh_services .bgback img , #slideshow.uh_services .bgback img{
-	border: 0 none;
-    height: 100%;
-    max-width: 100%;
-    vertical-align: middle;
-	width:100%;
-   /* background-image: url("../images/services.png");*/
-}
-
-#page_header.uh_services #sparkles , #slideshow.uh_services #sparkles {
-    display: none;
-}
-
-#page_header.uh_services , #slideshow.uh_services {
-    background-color: #AAAAAA;
-    background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
- /* FF3.6+ */
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5)));
- /* Chrome,Safari4+ */
-    background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
- /* Chrome10+,Safari5.1+ */
-    background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
- /* Opera 11.10+ */
-    background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
- /* IE10+ */
-    background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
- /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 );
- /* IE6-9 */;
-}
-
-
-
 #page_header.uh_contact-us .bgback img, #slideshow.uh_contact-us .bgback img{
 	border: 0 none;
     height: 100%;
@@ -101,67 +68,780 @@ background-color:#AAAAAA;}
  /* IE6-9 */;
 }
 
-#page_header.uh_career .bgback img, #slideshow.uh_career .bgback img{
-	border: 0 none;
-    height: 100%;
-    max-width: 100%;
+
+.pagebanner #bgback {
+    width: 100%;
+    display: inline-block;
     vertical-align: middle;
-	width:100%;
-    /*background-image: url("../images/career.png");*/
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.pagebanner #bgback .inner {
+    padding-top: 21.35%; /* height/width of image */
+    display: block;
+    height: 0;
+}
+/* default screen, non-retina */
+.pagebanner.about-us #bgback { background-image: url('about-us.png'); }
+.pagebanner.services-banner #bgback { background-image: url('services.png'); }
+.pagebanner.career-banner #bgback { background-image: url('career.png'); }
+
+@media only screen and (max-width: 340px) {
+    /* Small screen, non-retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-470.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-470.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-470.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+	
+}
+@media only screen and (min-resolution: 2dppx) and (max-width: 340px) {
+    /* Small screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-470.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-470.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-470.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
 }
 
-#page_header.uh_career #sparkles , #slideshow.uh_career #sparkles {
-    display: none;
+@media only screen and (min-width: 341px) and (max-width: 435px) {
+    /* Medium screen, non-retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-520.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-520.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-520.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 341px) and (max-width: 435px) {
+    /* Medium screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-520.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-520.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-520.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 435px) {
+    /* Large screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-520.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-520.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-520.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}	
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
 }
 
-#page_header.career , #slideshow.uh_career {
-    background-color: #AAAAAA;
-    background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
- /* FF3.6+ */
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5)));
- /* Chrome,Safari4+ */
-    background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
- /* Chrome10+,Safari5.1+ */
-    background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
- /* Opera 11.10+ */
-    background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
- /* IE10+ */
-    background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
- /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 );
- /* IE6-9 */;
+@media only screen and (min-width: 434px) and (max-width: 501px) {
+    /* Medium screen, non-retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-675.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-675.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-675.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 434px) and (max-width: 501px) {
+    /* Medium screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-675.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-675.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-675.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 501px) {
+    /* Large screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-675.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-675.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-675.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}	
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
 }
 
-#page_header.uh_about-us .bgback img , #slideshow.uh_about-us .bgback img{
-	border: 0 none;
-    height: 100%;
-    max-width: 100%;
-    vertical-align: middle;
-	width:100%;
-    /*background-image: url("../images/about-us.png");*/
+@media only screen and (min-width: 500px) and (max-width: 580px) {
+    /* Medium screen, non-retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-800.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-800.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-800.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 500px) and (max-width: 580px) {
+    /* Medium screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-800.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-800.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-800.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 580px) {
+    /* Large screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-800.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-800.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-800.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}	
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
 }
 
-#page_header.uh_about-us #sparkles , #slideshow.uh_about-us #sparkles {
-    display: none;
+@media only screen and (min-width: 579px) and (max-width: 679px) {
+    /* Medium screen, non-retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-970-short.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-970.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-970.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 579px) and (max-width: 679px) {
+    /* Medium screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-970-short.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-970.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-970.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 679px) {
+    /* Large screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-970-short.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-970.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-970.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}	
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
 }
 
-#page_header.uh_about-us , #slideshow.uh_about-us {
-    background-color: #AAAAAA;
-    background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
- /* FF3.6+ */
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5)));
- /* Chrome,Safari4+ */
-    background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
- /* Chrome10+,Safari5.1+ */
-    background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
- /* Opera 11.10+ */
-    background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
- /* IE10+ */
-    background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
- /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 );
- /* IE6-9 */;
+@media only screen and (min-width: 678px) and (max-width: 746px) {
+    /* Medium screen, non-retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-1020.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-1020.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-1020.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
 }
+@media only screen and (min-resolution: 2dppx) and (min-width: 678px) and (max-width: 746px) {
+    /* Medium screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-1020.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-1020.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-1020.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 746px) {
+    /* Large screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-1020.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-1020.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-1020.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}	
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+
+@media only screen and (min-width: 745px) and (max-width: 921px) {
+    /* Medium screen, non-retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-1076.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-1076.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-1076.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 745px) and (max-width: 921px) {
+    /* Medium screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-1076.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-1076.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-1076.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 921px) {
+    /* Large screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-1076.png'); }
+	.pagebanner.services-banner #bgback { background-image: url('services-1076.png'); }
+	.pagebanner.career-banner #bgback { background-image: url('career-1076.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}	
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1004px) {
+    /* Medium screen, non-retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-1217.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 920px) and (max-width: 1004px) {
+    /* Medium screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-1217.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 1004px) {
+    /* Large screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-1217.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}	
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+
+@media only screen and (min-width: 1003px) and (max-width: 1200px) {
+    /* Medium screen, non-retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-1300.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 1003px) and (max-width: 1200px) {
+    /* Medium screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-1300.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    /* Large screen, retina */
+    .pagebanner.about-us #bgback { background-image: url('about-us-1300.png'); }
+	.pagebanner{
+		position:relative;
+		min-height:300px;
+	}
+	.pagebanner #bgback {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+		top:0;
+		font: 0/0 serif;
+		text-shadow: none;
+		color: transparent;
+		background-size: 100% 100%;
+		/*background-position: 50% 50%;*/
+		background-repeat: no-repeat;
+	}	
+	.pagebanner #bgback .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
+	}
+}
+
 
 
 #page_header.uh_portfolio .bgback img, #slideshow.uh_portfolio .bgback img{
@@ -405,6 +1085,7 @@ header#header , .oldie #page_wrapper header#header{
 }
 
 footer#footer {
+	word-wrap:break-word;
 					
 }
 
