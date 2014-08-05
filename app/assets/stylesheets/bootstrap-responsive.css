@@ -1533,6 +1533,9 @@ padding: 10px 0 0;}
 /************************************* end KALLYAS EDIT */
 }
 
+@media (max-width: 620px) {
+    header#header {position: relative; height: auto;}
+}
 
 @media (max-width: 480px) {
   .nav-collapse {

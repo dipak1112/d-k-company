@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery.min.js
+//= require jquery
 //= require bootstrap.js
 //= require jquery-migrate
 //= require jquery_revslider.js
@@ -24,3 +24,4 @@
 //= require jquery_carouFredSel.js
 //= require plugins.js
 //= require superfish_menu.js
+

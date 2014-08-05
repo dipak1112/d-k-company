@@ -6,7 +6,7 @@ nav#main_menu {clear: right;}		body header#header #logo a ,header#header.style2 
 			text-align: center;
 			height:95px;
 			}
-		#logo a img { max-height:90px;padding:10px; }
+		#logo a img { max-height:60px;padding:10px; }
 		#logo a img{
 	max-width:none;
 	width:auto;	
